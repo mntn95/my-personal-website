@@ -8,7 +8,6 @@ export * from "./floating-icons";
 export * from "./image-with-fallback";
 export * from "./loader";
 export * from "./particle-background";
-export * from "./error-boundary";
 export * from "./icon-wrapper";
 export * from "./loading";
 export * from "./page-header";
