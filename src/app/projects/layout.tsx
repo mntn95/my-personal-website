@@ -1,0 +1,29 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects - Mathieu Nguyen | Portfolio & Web Development Projects",
+  description:
+    "Explore my portfolio of web development projects built with React, Next.js, TypeScript, and modern web technologies. See examples of responsive websites, web applications, and more.",
+  keywords: [
+    "web development portfolio",
+    "react projects",
+    "nextjs projects",
+    "typescript projects",
+    "web applications",
+    "portfolio",
+  ],
+  openGraph: {
+    title: "Projects - Mathieu Nguyen | Portfolio",
+    description:
+      "Explore my portfolio of web development projects built with modern technologies.",
+    type: "website",
+  },
+};
+
+export default function ProjectsLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}): React.ReactElement {
+  return <>{children}</>;
+}

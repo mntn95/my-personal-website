@@ -1,0 +1,28 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact - Mathieu Nguyen | Get in Touch",
+  description:
+    "Get in touch with Mathieu Nguyen for web development projects, collaboration opportunities, or inquiries. Based in Paris, available for remote work worldwide.",
+  keywords: [
+    "contact front-end developer",
+    "hire react developer",
+    "freelance web developer contact",
+    "paris web developer",
+    "remote developer",
+  ],
+  openGraph: {
+    title: "Contact - Mathieu Nguyen",
+    description:
+      "Get in touch for web development projects and collaboration opportunities.",
+    type: "website",
+  },
+};
+
+export default function ContactLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}): React.ReactElement {
+  return <>{children}</>;
+}
