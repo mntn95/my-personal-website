@@ -1,5 +1,8 @@
+"use client";
+
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { getFixedAnimationDelay } from "@/lib/utils";
 
 /**
@@ -8,6 +11,8 @@ import { getFixedAnimationDelay } from "@/lib/utils";
  * Used in the About component
  */
 export function CTAButton(): React.ReactElement {
+	const t = useTranslations("HomePage.about");
+
 	return (
 		<div
 			className="text-center animate-fadeInUp"
@@ -17,7 +22,7 @@ export function CTAButton(): React.ReactElement {
 				href="/about"
 				className="inline-flex items-center px-6 py-3 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-all hover:scale-105 cursor-pointer font-medium"
 			>
-				More About Me
+				{t("moreAboutMe")}
 				<ArrowRight className="ml-2 h-4 w-4" />
 			</Link>
 		</div>

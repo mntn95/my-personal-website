@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { FeatureCard } from "@/components/common";
 import { Badge } from "@/components/ui";
 import { aboutSkills } from "@/data/about";
@@ -7,14 +8,15 @@ import { getAnimationDelay } from "@/lib/utils";
  * Hard skills section component displaying technical skills with badges
  * Used in the About page
  */
-export function HardSkillsSection(): React.ReactElement {
+export async function HardSkillsSection(): Promise<React.ReactElement> {
+  const t = await getTranslations("AboutPage.hardSkills");
+
   return (
     <div className="mb-24 animate-fadeInUp">
       <div className="text-center mb-12">
-        <h2 className="text-3xl mb-6 font-bold">Hard Skills</h2>
+        <h2 className="text-3xl mb-6 font-bold">{t("title")}</h2>
         <p className="text-gray-400 max-w-3xl mx-auto font-normal leading-relaxed">
-          These are the technologies and programming languages I&apos;ve worked
-          with and continue to develop expertise in.
+          {t("description")}
         </p>
       </div>
 
@@ -38,7 +40,7 @@ export function HardSkillsSection(): React.ReactElement {
               }
               size="sm"
             >
-              {skill.level}
+              {t(`levels.${skill.level}`)}
             </Badge>
           </FeatureCard>
         ))}

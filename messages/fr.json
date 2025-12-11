@@ -1,0 +1,303 @@
+{
+  "HomePage": {
+    "hero": {
+      "greeting": "Salut, je suis",
+      "name": "Mathieu Nguyen",
+      "description": "Développeur front-end créant des expériences numériques rapides, modernes et significatives. Je conçois des interfaces claires et intuitives qui élèvent vos idées et renforcent votre marque. Curieux, adaptable et toujours à la recherche de nouveaux défis, je suis là pour vous aider à transformer votre vision en quelque chose d'impactant.",
+      "getInTouch": "Me Contacter",
+      "downloadResume": "Télécharger le CV"
+    },
+    "about": {
+      "title": "Qui Je Suis",
+      "description": "Je suis un Développeur Front-End Freelance avec 7 ans d'expérience aidant les entreprises et les startups à créer des sites web propres, modernes et faciles à utiliser.",
+      "moreAboutMe": "En Savoir Plus Sur Moi"
+    },
+    "services": {
+      "title": "Services",
+      "description": "Du développement de produits au support continu, je propose des solutions complètes adaptées aux besoins de votre entreprise.",
+      "seeMore": "Voir plus"
+    },
+    "projects": {
+      "title": "Projets en Vedette",
+      "description": "Une sélection de mes récents projets de développement web."
+    },
+    "contact": {
+      "title": "Travaillons Ensemble",
+      "description": "Je suis actuellement disponible pour du travail freelance et ouvert à de nouvelles opportunités. Si vous avez un projet en tête ou souhaitez collaborer, restons en contact !",
+      "getInTouch": "Me Contacter"
+    }
+  },
+  "Navigation": {
+    "home": "Accueil",
+    "aboutMe": "À Propos",
+    "education": "Formation",
+    "projects": "Projets",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "AboutPage": {
+    "badge": "À Propos",
+    "title": "Apprenez à Me Connaître",
+    "description": "Je transforme les idées en applications web interactives et conviviales. Les sections ci-dessous mettent en avant mon expérience, mes compétences techniques et les valeurs qui guident mon travail.",
+    "profile": {
+      "whoAmI": "Qui suis-je ?",
+      "intro1": "Je suis",
+      "intro2": "un Développeur Web Front-End Freelance avec 7 ans d'expérience créant des interfaces web performantes, intuitives et maintenables.",
+      "intro3": "J'ai commencé à coder poussé par l'amour de la résolution de problèmes et de la création de choses que les gens peuvent utiliser et apprécier. Au fil du temps, je me suis concentré sur le développement front-end et j'ai appris à maîtriser les écosystèmes JavaScript modernes, les frameworks full-stack et les outils avancés.",
+      "intro4": "De mes premiers rôles chez Alain Afflelou et Extia à mon travail freelance actuel, j'ai conçu et maintenu des applications web qui privilégient la vitesse, l'accessibilité et la fiabilité, tout en participant à des discussions d'architecture, des revues de code et des optimisations de performance.",
+      "intro5": "Quand je ne construis pas de sites web, j'aime explorer les technologies web, expérimenter avec des outils d'automatisation ou contribuer à des projets personnels. En dehors du travail, je me concentre sur le sport, notamment le CrossFit et la boxe, j'entretiens ma passion pour l'histoire et la géopolitique, et je me détends avec des jeux vidéo de temps en temps."
+    },
+    "hardSkills": {
+      "title": "Compétences Techniques",
+      "description": "Ce sont les technologies et langages de programmation avec lesquels j'ai travaillé et que je continue à développer.",
+      "levels": {
+        "Advanced": "Avancé",
+        "Intermediate": "Intermédiaire",
+        "Beginner": "Débutant"
+      }
+    },
+    "softSkills": {
+      "title": "Compétences Humaines",
+      "description": "Ce sont les compétences interpersonnelles et professionnelles qui m'aident à travailler efficacement et à fournir des résultats de qualité."
+    },
+    "moreAboutMe": {
+      "title": "En Savoir Plus Sur Moi",
+      "cards": {
+        "personalInterests": "Intérêts Personnels",
+        "codingPhilosophy": "Philosophie de Code",
+        "educationJourney": "Parcours Éducatif",
+        "futureGoals": "Objectifs Futurs"
+      },
+      "interests": {
+        "0": "Explorer de nouvelles technologies",
+        "1": "Construire des projets personnels",
+        "2": "Contribuer au développement open-source",
+        "3": "Pratiquer le sport"
+      },
+      "philosophy": {
+        "0": "Écrire un code propre, maintenable et évolutif",
+        "1": "Prioriser l'expérience utilisateur et les interfaces intuitives",
+        "2": "Suivre les meilleures pratiques",
+        "3": "Collaborer pour s'améliorer ensemble"
+      },
+      "education": {
+        "0": "Fondamentaux du développement web",
+        "1": "Spécialisation en React.js",
+        "2": "Expérience de projet full-stack",
+        "3": "Apprentissage continu"
+      },
+      "goals": {
+        "0": "Maîtriser le Front End avancé",
+        "1": "Apprendre Node.js",
+        "2": "Contribuer à l'open-source et partager les connaissances",
+        "3": "Explorer l'automatisation IA"
+      }
+    },
+    "softSkillsList": {
+      "problemSolving": {
+        "title": "Résolution de Problèmes",
+        "description": "Approche analytique des défis techniques complexes"
+      },
+      "communication": {
+        "title": "Communication",
+        "description": "Communication claire technique et non technique"
+      },
+      "teamCollaboration": {
+        "title": "Collaboration d'Équipe",
+        "description": "Travail efficace dans des équipes interfonctionnelles"
+      },
+      "adaptability": {
+        "title": "Adaptabilité",
+        "description": "Apprentissage rapide de nouvelles technologies et méthodologies"
+      },
+      "timeManagement": {
+        "title": "Gestion du Temps",
+        "description": "Livraison efficace de projets dans les délais"
+      },
+      "criticalThinking": {
+        "title": "Pensée Critique",
+        "description": "Évaluation analytique des solutions et approches"
+      }
+    }
+  },
+  "EducationPage": {
+    "badge": "Formation",
+    "title": "Parcours Éducatif",
+    "description": "Un aperçu de la formation, de l'expérience pratique et de l'apprentissage technique qui ont façonné mon parcours en tant que développeur front-end.",
+    "degree": "Titre Professionnel : Développeur Web et Web Mobile",
+    "institution": "O'Clock",
+    "field": "Formation Professionnelle au Développement Web",
+    "duration": "2018",
+    "location": "Paris - Distanciel",
+    "grade": "Obtenu",
+    "highlights": {
+      "0": "Programme intensif à temps plein de 700 heures en développement d'applications web modernes, structuré en deux phases complémentaires.",
+      "1": "Fondations Techniques : Maîtrise des fondamentaux du développement front-end et back-end, incluant HTML5, CSS3, JavaScript, PHP/MySQL, avec pratique pratique du contrôle de version (Git), des méthodologies Agile et des outils web professionnels.",
+      "2": "Spécialisation JavaScript/React : Formation approfondie dans l'écosystème JavaScript moderne, axée sur l'architecture de composants React, la gestion d'état, l'intégration d'API REST et les outils de build tels que Webpack et Babel.",
+      "3": "Projet de Fin de Formation : Collaboration en équipe de quatre pour construire une plateforme de jeu de rôle full-stack avec un plateau de jeu interactif avec mouvements en temps réel, chat intégré via WebSockets (Express.js), un blog et un forum communautaire. Développement d'une architecture JS full-stack robuste (React/Node.js/Express) capable de gérer plusieurs connexions simultanées, utilisant des pratiques Agile avec sprints hebdomadaires et revues de code."
+    },
+    "courses": {
+      "title": "Cours",
+      "list": {
+        "0": "Fondations Web & Outillage",
+        "1": "Intégration HTML/CSS & Accessibilité",
+        "2": "Sass & Modularité Front-End",
+        "3": "JavaScript & Interactions DOM",
+        "4": "Tests Automatisés & Qualité de Code",
+        "5": "WordPress & Bases du Déploiement",
+        "6": "Frameworks Front-End & Composants Dynamiques",
+        "7": "Bases de Données, SQL & ORM",
+        "8": "Architecture Back-End & API REST",
+        "9": "Algorithmes",
+        "10": "React et son écosystème",
+        "11": "DevOps, CI/CD & Docker",
+        "12": "UML, Wireframing & Méthodologie de Projet",
+        "13": "Développement de Projet Full-Stack en Temps Réel"
+      }
+    },
+    "graduationProject": {
+      "title": "Projet de Fin de Formation",
+      "projectTitle": "Plateforme RPG Interactive",
+      "description": "Développé en équipe de 4 développeurs, cette plateforme de jeu de rôle complète présente un plateau interactif avec des mouvements de joueurs en temps réel, créant une expérience de jeu immersive.",
+      "keyFeatures": {
+        "label": "Fonctionnalités Clés",
+        "content": "Plateau de jeu interactif avec mouvements de personnages en direct (jetons ronds), système de lancer de dés sur table, superposition de tutoriel activable pour les nouveaux joueurs, sélecteur de carte et chat intégré alimenté par WebSockets (Express.js)."
+      },
+      "techStack": {
+        "label": "Stack Technique",
+        "content": "Architecture JavaScript full-stack (React/Node.js/Express) avec gestion de la communication en temps réel et support de multiples connexions simultanées."
+      },
+      "methodology": {
+        "label": "Méthodologie",
+        "content": "Développement Agile avec sprints hebdomadaires et revues de code systématiques, garantissant un développement collaboratif de haute qualité."
+      }
+    }
+  },
+  "ProjectsPage": {
+    "badge": "Projets",
+    "title": "Mes Projets",
+    "description": "Découvrez une sélection de mes récents projets de développement web.",
+    "filter": {
+      "label": "Filtre :",
+      "all": "Tous",
+      "searchPlaceholder": "Rechercher des projets..."
+    },
+    "descriptions": {
+      "1": "Une plateforme e-commerce internationale dédiée à la lunetterie.",
+      "2": "Une solution CRM personnalisée conçue pour optimiser le recrutement et la gestion des employés.",
+      "3": "Une plateforme de gestion du temps et des clients pour les entrepreneurs individuels et les petites entreprises.",
+      "4": "Un site web pour un coach freelance offrant un accompagnement personnalisé pour augmenter leurs revenus.",
+      "5": "Site web pour un salon de coiffure vintage offrant un système de réservation moderne.",
+      "6": "La vitrine numérique d'un restaurant de cuisine méditerranéenne.",
+      "7": "Une page d'atterrissage dédiée à l'organisation de visites guidées à Paris."
+    }
+  },
+  "ServicesPage": {
+    "badge": "Services",
+    "title": "Ce Que Je Propose",
+    "description": "Vous cherchez un développeur front-end fiable pour donner vie à votre projet ? Je propose des solutions web de qualité adaptées à vos besoins, qu'il s'agisse d'un site web tout neuf, d'une collaboration en équipe ou d'une maintenance continue. Travaillons ensemble pour atteindre vos objectifs.",
+    "services": {
+      "customWebsiteCreation": {
+        "title": "Création de Site Web Personnalisé",
+        "description": "Expérimenté dans la création de sites web rapides et attractifs qui convertissent, des pages simples aux plateformes numériques complètes.",
+        "subtitle": "Je crée des sites web qui inspirent confiance et transforment vos visiteurs en clients.",
+        "descriptionParagraphs": {
+          "0": "Je conçois et développe des sites web personnalisés adaptés à vos besoins commerciaux spécifiques et à l'identité de votre marque. Chaque projet commence par comprendre vos objectifs, votre public cible et votre proposition de valeur unique. Que vous ayez besoin d'un site vitrine époustouflant, d'une page d'atterrissage à fort taux de conversion ou d'une plateforme e-commerce complète, je fournis des solutions qui combinent esthétique et fonctionnalité.",
+          "1": "Mon processus de développement privilégie l'expérience utilisateur, garantissant que votre site web est non seulement visuellement attrayant mais aussi intuitif et facile à naviguer. Je construis des designs responsives qui sont parfaits sur tous les appareils—des ordinateurs de bureau aux smartphones—et j'optimise chaque aspect pour des temps de chargement rapides et des performances fluides.",
+          "2": "Au-delà de la simple construction de votre site web, j'implémente les meilleures pratiques SEO dès le départ, aidant votre site à mieux se classer dans les moteurs de recherche. Je m'assure également que les normes d'accessibilité sont respectées, rendant votre contenu accessible à tous les utilisateurs. Après le lancement, je fournis des conseils sur la gestion de contenu et offre un support pour garantir que votre site web continue à performer de manière optimale."
+        },
+        "approach": {
+          "0": "Design moderne et responsive qui s'adapte parfaitement à toutes les tailles d'écran et appareils",
+          "1": "Optimisation des performances pour des temps de chargement ultra-rapides et des interactions fluides",
+          "2": "Architecture SEO-friendly pour améliorer la visibilité dans les moteurs de recherche dès le premier jour",
+          "3": "Design d'interface centré sur l'utilisateur axé sur les conversions et l'engagement",
+          "4": "Code propre et maintenable suivant les meilleures pratiques de l'industrie"
+        },
+        "examples": {
+          "0": "Site vitrine pour votre entreprise ou société",
+          "1": "Page d'atterrissage axée sur la conversion",
+          "2": "Portfolio créatif ou site web personnel",
+          "3": "Plateforme e-commerce",
+          "4": "Blog ou magazine"
+        }
+      },
+      "frontEndCollaboration": {
+        "title": "Collaboration Front-End",
+        "description": "Compétent pour travailler avec des équipes afin d'améliorer les projets, affiner les interfaces utilisateur et fournir des solutions front-end qui maintiennent le développement en cours.",
+        "subtitle": "Je rejoins votre équipe pour construire ou faire évoluer votre projet web.",
+        "descriptionParagraphs": {
+          "0": "Je m'intègre parfaitement dans votre équipe de développement en tant que développeur front-end compétent, apportant une expertise dans les technologies web modernes et un état d'esprit collaboratif. Que vous ayez besoin d'une assistance à court terme pour un sprint spécifique ou d'un partenariat à long terme pour un développement continu, je m'adapte au flux de travail, aux outils et aux processus de votre équipe.",
+          "1": "Avec de l'expérience dans des environnements agiles, je suis à l'aise pour travailler avec des systèmes de contrôle de version, participer à des revues de code et contribuer au développement de systèmes de design. Je crois en une communication claire et une documentation approfondie, garantissant que mon code est non seulement fonctionnel mais aussi maintenable par toute l'équipe.",
+          "2": "Je suis fier d'écrire un code propre, sémantique et bien testé qui suit les conventions et meilleures pratiques de votre équipe. Au-delà de la simple implémentation de fonctionnalités, je participe activement aux discussions techniques, suggère des améliorations et aide à encadrer les développeurs juniors si nécessaire. Mon objectif est d'ajouter de la valeur à votre équipe tout en livrant des résultats de haute qualité à temps."
+        },
+        "approach": {
+          "0": "Code propre et maintenable qui suit les normes et conventions de votre équipe",
+          "1": "État d'esprit collaboratif avec de solides compétences en communication et travail d'équipe",
+          "2": "Résolution proactive de problèmes et attention aux détails techniques",
+          "3": "Flexibilité pour travailler avec diverses piles technologiques et méthodologies de développement",
+          "4": "Participation active aux revues de code et partage de connaissances"
+        },
+        "examples": {
+          "0": "Mission à court ou long terme en collaboration directe avec votre personnel",
+          "1": "Intégration ou refonte d'interfaces existantes",
+          "2": "Participation aux revues de code et assurance qualité",
+          "3": "Implémentation ou évolution d'un système de design",
+          "4": "Collaboration avec les designers et développeurs backend"
+        }
+      },
+      "maintenanceSupport": {
+        "title": "Maintenance & Support",
+        "description": "Concentré sur le maintien des performances et de la sécurité du site web, gérant les mises à jour, optimisations et dépannage pour donner aux clients une tranquillité d'esprit.",
+        "subtitle": "Je gère la maintenance de votre site web pour le garder efficace et sécurisé.",
+        "descriptionParagraphs": {
+          "0": "Votre site web est un actif vivant qui nécessite des soins continus pour rester sécurisé, rapide et efficace. Je fournis des services de maintenance complets qui maintiennent votre site en bon fonctionnement, le protégeant des vulnérabilités de sécurité et garantissant des performances optimales à mesure que la technologie évolue et que votre entreprise grandit.",
+          "1": "Mon approche de maintenance est à la fois préventive et réactive. Je surveille proactivement la santé de votre site web, effectue des mises à jour régulières des dépendances et plugins, et implémente des correctifs de sécurité avant que les problèmes ne surviennent. En même temps, je suis disponible pour répondre rapidement à tout problème inattendu, bug ou besoin d'optimisation qui émerge.",
+          "2": "Au-delà de l'entretien technique, je fournis des rapports mensuels clairs sur l'état de votre site web, les métriques de performance et toutes les actions entreprises. Vous aurez accès à des canaux de support prioritaires, et j'offre des conseils sur les meilleures pratiques pour les mises à jour de contenu et la gestion du site. Mon objectif est de vous donner une tranquillité d'esprit, sachant que votre site web est entre de bonnes mains."
+        },
+        "whatIncluded": {
+          "0": "Contrôles de santé mensuels et surveillance des performances pour détecter les problèmes tôt",
+          "1": "Support prioritaire avec temps de réponse rapides pour les questions urgentes",
+          "2": "Audits de sécurité réguliers et correction immédiate des vulnérabilités",
+          "3": "Rapports mensuels détaillés sur la santé du site et les activités de maintenance",
+          "4": "Gestion des sauvegardes et planification de la reprise après sinistre"
+        },
+        "examples": {
+          "0": "Mises à jour des dépendances et plugins pour garder votre site à jour",
+          "1": "Sauvegardes régulières et surveillance proactive",
+          "2": "Corrections de bugs et optimisations de performance",
+          "3": "Support technique et conseils stratégiques",
+          "4": "Réponse d'urgence pour les problèmes critiques"
+        }
+      }
+    },
+    "sections": {
+      "myApproach": "Mon Approche",
+      "whatsIncluded": "Ce Qui Est Inclus",
+      "technologiesUsed": "Technologies Utilisées",
+      "examples": "Exemples"
+    }
+  },
+  "ContactPage": {
+    "badge": "Contact",
+    "title": "Restons en Contact",
+    "description": "Vous avez un projet en tête ? Envoyez-moi un message et créons quelque chose d'extraordinaire ensemble !",
+    "form": {
+      "yourName": "Votre Nom",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "namePlaceholder": "Jean Dupont",
+      "emailPlaceholder": "vous@exemple.com",
+      "subjectPlaceholder": "Demande de projet / Opportunité d'emploi / Collaboration...",
+      "messagePlaceholder": "Parlez-moi de votre projet, de votre calendrier et de ce que vous souhaitez accomplir...",
+      "sendMessage": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "privacyNotice": "Je respecte votre vie privée. Vos informations ne seront jamais partagées avec des tiers."
+    }
+  },
+  "Footer": {
+    "description": "Création de solutions numériques innovantes avec un accent sur un code propre et efficace et des expériences utilisateur exceptionnelles.",
+    "connectWithMe": "Restez connecté",
+    "copyright": "© 2025 Mathieu Nguyen Tous droits réservés."
+  }
+}

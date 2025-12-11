@@ -1,16 +1,19 @@
+import { getTranslations } from "next-intl/server";
 import { PageHeader } from "@/components/common";
 import { ContactInfo, ContactForm } from "@/components/features/contact";
 
-export default function Contact(): React.ReactElement {
+export default async function Contact(): Promise<React.ReactElement> {
+  const t = await getTranslations("ContactPage");
+
   return (
     <div className="min-h-screen relative z-10">
       <div className="pt-24 pb-16 min-h-screen flex items-center">
         <div className="container mx-auto px-4 max-w-6xl">
           {/* Header */}
           <PageHeader
-            badge="Contact"
-            title="Let's Connect"
-            description="Got a project in mind? Drop me a message and let's create something amazing together!"
+            badge={t("badge")}
+            title={t("title")}
+            description={t("description")}
           />
 
           {/* Two Column Layout */}

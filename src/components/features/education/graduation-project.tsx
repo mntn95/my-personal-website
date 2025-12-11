@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Award } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 import { FeatureCard, IconWrapper } from "@/components/common";
 import { ProjectDetailItem } from "./project-detail-item";
 
@@ -8,11 +9,13 @@ import { ProjectDetailItem } from "./project-detail-item";
  * Displays details about the graduation project with image
  * Used in the Education page
  */
-export function GraduationProject(): React.ReactElement {
+export async function GraduationProject(): Promise<React.ReactElement> {
+	const t = await getTranslations("EducationPage.graduationProject");
+
 	return (
 		<div className="animate-fadeInUp">
 			<h2 className="mb-12 text-center text-white text-3xl font-bold">
-				Graduation Project
+				{t("title")}
 			</h2>
 			<FeatureCard variant="default" hover className="overflow-hidden">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
@@ -21,28 +24,24 @@ export function GraduationProject(): React.ReactElement {
 						<div className="flex items-center mb-6">
 							<IconWrapper icon={Award} size="md" className="mr-4" />
 							<h3 className="text-white text-2xl font-semibold">
-								Interactive RPG Platform
+								{t("projectTitle")}
 							</h3>
 						</div>
 						<div className="space-y-4 text-gray-400">
 							<p>
-								{" "}
-								Developed as a team of 4 developers, this comprehensive
-								role-playing game platform features an interactive board
-								with real-time player movements, creating an immersive
-								gaming experience.
+								{t("description")}
 							</p>
 							<ProjectDetailItem
-								label="Key Features"
-								content="Interactive game board with live character movements (round tokens), tabletop dice rolling system, toggleable tutorial overlay for new players, map selector, and integrated chat powered by WebSockets (Express.js)."
+								label={t("keyFeatures.label")}
+								content={t("keyFeatures.content")}
 							/>
 							<ProjectDetailItem
-								label="Tech Stack"
-								content="Full-stack JavaScript architecture (React/Node.js/Express) with real-time communication handling and support for multiple simultaneous connections."
+								label={t("techStack.label")}
+								content={t("techStack.content")}
 							/>
 							<ProjectDetailItem
-								label="Methodology"
-								content="Agile development with weekly sprints and systematic code reviews, ensuring high-quality collaborative development."
+								label={t("methodology.label")}
+								content={t("methodology.content")}
 							/>
 						</div>
 					</div>

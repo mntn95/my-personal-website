@@ -1,10 +1,13 @@
 "use client";
 
 import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 import { PageHeader } from "@/components/common";
 import { ServicesList } from "@/components/features/services";
 
 export default function Services(): React.ReactElement {
+  const t = useTranslations("ServicesPage");
+
   // Handle scroll to anchor on page load
   useEffect(() => {
     const hash = window.location.hash;
@@ -30,9 +33,9 @@ export default function Services(): React.ReactElement {
         <div className="container mx-auto px-4 lg:px-8">
           {/* Header */}
           <PageHeader
-            badge="Services"
-            title="What I Offer"
-            description="Looking for a reliable front-end developer to bring your project to life? I deliver quality web solutions tailored to your needs, whether it's a brand-new website, team collaboration, or ongoing maintenance. Let's work together to achieve your goals."
+            badge={t("badge")}
+            title={t("title")}
+            description={t("description")}
           />
 
           <div className="space-y-8">

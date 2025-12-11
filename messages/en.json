@@ -1,0 +1,303 @@
+{
+  "HomePage": {
+    "hero": {
+      "greeting": "Hi, I'm",
+      "name": "Mathieu Nguyen",
+      "description": "Front-end developer crafting fast, modern, and meaningful digital experiences. I design clear, intuitive interfaces that elevate your ideas and strengthen your brand. Curious, adaptable, and always exploring new challenges, I'm here to help turn your vision into something impactful.",
+      "getInTouch": "Get in Touch",
+      "downloadResume": "Download Resume"
+    },
+    "about": {
+      "title": "Who I Am",
+      "description": "I'm a Freelance Front-End Developer with 7 years of experience helping businesses and startups build clean, modern, and easy-to-use websites.",
+      "moreAboutMe": "More About Me"
+    },
+    "services": {
+      "title": "Services",
+      "description": "From product development to ongoing support, I offer comprehensive solutions tailored to your business needs.",
+      "seeMore": "See more"
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "description": "A selection of my recent web development projects."
+    },
+    "contact": {
+      "title": "Let's Work Together",
+      "description": "I'm currently available for freelance work and open to new opportunities. If you have a project in mind or want to collaborate, let's connect!",
+      "getInTouch": "Get in Touch"
+    }
+  },
+  "Navigation": {
+    "home": "Home",
+    "aboutMe": "About Me",
+    "education": "Education",
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "AboutPage": {
+    "badge": "About Me",
+    "title": "Know Who I Am",
+    "description": "I turn ideas into interactive, user-friendly web applications. The divs below highlight my experience, technical skills, and the values that guide my work.",
+    "profile": {
+      "whoAmI": "Who am I?",
+      "intro1": "I'm",
+      "intro2": "a Freelance Front-End Web Developer with 7 years of experience creating high-performance, intuitive, and maintainable web interfaces.",
+      "intro3": "I began coding driven by a love for problem-solving and building things that people can use and enjoy. Over time, I focused on front-end development and learned to master modern JavaScript ecosystems, full-stack frameworks, and advanced tooling.",
+      "intro4": "From my early roles at Alain Afflelou and Extia to my current freelance work, I've designed and maintained web applications that prioritize speed, accessibility, and reliability, while participating in architecture discussions, code reviews, and performance optimizations.",
+      "intro5": "When I'm not building websites, I enjoy exploring web technologies, experimenting with automation tools or contributing to personal projects. Outside work, I focus on sports, particularly CrossFit and boxing, nurture my passion for history and geopolitics, and unwind with video games from time to time."
+    },
+    "hardSkills": {
+      "title": "Hard Skills",
+      "description": "These are the technologies and programming languages I've worked with and continue to develop expertise in.",
+      "levels": {
+        "Advanced": "Advanced",
+        "Intermediate": "Intermediate",
+        "Beginner": "Beginner"
+      }
+    },
+    "softSkills": {
+      "title": "Soft Skills",
+      "description": "These are the interpersonal and professional skills that help me work effectively and deliver quality results."
+    },
+    "moreAboutMe": {
+      "title": "More About Me",
+      "cards": {
+        "personalInterests": "Personal Interests",
+        "codingPhilosophy": "Coding Philosophy",
+        "educationJourney": "Education Journey",
+        "futureGoals": "Future Goals"
+      },
+      "interests": {
+        "0": "Exploring new technologies",
+        "1": "Building personal projects",
+        "2": "Contributing to open-source development",
+        "3": "Practicing sports"
+      },
+      "philosophy": {
+        "0": "Writing clean, maintainable, and scalable code",
+        "1": "Prioritizing user experience and intuitive interfaces",
+        "2": "Following best practices",
+        "3": "Collaborating to improve together"
+      },
+      "education": {
+        "0": "Web development fundamentals",
+        "1": "Specialization in React.js",
+        "2": "Full-stack project experience",
+        "3": "Ongoing learning"
+      },
+      "goals": {
+        "0": "Mastering advanced Front End",
+        "1": "Learn Node.js",
+        "2": "Contributing to open-source and sharing knowledge",
+        "3": "Exploring AI automation"
+      }
+    },
+    "softSkillsList": {
+      "problemSolving": {
+        "title": "Problem Solving",
+        "description": "Analytical approach to complex technical challenges"
+      },
+      "communication": {
+        "title": "Communication",
+        "description": "Clear technical and non-technical communication"
+      },
+      "teamCollaboration": {
+        "title": "Team Collaboration",
+        "description": "Effective work in cross-functional teams"
+      },
+      "adaptability": {
+        "title": "Adaptability",
+        "description": "Quick learning of new technologies and methodologies"
+      },
+      "timeManagement": {
+        "title": "Time Management",
+        "description": "Efficient project delivery within deadlines"
+      },
+      "criticalThinking": {
+        "title": "Critical Thinking",
+        "description": "Analytical evaluation of solutions and approaches"
+      }
+    }
+  },
+  "EducationPage": {
+    "badge": "Education",
+    "title": "Educational Background",
+    "description": "An overview of the education, practical experience, and technical learning that shaped my journey as a front-end developer.",
+    "degree": "Professional Title: Web and Mobile Web Developer",
+    "institution": "O'Clock",
+    "field": "Professional Web Development Training",
+    "duration": "2018",
+    "location": "Paris - Remote",
+    "grade": "Obtained",
+    "highlights": {
+      "0": "Full-time intensive 700-hour program in modern web application development, structured in two complementary phases.",
+      "1": "Technical Foundations: Mastery of front-end and back-end development fundamentals, including HTML5, CSS3, JavaScript, PHP/MySQL, with hands-on practice in version control (Git), Agile methodologies, and professional web tools.",
+      "2": "JavaScript/React Specialization: In-depth training in the modern JavaScript ecosystem, focusing on React component architecture, state management, REST API integration, and build tools such as Webpack and Babel.",
+      "3": "Capstone Project: Collaborated in a team of four to build a full-stack role-playing platform featuring an interactive game board with real-time movements, integrated chat via WebSockets (Express.js), a blog, and a community forum. Developed a robust full-stack JS architecture (React/Node.js/Express) capable of handling multiple simultaneous connections, using Agile practices with weekly sprints and code reviews."
+    },
+    "courses": {
+      "title": "Courses",
+      "list": {
+        "0": "Web Foundations & Tooling",
+        "1": "HTML/CSS Integration & Accessibility",
+        "2": "Sass & Front-End Modularity",
+        "3": "JavaScript & DOM Interactions",
+        "4": "Automated Testing & Code Quality",
+        "5": "WordPress & Deployment Basics",
+        "6": "Front-End Frameworks & Dynamic Components",
+        "7": "Databases, SQL & ORM",
+        "8": "Back-End Architecture & REST APIs",
+        "9": "Algorithms",
+        "10": "React and its ecosystem",
+        "11": "DevOps, CI/CD & Docker",
+        "12": "UML, Wireframing & Project Methodology",
+        "13": "Full-Stack Real-Time Project Development"
+      }
+    },
+    "graduationProject": {
+      "title": "Graduation Project",
+      "projectTitle": "Interactive RPG Platform",
+      "description": "Developed as a team of 4 developers, this comprehensive role-playing game platform features an interactive board with real-time player movements, creating an immersive gaming experience.",
+      "keyFeatures": {
+        "label": "Key Features",
+        "content": "Interactive game board with live character movements (round tokens), tabletop dice rolling system, toggleable tutorial overlay for new players, map selector, and integrated chat powered by WebSockets (Express.js)."
+      },
+      "techStack": {
+        "label": "Tech Stack",
+        "content": "Full-stack JavaScript architecture (React/Node.js/Express) with real-time communication handling and support for multiple simultaneous connections."
+      },
+      "methodology": {
+        "label": "Methodology",
+        "content": "Agile development with weekly sprints and systematic code reviews, ensuring high-quality collaborative development."
+      }
+    }
+  },
+  "ProjectsPage": {
+    "badge": "Projects",
+    "title": "My Projects",
+    "description": "Explore a selection of my recent web development projects.",
+    "filter": {
+      "label": "Filter:",
+      "all": "All",
+      "searchPlaceholder": "Search projects..."
+    },
+    "descriptions": {
+      "1": "An international e-commerce platform dedicated to eyewear.",
+      "2": "A custom CRM solution designed to optimize recruitment and employee management.",
+      "3": "A time and client management platform for solo entrepreneurs and small businesses.",
+      "4": "A website for a freelance coach offering personalized support to increase their revenue.",
+      "5": "Website for a vintage-inspired barber shop offering a modern booking system.",
+      "6": "The digital showcase of a Mediterranean cuisine restaurant.",
+      "7": "A landing page dedicated to organizing guided tours in Paris."
+    }
+  },
+  "ServicesPage": {
+    "badge": "Services",
+    "title": "What I Offer",
+    "description": "Looking for a reliable front-end developer to bring your project to life? I deliver quality web solutions tailored to your needs, whether it's a brand-new website, team collaboration, or ongoing maintenance. Let's work together to achieve your goals.",
+    "services": {
+      "customWebsiteCreation": {
+        "title": "Custom Website Creation",
+        "description": "Experienced in crafting fast, attractive websites that converts, from simple pages to full digital platforms.",
+        "subtitle": "I create websites that inspire trust and convert your visitors into clients.",
+        "descriptionParagraphs": {
+          "0": "I design and develop custom websites tailored to your specific business needs and brand identity. Every project starts with understanding your goals, target audience, and unique value proposition. Whether you need a stunning showcase website, a high-converting landing page, or a fully-featured e-commerce platform, I deliver solutions that combine aesthetics with functionality.",
+          "1": "My development process prioritizes user experience, ensuring your website is not only visually appealing but also intuitive and easy to navigate. I build responsive designs that look perfect on all devices—from desktop computers to smartphones—and optimize every aspect for fast loading times and smooth performance.",
+          "2": "Beyond just building your website, I implement SEO best practices from the ground up, helping your site rank better in search engines. I also ensure accessibility standards are met, making your content available to all users. After launch, I provide guidance on content management and offer support to ensure your website continues to perform optimally."
+        },
+        "approach": {
+          "0": "Modern, responsive design that adapts seamlessly to all screen sizes and devices",
+          "1": "Performance optimization for lightning-fast loading times and smooth interactions",
+          "2": "SEO-friendly architecture to improve search engine visibility from day one",
+          "3": "User-centered interface design focused on conversions and engagement",
+          "4": "Clean, maintainable code following industry best practices"
+        },
+        "examples": {
+          "0": "Showcase website for your business or company",
+          "1": "Conversion-focused landing page",
+          "2": "Creative portfolio or personal website",
+          "3": "E-commerce platform",
+          "4": "Blog or magazine"
+        }
+      },
+      "frontEndCollaboration": {
+        "title": "Front-end Collaboration",
+        "description": "Skilled at working with teams to enhance projects, refine user interfaces, and deliver front-end solutions that keep development running smoothly.",
+        "subtitle": "I join your team to build or evolve your web project.",
+        "descriptionParagraphs": {
+          "0": "I integrate seamlessly into your development team as a skilled front-end developer, bringing expertise in modern web technologies and a collaborative mindset. Whether you need short-term assistance for a specific sprint or long-term partnership for ongoing development, I adapt to your team's workflow, tools, and processes.",
+          "1": "With experience in agile environments, I'm comfortable working with version control systems, participating in code reviews, and contributing to design system development. I believe in clear communication and thorough documentation, ensuring that my code is not only functional but also maintainable by the entire team.",
+          "2": "I take pride in writing clean, semantic, and well-tested code that follows your team's conventions and best practices. Beyond just implementing features, I actively participate in technical discussions, suggest improvements, and help mentor junior developers when needed. My goal is to add value to your team while delivering high-quality results on time."
+        },
+        "approach": {
+          "0": "Clean, maintainable code that follows your team's standards and conventions",
+          "1": "Collaborative mindset with strong communication and teamwork skills",
+          "2": "Proactive problem-solving and attention to technical details",
+          "3": "Flexibility to work with various tech stacks and development methodologies",
+          "4": "Active participation in code reviews and knowledge sharing"
+        },
+        "examples": {
+          "0": "Short or long-term assignment in direct collaboration with your staff",
+          "1": "Integration or redesign of existing interfaces",
+          "2": "Code review participation and quality assurance",
+          "3": "Implementation or evolution of a design system",
+          "4": "Collaboration with designers and backend developers"
+        }
+      },
+      "maintenanceSupport": {
+        "title": "Maintenance & Support",
+        "description": "Focused on maintaining website performance and security, handling updates, optimizations, and troubleshooting to give clients peace of mind.",
+        "subtitle": "I handle your website maintenance to keep it efficient and secure.",
+        "descriptionParagraphs": {
+          "0": "Your website is a living asset that requires ongoing care to remain secure, fast, and effective. I provide comprehensive maintenance services that keep your site running smoothly, protecting it from security vulnerabilities and ensuring optimal performance as technology evolves and your business grows.",
+          "1": "My maintenance approach is both preventive and reactive. I proactively monitor your website's health, perform regular updates to dependencies and plugins, and implement security patches before issues arise. At the same time, I'm available to quickly address any unexpected problems, bugs, or optimization needs that emerge.",
+          "2": "Beyond technical upkeep, I provide clear monthly reports on your website's status, performance metrics, and any actions taken. You'll have access to priority support channels, and I offer guidance on best practices for content updates and site management. My goal is to give you peace of mind, knowing your website is in expert hands."
+        },
+        "whatIncluded": {
+          "0": "Monthly health checks and performance monitoring to catch issues early",
+          "1": "Priority support with fast response times for urgent matters",
+          "2": "Regular security audits and immediate patching of vulnerabilities",
+          "3": "Detailed monthly reports on site health and maintenance activities",
+          "4": "Backup management and disaster recovery planning"
+        },
+        "examples": {
+          "0": "Dependency and plugin updates to keep your site current",
+          "1": "Regular backups and proactive monitoring",
+          "2": "Bug fixes and performance optimizations",
+          "3": "Technical support and strategic advice",
+          "4": "Emergency response for critical issues"
+        }
+      }
+    },
+    "sections": {
+      "myApproach": "My Approach",
+      "whatsIncluded": "What's Included",
+      "technologiesUsed": "Technologies Used",
+      "examples": "Examples"
+    }
+  },
+  "ContactPage": {
+    "badge": "Contact",
+    "title": "Let's Connect",
+    "description": "Got a project in mind? Drop me a message and let's create something amazing together!",
+    "form": {
+      "yourName": "Your Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "namePlaceholder": "John Smith",
+      "emailPlaceholder": "you@example.com",
+      "subjectPlaceholder": "Project inquiry / Job opportunity / Collaboration...",
+      "messagePlaceholder": "Tell me more about your project, your timeline, and what you're looking to achieve...",
+      "sendMessage": "Send Message",
+      "sending": "Sending...",
+      "privacyNotice": "I value your privacy. Your information will never be shared with third parties."
+    }
+  },
+  "Footer": {
+    "description": "Building innovative digital solutions with a focus on clean, efficient code and exceptional user experiences.",
+    "connectWithMe": "Connect with me",
+    "copyright": "© 2025 Mathieu Nguyen All rights reserved."
+  }
+}

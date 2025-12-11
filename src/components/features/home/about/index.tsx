@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { SectionHeader } from "@/components/common";
 import { SectionLayout } from "@/components/layouts/section-layout";
 import { SkillsGrid } from "./skills-grid";
@@ -11,12 +12,14 @@ import { CTAButton } from "./cta-button";
  * Used in the homepage
  */
 export function About(): React.ReactElement {
+	const t = useTranslations("HomePage.about");
+
 	return (
 		<SectionLayout id="about" background="darker">
 			<div className="container mx-auto px-4">
 				<SectionHeader
-					title="Who I Am"
-					description="I'm a Freelance Front-End Developer with 7 years of experience helping businesses and startups build clean, modern, and easy-to-use websites."
+					title={t("title")}
+					description={t("description")}
 				/>
 
 				<SkillsGrid />

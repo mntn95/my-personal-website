@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { ListItem } from "@/components/ui";
 
 /**
@@ -12,6 +15,8 @@ interface TechnologiesSectionProps {
 export function TechnologiesSection({
 	technologies,
 }: TechnologiesSectionProps): React.ReactElement | null {
+	const t = useTranslations("ServicesPage.sections");
+
 	if (!technologies) {
 		return null;
 	}
@@ -19,7 +24,7 @@ export function TechnologiesSection({
 	return (
 		<div className="mb-6">
 			<h4 className="text-white mb-3 font-semibold text-base">
-				Technologies Used
+				{t("technologiesUsed")}
 			</h4>
 			<div className="bg-dark-bg/30 p-4 rounded-lg border border-card-border/50">
 				<ul className="space-y-2">

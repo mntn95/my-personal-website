@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { skills } from "@/data/skills";
 import { getAnimationDelay } from "@/lib/utils";
 
@@ -7,6 +10,8 @@ import { getAnimationDelay } from "@/lib/utils";
  * Used in the Hero component
  */
 export function SkillsGrid(): React.ReactElement {
+  const t = useTranslations();
+
   return (
     <div className="relative hidden lg:block animate-fadeInRight">
       <div className="relative w-full h-[500px] rounded-lg overflow-hidden bg-card-bg border border-card-border p-6 shadow-xl shadow-teal-500/10">
@@ -24,7 +29,9 @@ export function SkillsGrid(): React.ReactElement {
                 <h3 style={{ fontWeight: 600 }}>{skill.name}</h3>
               </div>
               <p className="text-sm text-gray-400" style={{ fontWeight: 400 }}>
-                {skill.description}
+                {skill.description.startsWith("SkillsPage.") 
+                  ? t(skill.description) 
+                  : skill.description}
               </p>
             </div>
           ))}

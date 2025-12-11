@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { ListItem } from "@/components/ui";
 
 /**
@@ -12,9 +15,11 @@ interface ExamplesSectionProps {
 export function ExamplesSection({
 	examples,
 }: ExamplesSectionProps): React.ReactElement {
+	const t = useTranslations("ServicesPage.sections");
+
 	return (
 		<div>
-			<h4 className="text-white mb-3 font-semibold text-base">Examples</h4>
+			<h4 className="text-white mb-3 font-semibold text-base">{t("examples")}</h4>
 			<ul className="space-y-2">
 				{examples.map((example, i) => (
 					<ListItem key={i} icon="bullet">

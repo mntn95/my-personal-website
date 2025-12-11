@@ -1,4 +1,5 @@
 import { BookOpen } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 import { FeatureCard, IconWrapper } from "@/components/common";
 import { courses } from "@/data/education";
 import { getAnimationDelay } from "@/lib/utils";
@@ -8,25 +9,27 @@ import { getAnimationDelay } from "@/lib/utils";
  * Displays a grid of courses completed during education
  * Used in the Education page
  */
-export function Courses(): React.ReactElement {
+export async function Courses(): Promise<React.ReactElement> {
+	const t = await getTranslations();
+
 	return (
 		<div className="mb-24 animate-fadeInUp">
 			<h2 className="mb-12 text-center text-white text-3xl font-bold">
-				Key Courses
+				{t("EducationPage.courses.title")}
 			</h2>
 			<FeatureCard variant="default" hover className="p-10">
 				<div className="flex items-center justify-center mb-8">
 					<IconWrapper icon={BookOpen} size="lg" />
 				</div>
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-					{courses.map((course, index) => (
+					{courses.map((key, index) => (
 						<div
 							key={index}
 							className="flex items-center p-4 bg-dark-bg-alt/50 rounded-lg animate-fadeInUp"
 							style={getAnimationDelay(index, 0.05)}
 						>
 							<div className="h-2 w-2 rounded-full bg-brand-primary mr-3"></div>
-							<span className="text-gray-300">{course}</span>
+							<span className="text-gray-300">{t(key)}</span>
 						</div>
 					))}
 				</div>

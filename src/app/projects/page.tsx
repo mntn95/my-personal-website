@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { projects } from "@/data/projects";
 import { PageHeader } from "@/components/common";
 import { FilterBar, ProjectsGrid } from "@/components/features/projects";
@@ -19,10 +20,19 @@ type TagFilter =
   | "redux";
 
 export default function Projects(): React.ReactElement {
+  const t = useTranslations("ProjectsPage");
   const [selectedTag, setSelectedTag] = useState<TagFilter>("all");
   const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredProjects = projects.filter((project) => {
+  const tGlobal = useTranslations();
+  const projectsWithTranslations = projects.map((project) => ({
+    ...project,
+    description: project.description.startsWith("ProjectsPage.") 
+      ? tGlobal(project.description) 
+      : t(`descriptions.${project.id}`),
+  }));
+
+  const filteredProjects = projectsWithTranslations.filter((project) => {
     const matchesTag =
       selectedTag === "all" ||
       project.tags.some(
@@ -43,9 +53,9 @@ export default function Projects(): React.ReactElement {
         <div className="container mx-auto px-4 lg:px-8">
           {/* Header */}
           <PageHeader
-            badge="Projects"
-            title="My Projects"
-            description="Explore a selection of my recent web development projects."
+            badge={t("badge")}
+            title={t("title")}
+            description={t("description")}
           />
 
           <FilterBar

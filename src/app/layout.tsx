@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale } from "next-intl/server";
 import { Navigation } from "@/components/layouts/navigation";
 import { Footer } from "@/components/layouts/footer";
 import { ParticleBackground } from "@/components/common/particle-background";
@@ -35,24 +37,28 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>): React.ReactElement {
+}>): Promise<React.ReactElement> {
+  const locale = await getLocale();
+
   return (
-    <html lang="en" className={inter.className}>
+    <html lang={locale} className={inter.className}>
       <body className="antialiased" suppressHydrationWarning>
-        <div className="flex flex-col min-h-screen bg-dark-bg text-white relative">
-          <ParticleBackground />
+        <NextIntlClientProvider>
+          <div className="flex flex-col min-h-screen bg-dark-bg text-white relative">
+            <ParticleBackground />
 
-          <Navigation />
+            <Navigation />
 
-          <main className="flex-grow relative z-10">{children}</main>
+            <main className="flex-grow relative z-10">{children}</main>
 
-          <Footer />
-          <BackToTop />
-        </div>
+            <Footer />
+            <BackToTop />
+          </div>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

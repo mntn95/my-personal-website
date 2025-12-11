@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { ListItem } from "@/components/ui";
 
 /**
@@ -6,34 +9,35 @@ import { ListItem } from "@/components/ui";
  * Used in the ServiceCard component
  */
 interface ApproachSectionProps {
-	approach?: string[];
-	whatIncluded?: string[];
+  approach?: string[];
+  whatIncluded?: string[];
 }
 
 export function ApproachSection({
-	approach,
-	whatIncluded,
+  approach,
+  whatIncluded,
 }: ApproachSectionProps): React.ReactElement | null {
-	if (!approach && !whatIncluded) {
-		return null;
-	}
+  const t = useTranslations("ServicesPage.sections");
 
-	const items = approach || whatIncluded;
-	const title = approach ? "My Approach" : "What's Included";
+  if (!approach && !whatIncluded) {
+    return null;
+  }
 
-	return (
-		<div className="mb-6">
-			<h4 className="text-white mb-3 font-semibold text-base">{title}</h4>
-			<div className="bg-dark-bg/30 p-4 rounded-lg border border-card-border/50">
-				<ul className="space-y-2">
-					{items?.map((item, i) => (
-						<ListItem key={i} icon="check">
-							{item}
-						</ListItem>
-					))}
-				</ul>
-			</div>
-		</div>
-	);
+  const items = approach || whatIncluded;
+  const title = approach ? t("myApproach") : t("whatsIncluded");
+
+  return (
+    <div className="mb-6">
+      <h4 className="text-white mb-3 font-semibold text-base">{title}</h4>
+      <div className="bg-dark-bg/30 p-4 rounded-lg border border-card-border/50">
+        <ul className="space-y-2">
+          {items?.map((item, i) => (
+            <ListItem key={i} icon="check">
+              {item}
+            </ListItem>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
 }
-

@@ -2,4 +2,4 @@ export { About } from "./about";
 export { Contact } from "./contact";
 export { Hero } from "./hero";
 export { Projects } from "./projects";
-export { Skills } from "./services";
+export { Services } from "./services";

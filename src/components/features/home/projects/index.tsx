@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { SectionHeader } from "@/components/common";
 import { SectionLayout } from "@/components/layouts/section-layout";
 import { ProjectsGrid } from "./projects-grid";
@@ -9,18 +12,16 @@ import { CTAButton } from "./cta-button";
  * Used in the homepage
  */
 export function Projects(): React.ReactElement {
-	return (
-		<SectionLayout id="projects" background="darker">
-			<div className="container mx-auto px-4">
-				<SectionHeader
-					title="Featured Projects"
-					description="A selection of my recent web development projects."
-				/>
+  const t = useTranslations("HomePage.projects");
 
-				<ProjectsGrid />
-				<CTAButton />
-			</div>
-		</SectionLayout>
-	);
+  return (
+    <SectionLayout id="projects" background="darker">
+      <div className="container mx-auto px-4">
+        <SectionHeader title={t("title")} description={t("description")} />
+
+        <ProjectsGrid />
+        <CTAButton />
+      </div>
+    </SectionLayout>
+  );
 }
-

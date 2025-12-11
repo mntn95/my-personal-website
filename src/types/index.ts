@@ -34,6 +34,7 @@ export interface Service {
  */
 export interface DetailedService {
   id: string;
+  serviceId?: string;
   icon: LucideIcon;
   title: string;
   subtitle: string;

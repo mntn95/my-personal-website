@@ -29,84 +29,84 @@ export const aboutSkills: AboutSkill[] = [
 ];
 
 export const interests: string[] = [
-  "Exploring new technologies",
-  "Building personal projects",
-  "Contributing to open-source development",
-  "Practicing sports",
+  "AboutPage.moreAboutMe.interests.0",
+  "AboutPage.moreAboutMe.interests.1",
+  "AboutPage.moreAboutMe.interests.2",
+  "AboutPage.moreAboutMe.interests.3",
 ];
 
 export const philosophy: string[] = [
-  "Writing clean, maintainable, and scalable code",
-  "Prioritizing user experience and intuitive interfaces",
-  "Following best practices",
-  "Collaborating to improve together",
+  "AboutPage.moreAboutMe.philosophy.0",
+  "AboutPage.moreAboutMe.philosophy.1",
+  "AboutPage.moreAboutMe.philosophy.2",
+  "AboutPage.moreAboutMe.philosophy.3",
 ];
 
 export const education: string[] = [
-  "Web development fundamentals",
-  "Specialization in React.js",
-  "Full-stack project experience",
-  "Ongoing learning",
+  "AboutPage.moreAboutMe.education.0",
+  "AboutPage.moreAboutMe.education.1",
+  "AboutPage.moreAboutMe.education.2",
+  "AboutPage.moreAboutMe.education.3",
 ];
 
 export const goals: string[] = [
-  "Mastering advanced Front End",
-  "Learn Node.js",
-  "Contributing to open-source and sharing knowledge",
-  "Exploring AI automation",
+  "AboutPage.moreAboutMe.goals.0",
+  "AboutPage.moreAboutMe.goals.1",
+  "AboutPage.moreAboutMe.goals.2",
+  "AboutPage.moreAboutMe.goals.3",
 ];
 
 export const softSkills: SoftSkill[] = [
   {
-    title: "Problem Solving",
-    description: "Analytical approach to complex technical challenges",
+    title: "AboutPage.softSkillsList.problemSolving.title",
+    description: "AboutPage.softSkillsList.problemSolving.description",
   },
   {
-    title: "Communication",
-    description: "Clear technical and non-technical communication",
+    title: "AboutPage.softSkillsList.communication.title",
+    description: "AboutPage.softSkillsList.communication.description",
   },
   {
-    title: "Team Collaboration",
-    description: "Effective work in cross-functional teams",
+    title: "AboutPage.softSkillsList.teamCollaboration.title",
+    description: "AboutPage.softSkillsList.teamCollaboration.description",
   },
   {
-    title: "Adaptability",
-    description: "Quick learning of new technologies and methodologies",
+    title: "AboutPage.softSkillsList.adaptability.title",
+    description: "AboutPage.softSkillsList.adaptability.description",
   },
   {
-    title: "Time Management",
-    description: "Efficient project delivery within deadlines",
+    title: "AboutPage.softSkillsList.timeManagement.title",
+    description: "AboutPage.softSkillsList.timeManagement.description",
   },
   {
-    title: "Critical Thinking",
-    description: "Analytical evaluation of solutions and approaches",
+    title: "AboutPage.softSkillsList.criticalThinking.title",
+    description: "AboutPage.softSkillsList.criticalThinking.description",
   },
 ];
 
 export const moreAboutMeCards: AboutCard[] = [
   {
-    title: "Personal Interests",
+    title: "AboutPage.moreAboutMe.cards.personalInterests",
     icon: User,
     listIcon: Heart,
     items: interests,
     animationDelay: "0s",
   },
   {
-    title: "Coding Philosophy",
+    title: "AboutPage.moreAboutMe.cards.codingPhilosophy",
     icon: Brain,
     listIcon: Lightbulb,
     items: philosophy,
     animationDelay: "0.1s",
   },
   {
-    title: "Education Journey",
+    title: "AboutPage.moreAboutMe.cards.educationJourney",
     icon: GraduationCap,
     listIcon: BookOpen,
     items: education,
     animationDelay: "0.2s",
   },
   {
-    title: "Future Goals",
+    title: "AboutPage.moreAboutMe.cards.futureGoals",
     icon: Goal,
     listIcon: CircleCheckBig,
     items: goals,

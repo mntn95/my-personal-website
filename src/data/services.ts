@@ -7,27 +7,24 @@ import type { Service } from "@/types";
  */
 export const services: Service[] = [
   {
-    id: "custom-website-creation",
+    id: "customWebsiteCreation",
     icon: Globe,
-    title: "Custom Website Creation",
-    description:
-      "Experienced in crafting fast, attractive websites that converts, from simple pages to full digital platforms.",
+    title: "title",
+    description: "description",
     serviceId: "custom-website-creation",
   },
   {
-    id: "front-end-collaboration",
+    id: "frontEndCollaboration",
     icon: Users,
-    title: "Front End Collaboration",
-    description:
-      "Skilled at working with teams to enhance projects, refine user interfaces, and deliver front-end solutions that keep development running smoothly.",
+    title: "title",
+    description: "description",
     serviceId: "front-end-collaboration",
   },
   {
-    id: "maintenance-support",
+    id: "maintenanceSupport",
     icon: Wrench,
-    title: "Maintenance & Support",
-    description:
-      "Focused on maintaining website performance and security, handling updates, optimizations, and troubleshooting to give clients peace of mind.",
+    title: "title",
+    description: "description",
     serviceId: "maintenance-support",
   },
 ];

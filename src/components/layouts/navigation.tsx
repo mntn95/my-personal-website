@@ -4,14 +4,28 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { navItems } from "@/data/navigation";
 
 export function Navigation(): React.ReactElement {
+  const t = useTranslations("Navigation");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
   const isActive = (path: string): boolean => {
     return pathname === path;
+  };
+
+  const getTranslationKey = (path: string): string => {
+    const keyMap: Record<string, string> = {
+      "/": "home",
+      "/about": "aboutMe",
+      "/education": "education",
+      "/projects": "projects",
+      "/services": "services",
+      "/contact": "contact",
+    };
+    return keyMap[path] || "home";
   };
 
   return (
@@ -40,7 +54,7 @@ export function Navigation(): React.ReactElement {
                   }`}
                   style={{ fontWeight: 500 }}
                 >
-                  {item.name}
+                  {t(getTranslationKey(item.path))}
                 </Link>
                 {isActive(item.path) && (
                   <div className="absolute bottom-0 left-4 right-4 h-[2px] bg-purple-400"></div>
@@ -88,7 +102,7 @@ export function Navigation(): React.ReactElement {
                     fontSize: "1.125rem",
                   }}
                 >
-                  {item.name}
+                  {t(getTranslationKey(item.path))}
                 </Link>
               ))}
             </div>

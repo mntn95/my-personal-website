@@ -1,4 +1,7 @@
+"use client";
+
 import { User, Mail, FileText, MessageSquare, Send } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Button, Input, Textarea } from "@/components/ui";
 import { StatusMessages } from "./status-messages";
 
@@ -27,13 +30,15 @@ export function FormFields({
   isSubmitting,
   submitStatus,
 }: FormFieldsProps): React.ReactElement {
+  const t = useTranslations("ContactPage.form");
+
   return (
     <>
       {/* Name and Email Row */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Name Field */}
         <Input
-          label="Your Name"
+          label={t("yourName")}
           icon={User}
           type="text"
           id="name"
@@ -41,12 +46,12 @@ export function FormFields({
           required
           value={formData.name}
           onChange={onChange}
-          placeholder="John Smith"
+          placeholder={t("namePlaceholder")}
         />
 
         {/* Email Field */}
         <Input
-          label="Email"
+          label={t("email")}
           icon={Mail}
           type="email"
           id="email"
@@ -54,13 +59,13 @@ export function FormFields({
           required
           value={formData.email}
           onChange={onChange}
-          placeholder="you@example.com"
+          placeholder={t("emailPlaceholder")}
         />
       </div>
 
       {/* Subject Field */}
       <Input
-        label="Subject"
+        label={t("subject")}
         icon={FileText}
         type="text"
         id="subject"
@@ -68,12 +73,12 @@ export function FormFields({
         required
         value={formData.subject}
         onChange={onChange}
-        placeholder="Project inquiry / Job opportunity / Collaboration..."
+        placeholder={t("subjectPlaceholder")}
       />
 
       {/* Message Field */}
       <Textarea
-        label="Message"
+        label={t("message")}
         icon={MessageSquare}
         id="message"
         name="message"
@@ -81,7 +86,7 @@ export function FormFields({
         rows={4}
         value={formData.message}
         onChange={onChange}
-        placeholder="Tell me more about your project, your timeline, and what you're looking to achieve..."
+        placeholder={t("messagePlaceholder")}
       />
 
       {/* Submit Button */}
@@ -94,10 +99,10 @@ export function FormFields({
           icon={Send}
           iconPosition="left"
           isLoading={isSubmitting}
-          loadingText="Sending..."
+          loadingText={t("sending")}
           className="bg-brand-primary hover:bg-brand-primary-dark"
         >
-          Send Message
+          {t("sendMessage")}
         </Button>
       </div>
 
@@ -106,8 +111,7 @@ export function FormFields({
 
       {/* Privacy Notice */}
       <p className="text-xs text-gray-400 text-center">
-        I value your privacy. Your information will never be shared with third
-        parties.
+        {t("privacyNotice")}
       </p>
     </>
   );

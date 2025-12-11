@@ -1,5 +1,8 @@
+"use client";
+
 import { ArrowRight, Download } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { getFixedAnimationDelay } from "@/lib/utils";
 import { TypingText } from "./typing-text";
 
@@ -9,6 +12,8 @@ import { TypingText } from "./typing-text";
  * Used in the Hero component
  */
 export function HeroContent(): React.ReactElement {
+  const t = useTranslations("HomePage.hero");
+
   return (
     <div>
       <h1
@@ -18,8 +23,8 @@ export function HeroContent(): React.ReactElement {
           fontWeight: 800,
         }}
       >
-        <span className="block text-white">Hi, I&apos;m </span>
-        <span className="text-teal-500">Mathieu Nguyen</span>
+        <span className="block text-white">{t("greeting")} </span>
+        <span className="text-teal-500">{t("name")}</span>
       </h1>
 
       <TypingText />
@@ -31,11 +36,7 @@ export function HeroContent(): React.ReactElement {
           fontWeight: 400,
         }}
       >
-        Front-end developer crafting fast, modern, and meaningful digital
-        experiences. I design clear, intuitive interfaces that elevate your
-        ideas and strengthen your brand. Curious, adaptable, and always
-        exploring new challenges, I&apos;m here to help turn your vision into
-        something impactful.
+        {t("description")}
       </p>
 
       <div
@@ -46,7 +47,7 @@ export function HeroContent(): React.ReactElement {
           href="/contact"
           className="inline-flex items-center bg-teal-500 text-white px-6 py-3 rounded-lg hover:bg-teal-600 transition-all hover:scale-105 font-medium cursor-pointer"
         >
-          Get in Touch
+          {t("getInTouch")}
           <ArrowRight className="ml-2 h-4 w-4" />
         </Link>
         <a
@@ -54,7 +55,7 @@ export function HeroContent(): React.ReactElement {
           download
           className="inline-flex items-center bg-card-bg text-white px-6 py-3 rounded-lg hover:bg-card-hover hover:scale-105 transition-all font-medium cursor-pointer"
         >
-          Download Resume
+          {t("downloadResume")}
           <Download className="ml-2 h-4 w-4" />
         </a>
       </div>
