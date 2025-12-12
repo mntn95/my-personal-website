@@ -1,5 +1,9 @@
 /**
+ * @deprecated This file contains CSS-based animation utilities that have been replaced by Motion.
+ * Use `@/lib/motion/utils` instead for Motion-compatible delay helpers.
+ *
  * Utility functions for consistent animation delays across components
+ * These are kept for backward compatibility but should not be used in new code.
  */
 
 /**
@@ -60,4 +64,3 @@ const getFixedAnimationDelay = (seconds: number): React.CSSProperties => {
 };
 
 export { getAnimationDelay, getAnimationDelayString, getFixedAnimationDelay };
-

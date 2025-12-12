@@ -1,9 +1,9 @@
-"use client";
-
+import * as motion from "motion/react-client";
 import { ArrowRight, Download } from "lucide-react";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
-import { getFixedAnimationDelay } from "@/lib/utils";
+import { getTranslations } from "next-intl/server";
+import { fadeInUp } from "@/lib/motion/variants";
+import { getMotionFixedDelay } from "@/lib/motion/utils";
 import { TypingText } from "./typing-text";
 
 /**
@@ -11,37 +11,45 @@ import { TypingText } from "./typing-text";
  * Displays title, typing text, description, and action buttons
  * Used in the Hero component
  */
-const HeroContent = (): React.ReactElement => {
-  const t = useTranslations("HomePage.hero");
+const HeroContent = async (): Promise<React.ReactElement> => {
+  const t = await getTranslations("HomePage.hero");
 
   return (
     <div>
-      <h1
-        className="text-5xl md:text-6xl font-bold mb-2 animate-fadeInUp leading-tight"
-        style={{
-          ...getFixedAnimationDelay(0.1),
-          fontWeight: 800,
-        }}
+      <motion.h1
+        className="text-5xl md:text-6xl font-bold mb-2 leading-tight"
+        style={{ fontWeight: 800 }}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+        variants={fadeInUp}
+        transition={getMotionFixedDelay(0.1)}
       >
         <span className="block text-white">{t("greeting")} </span>
         <span className="text-teal-500">{t("name")}</span>
-      </h1>
+      </motion.h1>
 
       <TypingText />
 
-      <p
-        className="text-base text-gray-400 mb-8 max-w-lg animate-fadeInUp leading-relaxed"
-        style={{
-          ...getFixedAnimationDelay(0.3),
-          fontWeight: 400,
-        }}
+      <motion.p
+        className="text-base text-gray-400 mb-8 max-w-lg leading-relaxed"
+        style={{ fontWeight: 400 }}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+        variants={fadeInUp}
+        transition={getMotionFixedDelay(0.3)}
       >
         {t("description")}
-      </p>
+      </motion.p>
 
-      <div
-        className="flex flex-wrap gap-4 animate-fadeInUp"
-        style={getFixedAnimationDelay(0.4)}
+      <motion.div
+        className="flex flex-wrap gap-4"
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+        variants={fadeInUp}
+        transition={getMotionFixedDelay(0.4)}
       >
         <Link
           href="/contact"
@@ -58,7 +66,7 @@ const HeroContent = (): React.ReactElement => {
           {t("downloadResume")}
           <Download className="ml-2 h-4 w-4" />
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 };

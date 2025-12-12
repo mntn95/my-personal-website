@@ -1,5 +1,3 @@
-"use client";
-
 import { FloatingIcons } from "@/components/common/floating-icons";
 import { GradientOrbs } from "./gradient-orbs";
 import { HeroContent } from "./hero-content";

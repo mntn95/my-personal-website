@@ -1,9 +1,11 @@
 "use client";
 
+import { motion } from "motion/react";
 import { Filter, Search } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { FeatureCard } from "@/components/common";
 import { Badge, Input } from "@/components/ui";
+import { fadeInUp } from "@/lib/motion/variants";
 
 type TagFilter =
   | "all"
@@ -53,7 +55,13 @@ const FilterBar = ({
   const t = useTranslations("ProjectsPage.filter");
 
   return (
-    <div className="mb-12 animate-fadeInUp">
+    <motion.div
+      className="mb-12"
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+      variants={fadeInUp}
+    >
       <FeatureCard variant="elevated" hover={false}>
         <div className="flex flex-col md:flex-row gap-6 items-center justify-between">
           <div className="flex flex-col lg:flex-row items-start md:items-center w-full :w-auto gap-3 md:gap-0">
@@ -90,7 +98,7 @@ const FilterBar = ({
           </div>
         </div>
       </FeatureCard>
-    </div>
+    </motion.div>
   );
 };
 

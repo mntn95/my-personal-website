@@ -1,9 +1,11 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
 import { HERO_ROLES } from "@/constants/animations";
-import { getFixedAnimationDelay } from "@/lib/utils";
+import { fadeInUp } from "@/lib/motion/variants";
+import { getMotionFixedDelay } from "@/lib/motion/utils";
 
 /**
  * Typing text component with animated role display
@@ -53,9 +55,13 @@ const TypingText = (): React.ReactElement => {
   }, [displayText, isDeleting, roleIndex, t]);
 
   return (
-    <div
-      className="h-12 mb-6 animate-fadeInUp"
-      style={getFixedAnimationDelay(0.2)}
+    <motion.div
+      className="h-12 mb-6"
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+      variants={fadeInUp}
+      transition={getMotionFixedDelay(0.2)}
     >
       <span
         className="text-2xl md:text-3xl text-gray-300"
@@ -64,7 +70,7 @@ const TypingText = (): React.ReactElement => {
         {displayText}
         <span className="animate-pulse">|</span>
       </span>
-    </div>
+    </motion.div>
   );
 };
 

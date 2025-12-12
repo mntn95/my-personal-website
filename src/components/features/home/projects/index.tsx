@@ -1,5 +1,3 @@
-"use client";
-
 import { useTranslations } from "next-intl";
 import { SectionHeader } from "@/components/common";
 import { SectionLayout } from "@/components/layouts/section-layout";

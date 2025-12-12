@@ -1,6 +1,8 @@
 import React from "react";
+import * as motion from "motion/react-client";
 import { Badge } from "@/components/ui";
 import { cn } from "@/lib/utils";
+import { fadeInUp } from "@/lib/motion/variants";
 
 interface PageHeaderProps {
   badge?: string;
@@ -27,7 +29,13 @@ const PageHeader = ({
   className,
 }: PageHeaderProps): React.ReactElement => {
   return (
-    <div className={cn("text-center mb-16 animate-fadeInUp", className)}>
+    <motion.div
+      className={cn("text-center mb-16", className)}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+      variants={fadeInUp}
+    >
       {badge && (
         <div className="mb-4">
           <Badge variant="outline" size="sm">
@@ -41,7 +49,7 @@ const PageHeader = ({
           {description}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

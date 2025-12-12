@@ -1,6 +1,8 @@
 import { ArrowRight } from "lucide-react";
+import * as motion from "motion/react-client";
 import Link from "next/link";
-import { getFixedAnimationDelay } from "@/lib/utils";
+import { fadeInUp } from "@/lib/motion/variants";
+import { getMotionFixedDelay } from "@/lib/motion/utils";
 
 /**
  * CTA button component for Projects section
@@ -8,9 +10,13 @@ import { getFixedAnimationDelay } from "@/lib/utils";
  * Used in the Projects component
  */
 const CTAButton = (): React.ReactElement => (
-  <div
-    className="mt-12 text-center animate-fadeInUp"
-    style={getFixedAnimationDelay(0.4)}
+  <motion.div
+    className="mt-12 text-center"
+    initial="initial"
+    whileInView="animate"
+    viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+    variants={fadeInUp}
+    transition={getMotionFixedDelay(0.4)}
   >
     <Link
       href="/projects"
@@ -19,7 +25,7 @@ const CTAButton = (): React.ReactElement => (
       View All Projects
       <ArrowRight className="ml-2 h-4 w-4" />
     </Link>
-  </div>
+  </motion.div>
 );
 
 export { CTAButton };

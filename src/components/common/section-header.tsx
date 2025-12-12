@@ -1,5 +1,7 @@
 import React from "react";
+import * as motion from "motion/react-client";
 import { cn } from "@/lib/utils";
+import { fadeInUp } from "@/lib/motion/variants";
 
 interface SectionHeaderProps {
   title: string;
@@ -26,7 +28,13 @@ const SectionHeader = ({
   titleClassName,
   descriptionClassName,
 }: SectionHeaderProps): React.ReactElement => (
-  <div className={cn("text-center mb-16 animate-fadeInUp", className)}>
+  <motion.div
+    className={cn("text-center mb-16", className)}
+    initial="initial"
+    whileInView="animate"
+    viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+    variants={fadeInUp}
+  >
     <h2 className={cn("text-4xl mb-6 font-bold", titleClassName)}>{title}</h2>
     <p
       className={cn(
@@ -36,7 +44,7 @@ const SectionHeader = ({
     >
       {description}
     </p>
-  </div>
+  </motion.div>
 );
 
 export { SectionHeader };

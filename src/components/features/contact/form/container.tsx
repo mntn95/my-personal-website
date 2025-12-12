@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "motion/react";
 import { FeatureCard } from "@/components/common";
-import { getFixedAnimationDelay } from "@/lib/utils";
+import { fadeInUp } from "@/lib/motion/variants";
+import { getMotionFixedDelay } from "@/lib/motion/utils";
 import { FormFields } from "./fields";
 
 /**
@@ -59,7 +61,13 @@ const ContactFormContainer = (): React.ReactElement => {
   };
 
   return (
-    <div className="animate-fadeInUp" style={getFixedAnimationDelay(0.1)}>
+    <motion.div
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+      variants={fadeInUp}
+      transition={getMotionFixedDelay(0.1)}
+    >
       <FeatureCard variant="elevated" hover>
         <form onSubmit={handleSubmit} className="space-y-4">
           <FormFields
@@ -70,7 +78,7 @@ const ContactFormContainer = (): React.ReactElement => {
           />
         </form>
       </FeatureCard>
-    </div>
+    </motion.div>
   );
 };
 

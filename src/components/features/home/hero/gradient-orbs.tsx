@@ -1,4 +1,6 @@
-import { getFixedAnimationDelay } from "@/lib/utils";
+import * as motion from "motion/react-client";
+import { float } from "@/lib/motion/variants";
+import { getMotionFixedDelay } from "@/lib/motion/utils";
 
 /**
  * Gradient orbs background component
@@ -7,15 +9,23 @@ import { getFixedAnimationDelay } from "@/lib/utils";
  */
 const GradientOrbs = (): React.ReactElement => (
   <div className="absolute inset-0 overflow-hidden pointer-events-none">
-    <div className="absolute -top-20 -right-20 w-72 h-72 bg-brand-primary/20 rounded-full filter blur-3xl opacity-30 animate-float"></div>
-    <div
-      className="absolute top-1/3 -left-20 w-72 h-72 bg-brand-secondary/20 rounded-full filter blur-3xl opacity-30 animate-float"
-      style={getFixedAnimationDelay(2)}
-    ></div>
-    <div
-      className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 w-72 h-72 bg-brand-primary/20 rounded-full filter blur-3xl opacity-30 animate-float"
-      style={getFixedAnimationDelay(4)}
-    ></div>
+    <motion.div
+      className="absolute -top-20 -right-20 w-72 h-72 bg-brand-primary/20 rounded-full filter blur-3xl opacity-30"
+      animate="animate"
+      variants={float}
+    ></motion.div>
+    <motion.div
+      className="absolute top-1/3 -left-20 w-72 h-72 bg-brand-secondary/20 rounded-full filter blur-3xl opacity-30"
+      animate="animate"
+      variants={float}
+      transition={getMotionFixedDelay(2)}
+    ></motion.div>
+    <motion.div
+      className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 w-72 h-72 bg-brand-primary/20 rounded-full filter blur-3xl opacity-30"
+      animate="animate"
+      variants={float}
+      transition={getMotionFixedDelay(4)}
+    ></motion.div>
   </div>
 );
 

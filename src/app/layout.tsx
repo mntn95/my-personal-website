@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
+import { MotionConfig } from "motion/react";
 import { Navigation } from "@/components/layouts/navigation";
 import { Footer } from "@/components/layouts/footer";
 import { ParticleBackground } from "@/components/common/particle-background";
 import { BackToTop } from "@/components/common/back-to-top";
+import PageLoader from "@/components/common/page-loader";
+import { motionConfig } from "@/lib/motion/config";
 import "@/styles/globals.css";
 
 const inter = Inter({
@@ -48,16 +51,19 @@ const RootLayout = async ({
     <html lang={locale} className={inter.className}>
       <body className="antialiased" suppressHydrationWarning>
         <NextIntlClientProvider>
-          <div className="flex flex-col min-h-screen bg-dark-bg text-white relative">
-            <ParticleBackground />
+          <MotionConfig {...motionConfig}>
+            <PageLoader />
+            <div className="flex flex-col min-h-screen bg-dark-bg text-white relative">
+              <ParticleBackground />
 
-            <Navigation />
+              <Navigation />
 
-            <main className="flex-grow relative z-10">{children}</main>
+              <main className="flex-grow relative z-10">{children}</main>
 
-            <Footer />
-            <BackToTop />
-          </div>
+              <Footer />
+              <BackToTop />
+            </div>
+          </MotionConfig>
         </NextIntlClientProvider>
       </body>
     </html>

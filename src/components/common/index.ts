@@ -5,6 +5,7 @@
 export * from "./feature-card";
 export * from "./back-to-top";
 export * from "./floating-icons";
+export * from "./hash-scroll-handler";
 export * from "./image-with-fallback";
 export * from "./loader";
 export * from "./particle-background";

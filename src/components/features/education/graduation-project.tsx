@@ -1,7 +1,9 @@
 import Image from "next/image";
+import * as motion from "motion/react-client";
 import { Award } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { FeatureCard, IconWrapper } from "@/components/common";
+import { fadeInUp } from "@/lib/motion/variants";
 import { ProjectDetailItem } from "./project-detail-item";
 
 /**
@@ -13,7 +15,12 @@ const GraduationProject = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("EducationPage.graduationProject");
 
   return (
-    <div className="animate-fadeInUp">
+    <motion.div
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+      variants={fadeInUp}
+    >
       <h2 className="mb-12 text-center text-white text-3xl font-bold">
         {t("title")}
       </h2>
@@ -60,7 +67,7 @@ const GraduationProject = async (): Promise<React.ReactElement> => {
           </div>
         </div>
       </FeatureCard>
-    </div>
+    </motion.div>
   );
 };
 

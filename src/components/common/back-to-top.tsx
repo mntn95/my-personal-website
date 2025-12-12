@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "motion/react";
 import { ArrowUp } from "lucide-react";
+import { fadeInUp, fadeOutDown } from "@/lib/motion/variants";
 
 const BackToTop = (): React.ReactElement | null => {
   const [isVisible, setIsVisible] = useState(false);
@@ -49,18 +51,22 @@ const BackToTop = (): React.ReactElement | null => {
     });
   };
 
-  if (!isVisible) return null;
-
   return (
-    <button
-      onClick={scrollToTop}
-      className={`fixed bottom-8 right-8 z-50 p-4 bg-purple-400 text-white rounded-full shadow-lg hover:bg-purple-400/90 transition-all hover:scale-110 cursor-pointer ${
-        isAnimatingOut ? "animate-fadeOutDown" : "animate-fadeInUp"
-      }`}
-      aria-label="Back to top"
-    >
-      <ArrowUp className="w-5 h-5" />
-    </button>
+    <AnimatePresence>
+      {isVisible && (
+        <motion.button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-50 p-4 bg-purple-400 text-white rounded-full shadow-lg hover:bg-purple-400/90 transition-all hover:scale-110 cursor-pointer"
+          aria-label="Back to top"
+          initial="initial"
+          animate={isAnimatingOut ? "exit" : "animate"}
+          exit="exit"
+          variants={isAnimatingOut ? fadeOutDown : fadeInUp}
+        >
+          <ArrowUp className="w-5 h-5" />
+        </motion.button>
+      )}
+    </AnimatePresence>
   );
 };
 
