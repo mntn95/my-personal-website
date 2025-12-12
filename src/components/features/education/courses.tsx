@@ -15,13 +15,7 @@ const Courses = async (): Promise<React.ReactElement> => {
   const t = await getTranslations();
 
   return (
-    <motion.div
-      className="mb-24"
-      initial="initial"
-      whileInView="animate"
-      viewport={{ once: true, margin: "0px 0px -100px 0px" }}
-      variants={fadeInUp}
-    >
+    <div className="mb-24">
       <h2 className="mb-12 text-center text-white text-3xl font-bold">
         {t("EducationPage.courses.title")}
       </h2>
@@ -46,7 +40,7 @@ const Courses = async (): Promise<React.ReactElement> => {
           ))}
         </div>
       </FeatureCard>
-    </motion.div>
+    </div>
   );
 };
 

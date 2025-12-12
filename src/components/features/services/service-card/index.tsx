@@ -1,9 +1,6 @@
-import * as motion from "motion/react-client";
 import { getTranslations } from "next-intl/server";
 import { FeatureCard, IconWrapper } from "@/components/common";
 import type { DetailedService } from "@/types";
-import { fadeInUp } from "@/lib/motion/variants";
-import { getMotionDelay } from "@/lib/motion/utils";
 import { DescriptionSection } from "./description-section";
 import { ApproachSection } from "./approach-section";
 import { TechnologiesSection } from "./technologies-section";
@@ -37,50 +34,39 @@ const ServiceCard = async ({
   };
 
   return (
-    <motion.div
-      key={index}
-      initial="initial"
-      whileInView="animate"
-      viewport={{ once: true, margin: "0px 0px -100px 0px" }}
-      variants={fadeInUp}
-      transition={getMotionDelay(index)}
-      style={{ scrollMarginTop: "100px" }}
+    <FeatureCard
+      variant="default"
+      hover
+      className="p-4 sm:p-8 flex flex-col hover:bg-card-hover"
+      animationIndex={index}
     >
-      <FeatureCard
-        variant="default"
-        hover
-        className="p-4 sm:p-8 flex flex-col hover:bg-card-hover"
+      <div
+        id={service.serviceId || service.id}
+        className="flex flex-col lg:flex-row lg:items-start"
       >
-        <div
-          id={service.serviceId || service.id}
-          className="flex flex-col lg:flex-row lg:items-start"
-        >
-          <div className="mb-4 lg:mb-0 lg:mr-4 flex-shrink-0 self-center lg:self-auto">
-            <IconWrapper icon={service.icon} size="lg" />
-          </div>
-          <div className="flex-1">
-            <h3 className="text-xl sm:text-2xl mb-2 text-white text-center lg:text-left font-semibold">
-              {translatedService.title}
-            </h3>
-            <p className="text-gray-300 mb-6 text-center lg:text-left text-base font-medium">
-              {translatedService.subtitle}
-            </p>
-
-            <DescriptionSection description={translatedService.description} />
-            <ApproachSection
-              approach={translatedService.approach}
-              whatIncluded={translatedService.whatIncluded}
-            />
-            <TechnologiesSection
-              technologies={translatedService.technologies}
-            />
-            <ExamplesSection examples={translatedService.examples} />
-          </div>
+        <div className="mb-4 lg:mb-0 lg:mr-4 flex-shrink-0 self-center lg:self-auto">
+          <IconWrapper icon={service.icon} size="lg" />
         </div>
+        <div className="flex-1">
+          <h3 className="text-xl sm:text-2xl mb-2 text-white text-center lg:text-left font-semibold">
+            {translatedService.title}
+          </h3>
+          <p className="text-gray-300 mb-6 text-center lg:text-left text-base font-medium">
+            {translatedService.subtitle}
+          </p>
 
-        <CTAButton />
-      </FeatureCard>
-    </motion.div>
+          <DescriptionSection description={translatedService.description} />
+          <ApproachSection
+            approach={translatedService.approach}
+            whatIncluded={translatedService.whatIncluded}
+          />
+          <TechnologiesSection technologies={translatedService.technologies} />
+          <ExamplesSection examples={translatedService.examples} />
+        </div>
+      </div>
+
+      <CTAButton />
+    </FeatureCard>
   );
 };
 

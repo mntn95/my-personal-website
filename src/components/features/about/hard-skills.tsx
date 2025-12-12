@@ -4,7 +4,6 @@ import { FeatureCard } from "@/components/common";
 import { Badge } from "@/components/ui";
 import { aboutSkills } from "@/data/about";
 import { fadeInUp } from "@/lib/motion/variants";
-import { getMotionDelay } from "@/lib/motion/utils";
 
 /**
  * Hard skills section component displaying technical skills with badges
@@ -30,34 +29,28 @@ const HardSkillsSection = async (): Promise<React.ReactElement> => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {aboutSkills.map((skill, index) => (
-          <motion.div
+          <FeatureCard
             key={index}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true, margin: "0px 0px -100px 0px" }}
-            variants={fadeInUp}
-            transition={getMotionDelay(index, 0.05)}
+            variant="elevated"
+            hover
+            className="text-center hover:scale-105"
+            animationIndex={index}
+            animationDelayStep={0.05}
           >
-            <FeatureCard
-              variant="elevated"
-              hover
-              className="text-center hover:scale-105"
+            <h3 className="mb-2 font-semibold">{skill.name}</h3>
+            <Badge
+              variant={
+                skill.color === "teal"
+                  ? "teal"
+                  : skill.color === "blue"
+                  ? "purple"
+                  : "green"
+              }
+              size="sm"
             >
-              <h3 className="mb-2 font-semibold">{skill.name}</h3>
-              <Badge
-                variant={
-                  skill.color === "teal"
-                    ? "teal"
-                    : skill.color === "blue"
-                    ? "purple"
-                    : "green"
-                }
-                size="sm"
-              >
-                {t(`levels.${skill.level}`)}
-              </Badge>
-            </FeatureCard>
-          </motion.div>
+              {t(`levels.${skill.level}`)}
+            </Badge>
+          </FeatureCard>
         ))}
       </div>
     </motion.div>

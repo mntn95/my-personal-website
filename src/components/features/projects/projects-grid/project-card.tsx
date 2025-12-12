@@ -1,8 +1,5 @@
-import * as motion from "motion/react-client";
 import { FeatureCard, ImageWithFallback } from "@/components/common";
 import type { Project } from "@/types";
-import { fadeInUp } from "@/lib/motion/variants";
-import { getMotionDelay } from "@/lib/motion/utils";
 import { ProjectContent } from "./project-content";
 
 interface ProjectCardProps {
@@ -16,19 +13,12 @@ interface ProjectCardProps {
  */
 const ProjectCard = ({ project }: ProjectCardProps): React.ReactElement => {
   return (
-    <motion.div
-      key={project.id}
-      initial="initial"
-      whileInView="animate"
-      viewport={{ once: true, margin: "0px 0px -100px 0px" }}
-      variants={fadeInUp}
-      transition={getMotionDelay(project.id)}
+    <FeatureCard
+      variant="default"
+      hover
+      className="group overflow-hidden flex flex-col p-0 hover:transform hover:scale-[1.02] duration-300"
+      animationIndex={project.id}
     >
-      <FeatureCard
-        variant="default"
-        hover
-        className="group overflow-hidden flex flex-col p-0 hover:transform hover:scale-[1.02] duration-300"
-      >
       {/* Project Image */}
       <div className="relative h-48 overflow-hidden">
         <ImageWithFallback
@@ -41,7 +31,6 @@ const ProjectCard = ({ project }: ProjectCardProps): React.ReactElement => {
 
       <ProjectContent project={project} />
     </FeatureCard>
-    </motion.div>
   );
 };
 

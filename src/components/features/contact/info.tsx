@@ -1,8 +1,6 @@
-import * as motion from "motion/react-client";
 import { Mail, MapPin, Github, Linkedin } from "lucide-react";
 import { FeatureCard } from "@/components/common";
 import { ContactInfoCard, SocialLink } from "@/components/ui";
-import { fadeInUp } from "@/lib/motion/variants";
 
 /**
  * Contact information section component
@@ -11,13 +9,7 @@ import { fadeInUp } from "@/lib/motion/variants";
  */
 const ContactInfo = (): React.ReactElement => {
   return (
-    <motion.div
-      className="space-y-6"
-      initial="initial"
-      whileInView="animate"
-      viewport={{ once: true, margin: "0px 0px -100px 0px" }}
-      variants={fadeInUp}
-    >
+    <div className="space-y-6">
       <FeatureCard variant="elevated" hover>
         <h2 className="text-xl mb-4 text-teal-500 font-semibold">
           Contact Information
@@ -72,7 +64,7 @@ const ContactInfo = (): React.ReactElement => {
           I typically reply within 24 hours during business days.
         </p>
       </FeatureCard>
-    </motion.div>
+    </div>
   );
 };
 

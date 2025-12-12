@@ -1,10 +1,7 @@
-import * as motion from "motion/react-client";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { services } from "@/data/services";
 import { FeatureCard, IconWrapper } from "@/components/common";
-import { fadeInUp } from "@/lib/motion/variants";
-import { getMotionDelay } from "@/lib/motion/utils";
 
 interface ServiceCardProps {
   service: (typeof services)[0];
@@ -20,40 +17,32 @@ const ServiceCard = ({
   seeMore,
 }: ServiceCardProps): React.ReactElement => {
   return (
-    <motion.div
-      key={index}
-      className="h-full"
-      initial="initial"
-      whileInView="animate"
-      viewport={{ once: true, margin: "0px 0px -100px 0px" }}
-      variants={fadeInUp}
-      transition={getMotionDelay(index)}
+    <FeatureCard
+      variant="default"
+      hover
+      className="hover:scale-105 flex flex-col h-full"
+      animationIndex={index}
+      animationClassName="h-full"
     >
-      <FeatureCard
-        variant="default"
-        hover
-        className="hover:scale-105 flex flex-col h-full"
-      >
-        <div className="mb-6 mx-auto flex-shrink-0">
-          <IconWrapper icon={service.icon} size="lg" />
-        </div>
-        <h3 className="text-xl mb-4 text-center font-semibold flex-shrink-0">
-          {serviceT(service.title)}
-        </h3>
-        <p className="text-gray-400 text-center mb-6 flex-grow font-normal leading-relaxed">
-          {serviceT(service.description)}
-        </p>
-        <div className="flex justify-center mt-auto flex-shrink-0">
-          <Link
-            href={`/services#${service.serviceId}`}
-            className="inline-flex items-center text-teal-500 hover:text-teal-600 transition-colors cursor-pointer font-medium"
-          >
-            {seeMore}
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
-        </div>
-      </FeatureCard>
-    </motion.div>
+      <div className="mb-6 mx-auto flex-shrink-0">
+        <IconWrapper icon={service.icon} size="lg" />
+      </div>
+      <h3 className="text-xl mb-4 text-center font-semibold flex-shrink-0">
+        {serviceT(service.title)}
+      </h3>
+      <p className="text-gray-400 text-center mb-6 flex-grow font-normal leading-relaxed">
+        {serviceT(service.description)}
+      </p>
+      <div className="flex justify-center mt-auto flex-shrink-0">
+        <Link
+          href={`/services#${service.serviceId}`}
+          className="inline-flex items-center text-teal-500 hover:text-teal-600 transition-colors cursor-pointer font-medium"
+        >
+          {seeMore}
+          <ArrowRight className="ml-2 h-4 w-4" />
+        </Link>
+      </div>
+    </FeatureCard>
   );
 };
 

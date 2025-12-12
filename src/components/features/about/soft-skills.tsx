@@ -39,25 +39,18 @@ const SoftSkillsSection = async (): Promise<React.ReactElement> => {
           {t("description")}
         </p>
       </div>
-      <motion.div
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true, margin: "0px 0px -100px 0px" }}
-        variants={fadeInUp}
-      >
-        <FeatureCard variant="elevated" hover>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {skillTranslations.map((skill, index) => (
-              <FeatureCard key={index} variant="flat" hover={false}>
-                <h4 className="text-lg mb-2 text-white font-medium">
-                  {skill.title}
-                </h4>
-                <p className="text-gray-400 text-sm">{skill.description}</p>
-              </FeatureCard>
-            ))}
-          </div>
-        </FeatureCard>
-      </motion.div>
+      <FeatureCard variant="elevated" hover>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {skillTranslations.map((skill, index) => (
+            <FeatureCard key={index} variant="flat" hover={false}>
+              <h4 className="text-lg mb-2 text-white font-medium">
+                {skill.title}
+              </h4>
+              <p className="text-gray-400 text-sm">{skill.description}</p>
+            </FeatureCard>
+          ))}
+        </div>
+      </FeatureCard>
     </motion.div>
   );
 };
