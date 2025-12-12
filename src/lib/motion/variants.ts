@@ -188,23 +188,6 @@ export const scrollIndicator: Variants = {
 };
 
 /**
- * Loader fade in animation
- * Matches CSS: loaderFadeIn (opacity 0→1, duration 0.2s)
- */
-export const loaderFadeIn: Variants = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
-  },
-};
-
-/**
  * Loader spinner bar animation (infinite)
  * Matches CSS: loaderSpin (opacity 1→0.15, duration 1.2s, linear, infinite)
  */

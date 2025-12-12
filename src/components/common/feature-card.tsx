@@ -82,8 +82,6 @@ const FeatureCard = ({
     transition = getMotionDelay(animationIndex, animationDelayStep);
   }
 
-  console.log({ transition });
-
   return (
     <motion.div
       className={animationClassName}

@@ -52,17 +52,18 @@ const RootLayout = async ({
       <body className="antialiased" suppressHydrationWarning>
         <NextIntlClientProvider>
           <MotionConfig {...motionConfig}>
-            <PageLoader />
-            <div className="flex flex-col min-h-screen bg-dark-bg text-white relative">
-              <ParticleBackground />
+            <PageLoader>
+              <div className="flex flex-col min-h-screen bg-dark-bg text-white relative">
+                <ParticleBackground />
 
-              <Navigation />
+                <Navigation />
 
-              <main className="flex-grow relative z-10">{children}</main>
+                <main className="flex-grow relative z-10">{children}</main>
 
-              <Footer />
-              <BackToTop />
-            </div>
+                <Footer />
+                <BackToTop />
+              </div>
+            </PageLoader>
           </MotionConfig>
         </NextIntlClientProvider>
       </body>

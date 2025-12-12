@@ -1,4 +1,7 @@
+"use client";
+
 import { Mail, MapPin, Github, Linkedin } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { FeatureCard } from "@/components/common";
 import { ContactInfoCard, SocialLink } from "@/components/ui";
 
@@ -8,18 +11,20 @@ import { ContactInfoCard, SocialLink } from "@/components/ui";
  * Used in the Contact page
  */
 const ContactInfo = (): React.ReactElement => {
+  const t = useTranslations("ContactPage.info");
+
   return (
     <div className="space-y-6">
       <FeatureCard variant="elevated" hover>
         <h2 className="text-xl mb-4 text-teal-500 font-semibold">
-          Contact Information
+          {t("contactInformation")}
         </h2>
 
         <div className="space-y-4 mb-6">
           {/* Email */}
           <ContactInfoCard
             icon={Mail}
-            title="Email"
+            title={t("email")}
             value="mathieu.nguyen@proton.me"
             href="mailto:mathieu.nguyen@proton.me"
           />
@@ -27,7 +32,7 @@ const ContactInfo = (): React.ReactElement => {
           {/* Location */}
           <ContactInfoCard
             icon={MapPin}
-            title="Location"
+            title={t("location")}
             value="Paris, France"
             href="https://maps.google.com/?q=Paris"
             target="_blank"
@@ -37,7 +42,7 @@ const ContactInfo = (): React.ReactElement => {
 
         {/* Social Media */}
         <div>
-          <h3 className="mb-3 text-teal-500 font-medium">Social Media</h3>
+          <h3 className="mb-3 text-teal-500 font-medium">{t("socialMedia")}</h3>
           <div className="flex gap-3">
             <SocialLink
               href="https://github.com/mntn95/"
@@ -59,10 +64,8 @@ const ContactInfo = (): React.ReactElement => {
 
       {/* Response Time */}
       <FeatureCard variant="elevated" hover className="p-4">
-        <h3 className="mb-2 text-teal-500 font-medium">Response Time</h3>
-        <p className="text-sm text-gray-400">
-          I typically reply within 24 hours during business days.
-        </p>
+        <h3 className="mb-2 text-teal-500 font-medium">{t("responseTime")}</h3>
+        <p className="text-sm text-gray-400">{t("responseTimeDescription")}</p>
       </FeatureCard>
     </div>
   );

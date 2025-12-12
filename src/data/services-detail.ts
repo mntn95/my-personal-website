@@ -25,10 +25,10 @@ export const detailedServices: DetailedService[] = [
       "approach.4",
     ],
     technologies: [
-      "React & Next.js for dynamic, high-performance applications",
-      "Tailwind CSS for responsive, customizable styling",
-      "Modern JavaScript/TypeScript for robust functionality",
-      "Optimization tools for speed and accessibility",
+      "technologies.0",
+      "technologies.1",
+      "technologies.2",
+      "technologies.3",
     ],
     examples: [
       "examples.0",
@@ -57,10 +57,10 @@ export const detailedServices: DetailedService[] = [
       "approach.4",
     ],
     technologies: [
-      "React & Next.js for dynamic, high-performance applications",
-      "Tailwind CSS for responsive, customizable styling",
-      "Modern JavaScript/TypeScript for robust functionality",
-      "Optimization tools for speed and accessibility",
+      "technologies.0",
+      "technologies.1",
+      "technologies.2",
+      "technologies.3",
     ],
     examples: [
       "examples.0",
@@ -89,10 +89,10 @@ export const detailedServices: DetailedService[] = [
       "whatIncluded.4",
     ],
     technologies: [
-      "React & Next.js for dynamic, high-performance applications",
-      "Tailwind CSS for responsive, customizable styling",
-      "Modern JavaScript/TypeScript for robust functionality",
-      "Optimization tools for speed and accessibility",
+      "technologies.0",
+      "technologies.1",
+      "technologies.2",
+      "technologies.3",
     ],
     examples: [
       "examples.0",

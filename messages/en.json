@@ -239,6 +239,12 @@
           "2": "Creative portfolio or personal website",
           "3": "E-commerce platform",
           "4": "Blog or magazine"
+        },
+        "technologies": {
+          "0": "React & Next.js for dynamic, high-performance websites",
+          "1": "Tailwind CSS for responsive, customizable styling",
+          "2": "Supabase for database and authentication",
+          "3": "Optimization tools for speed and accessibility"
         }
       },
       "frontEndCollaboration": {
@@ -263,6 +269,12 @@
           "2": "Code review participation and quality assurance",
           "3": "Implementation or evolution of a design system",
           "4": "Collaboration with designers and backend developers"
+        },
+        "technologies": {
+          "0": "React, Next.js and TypeScript for high-quality typed code",
+          "1": "Tailwind CSS for responsive, customizable styling",
+          "2": "GenAI and MCP servers for agentic automation",
+          "3": "CI/CD pipelines for continuous delivery"
         }
       },
       "maintenanceSupport": {
@@ -287,6 +299,12 @@
           "2": "Bug fixes and performance optimizations",
           "3": "Technical support and strategic advice",
           "4": "Emergency response for critical issues"
+        },
+        "technologies": {
+          "0": "Vercel for continuous hosting and deployment",
+          "1": "OWASP recommendations for security best practices",
+          "2": "Monitoring tools for performance and uptime",
+          "3": "Updates and patches for dependencies and plugins"
         }
       }
     },
@@ -301,6 +319,14 @@
     "badge": "Contact",
     "title": "Let's Connect",
     "description": "Got a project in mind? Drop me a message and let's create something amazing together!",
+    "info": {
+      "contactInformation": "Contact Information",
+      "email": "Email",
+      "location": "Location",
+      "socialMedia": "Social Media",
+      "responseTime": "Response Time",
+      "responseTimeDescription": "I typically reply within 24 hours during business days."
+    },
     "form": {
       "yourName": "Your Name",
       "email": "Email",

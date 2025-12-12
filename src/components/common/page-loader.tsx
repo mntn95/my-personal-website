@@ -4,7 +4,11 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Loader } from "@/components/common/loader";
 
-const PageLoader = () => {
+interface PageLoaderProps {
+  children?: React.ReactNode;
+}
+
+const PageLoader = ({ children }: PageLoaderProps) => {
   const [isLoading, setIsLoading] = useState(true);
   const pathname = usePathname();
 
@@ -12,12 +16,16 @@ const PageLoader = () => {
     setIsLoading(true);
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 800);
 
     return () => clearTimeout(timer);
   }, [pathname]);
 
-  return <Loader isVisible={isLoading} />;
+  if (isLoading) {
+    return <Loader isVisible={true} />;
+  }
+
+  return <>{children}</>;
 };
 
 export default PageLoader;

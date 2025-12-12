@@ -30,6 +30,7 @@ const ServiceCard = async ({
     description: service.description.map((key) => t(key)),
     approach: service.approach?.map((key) => t(key)),
     whatIncluded: service.whatIncluded?.map((key) => t(key)),
+    technologies: service.technologies?.map((key) => t(key)),
     examples: service.examples.map((key) => t(key)),
   };
 
