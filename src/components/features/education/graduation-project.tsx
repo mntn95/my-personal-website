@@ -10,55 +10,56 @@ import { ProjectDetailItem } from "./project-detail-item";
  * Used in the Education page
  */
 export async function GraduationProject(): Promise<React.ReactElement> {
-	const t = await getTranslations("EducationPage.graduationProject");
+  const t = await getTranslations("EducationPage.graduationProject");
 
-	return (
-		<div className="animate-fadeInUp">
-			<h2 className="mb-12 text-center text-white text-3xl font-bold">
-				{t("title")}
-			</h2>
-			<FeatureCard variant="default" hover className="overflow-hidden">
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-					{/* Text Content - Left Side */}
-					<div className="p-8 lg:p-10 flex flex-col justify-center">
-						<div className="flex items-center mb-6">
-							<IconWrapper icon={Award} size="md" className="mr-4" />
-							<h3 className="text-white text-2xl font-semibold">
-								{t("projectTitle")}
-							</h3>
-						</div>
-						<div className="space-y-4 text-gray-400">
-							<p>
-								{t("description")}
-							</p>
-							<ProjectDetailItem
-								label={t("keyFeatures.label")}
-								content={t("keyFeatures.content")}
-							/>
-							<ProjectDetailItem
-								label={t("techStack.label")}
-								content={t("techStack.content")}
-							/>
-							<ProjectDetailItem
-								label={t("methodology.label")}
-								content={t("methodology.content")}
-							/>
-						</div>
-					</div>
+  return (
+    <div className="animate-fadeInUp">
+      <h2 className="mb-12 text-center text-white text-3xl font-bold">
+        {t("title")}
+      </h2>
+      <FeatureCard
+        variant="default"
+        hover
+        className="overflow-hidden hover:bg-card-hover"
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+          {/* Text Content - Left Side */}
+          <div className="p-8 lg:p-10 flex flex-col justify-center">
+            <div className="flex items-center mb-6">
+              <IconWrapper icon={Award} size="md" className="mr-4" />
+              <h3 className="text-white text-2xl font-semibold">
+                {t("projectTitle")}
+              </h3>
+            </div>
+            <div className="space-y-4 text-gray-400">
+              <p>{t("description")}</p>
+              <ProjectDetailItem
+                label={t("keyFeatures.label")}
+                content={t("keyFeatures.content")}
+              />
+              <ProjectDetailItem
+                label={t("techStack.label")}
+                content={t("techStack.content")}
+              />
+              <ProjectDetailItem
+                label={t("methodology.label")}
+                content={t("methodology.content")}
+              />
+            </div>
+          </div>
 
-					{/* Image - Right Side */}
-					<div className="relative h-full min-h-[300px] lg:min-h-[400px]">
-						<Image
-							src="/images/project-rpg-platform.png"
-							alt="Interactive RPG Platform - Game Board Interface"
-							fill
-							className="object-contain rounded-lg p-8 max-w-[75%] max-h-[75%]"
-							sizes="(max-width: 1024px) 100vw, 50vw"
-						/>
-					</div>
-				</div>
-			</FeatureCard>
-		</div>
-	);
+          {/* Image - Right Side */}
+          <div className="relative h-full min-h-[300px] lg:min-h-[400px]">
+            <Image
+              src="/images/project-rpg-platform.png"
+              alt="Interactive RPG Platform - Game Board Interface"
+              fill
+              className="object-contain rounded-lg p-8 max-w-[75%] max-h-[75%]"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+        </div>
+      </FeatureCard>
+    </div>
+  );
 }
-

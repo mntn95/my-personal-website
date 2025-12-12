@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { PageHeader } from "@/components/common";
 import {
-  EducationList,
+  Education as EducationComponent,
   Courses,
   GraduationProject,
 } from "@/components/features/education";
@@ -34,7 +34,7 @@ export default async function Education(): Promise<React.ReactElement> {
             description={t("description")}
           />
 
-          <EducationList />
+          <EducationComponent />
           <Courses />
           <GraduationProject />
         </div>

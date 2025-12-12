@@ -6,6 +6,7 @@ interface IconWrapperProps {
   icon: LucideIcon;
   size?: "sm" | "md" | "lg";
   className?: string;
+  isCentered?: boolean;
 }
 
 /**
@@ -19,6 +20,7 @@ export function IconWrapper({
   icon: Icon,
   size = "md",
   className,
+  isCentered = false,
 }: IconWrapperProps): React.ReactElement {
   const sizeClasses = {
     sm: "p-2 w-8 h-8",
@@ -36,6 +38,7 @@ export function IconWrapper({
     <div
       className={cn(
         "bg-teal-500/10 rounded-lg flex items-center justify-center",
+        isCentered && "mx-auto",
         sizeClasses[size],
         className
       )}

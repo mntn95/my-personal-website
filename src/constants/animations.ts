@@ -31,13 +31,14 @@ export const ANIMATION_FRAME_RATE = 16; // ~60fps
 
 /**
  * Hero typing animation roles
+ * Translation keys for hero roles
  */
 export const HERO_ROLES = [
-  "Web Developer",
-  "Freelancer",
-  "Idea Accelerator",
-  "Problem Solver",
-  "Brand Enhancer",
-  "Vision Translator",
-  "Quality-Driven Craftsman",
+  "webDeveloper",
+  "freelancer",
+  "ideaAccelerator",
+  "problemSolver",
+  "brandEnhancer",
+  "visionTranslator",
+  "qualityDrivenCraftsman",
 ] as const;

@@ -1,4 +1,3 @@
-export { EducationList } from "./education-list";
+export { Education } from "./education";
 export { Courses } from "./courses";
 export { GraduationProject } from "./graduation-project";
-

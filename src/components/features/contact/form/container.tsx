@@ -60,7 +60,7 @@ export function ContactFormContainer(): React.ReactElement {
 
   return (
     <div className="animate-fadeInUp" style={getFixedAnimationDelay(0.1)}>
-      <FeatureCard variant="elevated" hover={false}>
+      <FeatureCard variant="elevated" hover>
         <form onSubmit={handleSubmit} className="space-y-4">
           <FormFields
             formData={formData}

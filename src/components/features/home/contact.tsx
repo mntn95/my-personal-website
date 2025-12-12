@@ -15,10 +15,10 @@ export function Contact(): React.ReactElement {
         <FeatureCard
           variant="default"
           hover={false}
-          className="p-12 max-w-4xl mx-auto text-center animate-fadeInUp"
+          className="p-12 max-w-4xl mx-auto text-center hover:border-teal-500/50 hover:scale-105 transition-all animate-fadeInUp"
         >
           <div className="mb-6 mx-auto">
-            <IconWrapper icon={Handshake} size="lg" />
+            <IconWrapper icon={Handshake} size="lg" isCentered />
           </div>
 
           <h2 className="text-3xl mb-4 font-bold">{t("title")}</h2>

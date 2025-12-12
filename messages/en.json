@@ -5,7 +5,27 @@
       "name": "Mathieu Nguyen",
       "description": "Front-end developer crafting fast, modern, and meaningful digital experiences. I design clear, intuitive interfaces that elevate your ideas and strengthen your brand. Curious, adaptable, and always exploring new challenges, I'm here to help turn your vision into something impactful.",
       "getInTouch": "Get in Touch",
-      "downloadResume": "Download Resume"
+      "downloadResume": "Download Resume",
+      "roles": {
+        "webDeveloper": "Web Developer",
+        "freelancer": "Freelancer",
+        "ideaAccelerator": "Idea Accelerator",
+        "problemSolver": "Problem Solver",
+        "brandEnhancer": "Brand Enhancer",
+        "visionTranslator": "Vision Translator",
+        "qualityDrivenCraftsman": "Quality-Driven Craftsman"
+      },
+      "skills": {
+        "reactJs": "UI library",
+        "nextJs": "Full-stack React framework",
+        "typescript": "Typed JS language",
+        "tailwindCss": "Utility-first styling",
+        "graphQl": "Flexible API query language",
+        "redux": "State management library",
+        "ciCd": "Automated build & deploy",
+        "cypress": "End-to-end testing",
+        "jest": "Javascript testing framework"
+      }
     },
     "about": {
       "title": "Who I Am",

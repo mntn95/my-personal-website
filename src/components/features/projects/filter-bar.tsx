@@ -19,17 +19,17 @@ type TagFilter =
   | "redux";
 
 const tagFilters = [
-  { id: "all", labelKey: "all" },
-  { id: "react", labelKey: "react" },
-  { id: "next", labelKey: "next" },
-  { id: "redux", labelKey: "redux" },
-  { id: "tailwind", labelKey: "tailwind" },
-  { id: "typescript", labelKey: "typescript" },
-  { id: "bootstrap", labelKey: "bootstrap" },
-  { id: "jest", labelKey: "jest" },
-  { id: "cypress", labelKey: "cypress" },
-  { id: "graphql", labelKey: "graphql" },
-  { id: "scss", labelKey: "scss" },
+  { id: "all", labelKey: "All" },
+  { id: "react", labelKey: "React" },
+  { id: "next", labelKey: "Next" },
+  { id: "redux", labelKey: "Redux" },
+  { id: "tailwind css", labelKey: "Tailwind" },
+  { id: "typescript", labelKey: "Typescript" },
+  { id: "bootstrap", labelKey: "Bootstrap" },
+  { id: "jest", labelKey: "Jest" },
+  { id: "cypress", labelKey: "Cypress" },
+  { id: "graphql", labelKey: "GraphQL" },
+  { id: "scss", labelKey: "SCSS" },
 ];
 
 interface FilterBarProps {

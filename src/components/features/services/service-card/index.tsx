@@ -41,7 +41,7 @@ export function ServiceCard({
       key={index}
       variant="default"
       hover
-      className="p-4 sm:p-8 animate-fadeInUp flex flex-col"
+      className="p-4 sm:p-8 animate-fadeInUp flex flex-col hover:bg-card-hover"
       style={
         {
           ...getAnimationDelay(index),

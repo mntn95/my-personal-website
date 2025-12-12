@@ -26,7 +26,7 @@ export async function HardSkillsSection(): Promise<React.ReactElement> {
             key={index}
             variant="elevated"
             hover
-            className="text-center animate-fadeInUp"
+            className="text-center hover:scale-105 animate-fadeInUp"
             style={getAnimationDelay(index, 0.05)}
           >
             <h3 className="mb-2 font-semibold">{skill.name}</h3>

@@ -35,7 +35,7 @@ export function FeatureCard({
         variant === "elevated" &&
           "bg-card-bg border border-card-border p-6 shadow-lg",
         variant === "flat" && "bg-card-border p-4",
-        hover && "hover:bg-card-hover hover:border-teal-500/50 hover:scale-105",
+        hover && "hover:border-teal-500/50",
         className
       )}
       style={style}

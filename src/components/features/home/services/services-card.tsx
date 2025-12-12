@@ -25,7 +25,7 @@ export function ServiceCard({
       key={index}
       variant="default"
       hover
-      className="animate-fadeInUp flex flex-col"
+      className="hover:scale-105 animate-fadeInUp flex flex-col"
       style={getAnimationDelay(index)}
     >
       <div className="mb-6 mx-auto">

@@ -4,13 +4,13 @@ import { IconWrapper } from "@/components/common";
 import { cn } from "@/lib/utils";
 
 interface ContactInfoCardProps {
-	icon: LucideIcon;
-	title: string;
-	value: string;
-	href?: string;
-	target?: "_blank" | undefined;
-	rel?: "noopener noreferrer" | undefined;
-	className?: string;
+  icon: LucideIcon;
+  title: string;
+  value: string;
+  href?: string;
+  target?: "_blank" | undefined;
+  rel?: "noopener noreferrer" | undefined;
+  className?: string;
 }
 
 /**
@@ -27,40 +27,39 @@ interface ContactInfoCardProps {
  * />
  */
 export const ContactInfoCard = ({
-	icon,
-	title,
-	value,
-	href,
-	target,
-	rel,
-	className,
+  icon,
+  title,
+  value,
+  href,
+  target,
+  rel,
+  className,
 }: ContactInfoCardProps): React.ReactElement => {
-	const content = (
-		<div
-			className={cn(
-				"flex items-center p-3 bg-card-border/40 rounded-lg hover:bg-card-border/60 transition-colors",
-				href && "cursor-pointer",
-				className
-			)}
-		>
-			<div className="flex-shrink-0 mr-3">
-				<IconWrapper icon={icon} size="sm" />
-			</div>
-			<div>
-				<h3 className="text-sm text-white font-medium">{title}</h3>
-				<p className="text-sm text-gray-400">{value}</p>
-			</div>
-		</div>
-	);
+  const content = (
+    <div
+      className={cn(
+        "flex items-center p-3 mb-3 bg-card-border/40 rounded-lg hover:bg-card-border/60 transition-colors",
+        href && "cursor-pointer",
+        className
+      )}
+    >
+      <div className="flex-shrink-0 mr-3">
+        <IconWrapper icon={icon} size="sm" />
+      </div>
+      <div>
+        <h3 className="text-sm text-white font-medium">{title}</h3>
+        <p className="text-sm text-gray-400">{value}</p>
+      </div>
+    </div>
+  );
 
-	if (href) {
-		return (
-			<a href={href} target={target} rel={rel}>
-				{content}
-			</a>
-		);
-	}
+  if (href) {
+    return (
+      <a href={href} target={target} rel={rel}>
+        {content}
+      </a>
+    );
+  }
 
-	return content;
+  return content;
 };
-

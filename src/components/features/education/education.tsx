@@ -4,11 +4,11 @@ import { FeatureCard, IconWrapper } from "@/components/common";
 import { educationData } from "@/data/education";
 
 /**
- * Education list component displaying education history
+ * Education component displaying education history
  * Shows degree, institution, field, duration, location, grade, and highlights
  * Used in the Education page
  */
-export async function EducationList(): Promise<React.ReactElement> {
+export async function Education(): Promise<React.ReactElement> {
   const t = await getTranslations();
 
   return (
@@ -17,7 +17,7 @@ export async function EducationList(): Promise<React.ReactElement> {
         <FeatureCard
           variant="default"
           hover
-          className="h-full animate-fadeInUp"
+          className="h-full animate-fadeInUp hover:bg-card-hover"
         >
           <div className="flex items-center mb-4">
             <IconWrapper icon={GraduationCap} size="md" className="mr-4" />

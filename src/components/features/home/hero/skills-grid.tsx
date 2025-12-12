@@ -29,8 +29,9 @@ export function SkillsGrid(): React.ReactElement {
                 <h3 style={{ fontWeight: 600 }}>{skill.name}</h3>
               </div>
               <p className="text-sm text-gray-400" style={{ fontWeight: 400 }}>
-                {skill.description.startsWith("SkillsPage.") 
-                  ? t(skill.description) 
+                {skill.description.startsWith("HomePage.") ||
+                skill.description.startsWith("SkillsPage.")
+                  ? t(skill.description)
                   : skill.description}
               </p>
             </div>

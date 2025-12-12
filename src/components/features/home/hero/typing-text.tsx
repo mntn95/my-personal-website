@@ -1,10 +1,9 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 import { HERO_ROLES } from "@/constants/animations";
 import { getFixedAnimationDelay } from "@/lib/utils";
-
-const roles = HERO_ROLES;
 
 /**
  * Typing text component with animated role display
@@ -12,6 +11,7 @@ const roles = HERO_ROLES;
  * Used in the Hero component
  */
 export function TypingText(): React.ReactElement {
+  const t = useTranslations("HomePage.hero.roles");
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -19,7 +19,8 @@ export function TypingText(): React.ReactElement {
   const deleteTimeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
   useEffect(() => {
-    const role = roles[roleIndex];
+    const roleKey = HERO_ROLES[roleIndex];
+    const role = t(roleKey);
     timeoutRef.current = setTimeout(
       () => {
         if (!isDeleting) {
@@ -37,7 +38,7 @@ export function TypingText(): React.ReactElement {
             setDisplayText(displayText.slice(0, -1));
           } else {
             setIsDeleting(false);
-            setRoleIndex((roleIndex + 1) % roles.length);
+            setRoleIndex((roleIndex + 1) % HERO_ROLES.length);
           }
         }
       },
@@ -49,7 +50,7 @@ export function TypingText(): React.ReactElement {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
       if (deleteTimeoutRef.current) clearTimeout(deleteTimeoutRef.current);
     };
-  }, [displayText, isDeleting, roleIndex]);
+  }, [displayText, isDeleting, roleIndex, t]);
 
   return (
     <div

@@ -35,11 +35,7 @@ export async function SoftSkillsSection(): Promise<React.ReactElement> {
           {t("description")}
         </p>
       </div>
-      <FeatureCard
-        variant="elevated"
-        hover={false}
-        className="animate-fadeInUp"
-      >
+      <FeatureCard variant="elevated" hover className="animate-fadeInUp">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {skillTranslations.map((skill, index) => (
             <FeatureCard key={index} variant="flat" hover={false}>
