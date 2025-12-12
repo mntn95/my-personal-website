@@ -17,7 +17,7 @@ interface FloatingIcon {
   rotationSpeed: number;
 }
 
-export function FloatingIcons(): React.ReactElement | null {
+const FloatingIcons = (): React.ReactElement | null => {
   const mountedRef = useRef(true);
   const [mounted, setMounted] = useState(false);
   const [floatingIcons, setFloatingIcons] = useState<FloatingIcon[]>(() => {
@@ -121,4 +121,6 @@ export function FloatingIcons(): React.ReactElement | null {
       })}
     </div>
   );
-}
+};
+
+export { FloatingIcons };

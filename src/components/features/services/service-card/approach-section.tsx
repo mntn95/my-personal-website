@@ -13,10 +13,10 @@ interface ApproachSectionProps {
   whatIncluded?: string[];
 }
 
-export function ApproachSection({
+const ApproachSection = ({
   approach,
   whatIncluded,
-}: ApproachSectionProps): React.ReactElement | null {
+}: ApproachSectionProps): React.ReactElement | null => {
   const t = useTranslations("ServicesPage.sections");
 
   if (!approach && !whatIncluded) {
@@ -40,4 +40,6 @@ export function ApproachSection({
       </div>
     </div>
   );
-}
+};
+
+export { ApproachSection };

@@ -44,12 +44,12 @@ interface FilterBarProps {
  * Displays tag filters and search input
  * Used in the Projects page
  */
-export function FilterBar({
+const FilterBar = ({
   selectedTag,
   onTagChange,
   searchQuery,
   onSearchChange,
-}: FilterBarProps): React.ReactElement {
+}: FilterBarProps): React.ReactElement => {
   const t = useTranslations("ProjectsPage.filter");
 
   return (
@@ -92,4 +92,6 @@ export function FilterBar({
       </FeatureCard>
     </div>
   );
-}
+};
+
+export { FilterBar };

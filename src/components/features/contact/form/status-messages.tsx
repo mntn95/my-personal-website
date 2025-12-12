@@ -1,7 +1,10 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { Alert } from "@/components/ui";
 
 interface StatusMessagesProps {
-	submitStatus: "idle" | "success" | "error";
+  submitStatus: "idle" | "success" | "error";
 }
 
 /**
@@ -9,22 +12,28 @@ interface StatusMessagesProps {
  * Displays success or error alerts based on form submission status
  * Used in the FormFields component
  */
-export function StatusMessages({
-	submitStatus,
-}: StatusMessagesProps): React.ReactElement {
-	return (
-		<>
-			{submitStatus === "success" && (
-				<Alert variant="success" className="mt-4">
-					Thank you for your message! I&apos;ll get back to you soon.
-				</Alert>
-			)}
-			{submitStatus === "error" && (
-				<Alert variant="error" className="mt-4">
-					Something went wrong. Please try again later.
-				</Alert>
-			)}
-		</>
-	);
-}
+const StatusMessages = ({
+  submitStatus,
+}: StatusMessagesProps): React.ReactElement | null => {
+  const t = useTranslations("ContactPage.form");
 
+  if (submitStatus === "success") {
+    return (
+      <Alert variant="success" className="mt-4">
+        {t("successMessage")}
+      </Alert>
+    );
+  }
+
+  if (submitStatus === "error") {
+    return (
+      <Alert variant="error" className="mt-4">
+        {t("errorMessage")}
+      </Alert>
+    );
+  }
+
+  return null;
+};
+
+export { StatusMessages };

@@ -11,7 +11,7 @@ import { getAnimationDelay } from "@/lib/utils";
  * Uses intersection observer to trigger animations when visible
  * Used in the About component
  */
-export function SkillsGrid(): React.ReactElement {
+const SkillsGrid = (): React.ReactElement => {
   const [sectionRef, isVisible] = useIntersectionObserver<HTMLDivElement>({
     threshold: 0.1,
   });
@@ -39,4 +39,6 @@ export function SkillsGrid(): React.ReactElement {
       ))}
     </div>
   );
-}
+};
+
+export { SkillsGrid };

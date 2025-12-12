@@ -9,7 +9,7 @@ import { ProjectDetailItem } from "./project-detail-item";
  * Displays details about the graduation project with image
  * Used in the Education page
  */
-export async function GraduationProject(): Promise<React.ReactElement> {
+const GraduationProject = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("EducationPage.graduationProject");
 
   return (
@@ -62,4 +62,6 @@ export async function GraduationProject(): Promise<React.ReactElement> {
       </FeatureCard>
     </div>
   );
-}
+};
+
+export { GraduationProject };

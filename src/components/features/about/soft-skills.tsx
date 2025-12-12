@@ -5,7 +5,7 @@ import { FeatureCard } from "@/components/common";
  * Soft skills section component displaying interpersonal and professional skills
  * Used in the About page
  */
-export async function SoftSkillsSection(): Promise<React.ReactElement> {
+const SoftSkillsSection = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("AboutPage.softSkills");
   const skillKeys = [
     "problemSolving",
@@ -49,4 +49,6 @@ export async function SoftSkillsSection(): Promise<React.ReactElement> {
       </FeatureCard>
     </div>
   );
-}
+};
+
+export { SoftSkillsSection };

@@ -12,7 +12,7 @@ import { getAnimationDelay } from "@/lib/utils";
  * Shows project cards with image, title, description, and tags
  * Used in the Projects component
  */
-export function ProjectsGrid(): React.ReactElement {
+const ProjectsGrid = (): React.ReactElement => {
   const t = useTranslations();
 
   return (
@@ -57,4 +57,6 @@ export function ProjectsGrid(): React.ReactElement {
       ))}
     </div>
   );
-}
+};
+
+export { ProjectsGrid };

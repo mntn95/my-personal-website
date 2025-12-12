@@ -20,12 +20,12 @@ interface PageHeaderProps {
  *   description="Learn about my journey..."
  * />
  */
-export function PageHeader({
+const PageHeader = ({
   badge,
   title,
   description,
   className,
-}: PageHeaderProps): React.ReactElement {
+}: PageHeaderProps): React.ReactElement => {
   return (
     <div className={cn("text-center mb-16 animate-fadeInUp", className)}>
       {badge && (
@@ -43,4 +43,6 @@ export function PageHeader({
       </div>
     </div>
   );
-}
+};
+
+export { PageHeader };

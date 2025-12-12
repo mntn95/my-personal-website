@@ -21,7 +21,7 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
  *   placeholder="John Smith"
  * />
  */
-export const Input = React.forwardRef<HTMLInputElement, InputProps>(
+const Input = React.forwardRef<HTMLInputElement, InputProps>(
 	({ label, icon: Icon, error, helperText, className, id, ...props }, ref) => {
 		const generatedId = useId();
 		const inputId = id || generatedId;
@@ -87,7 +87,7 @@ interface TextareaProps
  *   placeholder="Your message..."
  * />
  */
-export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
+const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
 	({ label, icon: Icon, error, helperText, className, id, ...props }, ref) => {
 		const generatedId = useId();
 		const textareaId = id || generatedId;
@@ -131,4 +131,6 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
 );
 
 Textarea.displayName = "Textarea";
+
+export { Input, Textarea };
 

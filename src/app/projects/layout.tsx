@@ -20,10 +20,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ProjectsLayout({
+const ProjectsLayout = ({
   children,
 }: {
   children: React.ReactNode;
-}): React.ReactElement {
-  return <>{children}</>;
-}
+}): React.ReactElement => <>{children}</>;
+
+export default ProjectsLayout;

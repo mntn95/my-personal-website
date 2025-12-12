@@ -11,21 +11,19 @@ import { CTAButton } from "./cta-button";
  * Displays skills with progress bars and CTA to full about page
  * Used in the homepage
  */
-export function About(): React.ReactElement {
-	const t = useTranslations("HomePage.about");
+const About = (): React.ReactElement => {
+  const t = useTranslations("HomePage.about");
 
-	return (
-		<SectionLayout id="about" background="darker">
-			<div className="container mx-auto px-4">
-				<SectionHeader
-					title={t("title")}
-					description={t("description")}
-				/>
+  return (
+    <SectionLayout id="about" background="darker">
+      <div className="container mx-auto px-4">
+        <SectionHeader title={t("title")} description={t("description")} />
 
-				<SkillsGrid />
-				<CTAButton />
-			</div>
-		</SectionLayout>
-	);
-}
+        <SkillsGrid />
+        <CTAButton />
+      </div>
+    </SectionLayout>
+  );
+};
 
+export { About };

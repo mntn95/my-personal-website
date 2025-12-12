@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { navItems } from "@/data/navigation";
 
-export function Navigation(): React.ReactElement {
+const Navigation = (): React.ReactElement => {
   const t = useTranslations("Navigation");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -111,4 +111,6 @@ export function Navigation(): React.ReactElement {
       </nav>
     </header>
   );
-}
+};
+
+export { Navigation };

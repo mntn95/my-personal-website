@@ -9,7 +9,7 @@ import { getAnimationDelay } from "@/lib/utils";
  * Displays skills in a responsive grid layout
  * Used in the Hero component
  */
-export function SkillsGrid(): React.ReactElement {
+const SkillsGrid = (): React.ReactElement => {
   const t = useTranslations();
 
   return (
@@ -40,4 +40,6 @@ export function SkillsGrid(): React.ReactElement {
       </div>
     </div>
   );
-}
+};
+
+export { SkillsGrid };

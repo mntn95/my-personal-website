@@ -16,12 +16,12 @@ interface IconWrapperProps {
  * @example
  * <IconWrapper icon={Code} size="md" />
  */
-export function IconWrapper({
+const IconWrapper = ({
   icon: Icon,
   size = "md",
   className,
   isCentered = false,
-}: IconWrapperProps): React.ReactElement {
+}: IconWrapperProps): React.ReactElement => {
   const sizeClasses = {
     sm: "p-2 w-8 h-8",
     md: "p-3 w-12 h-12",
@@ -46,4 +46,6 @@ export function IconWrapper({
       <Icon className={cn("text-teal-500", iconSizes[size])} />
     </div>
   );
-}
+};
+
+export { IconWrapper };

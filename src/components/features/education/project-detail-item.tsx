@@ -8,15 +8,15 @@ interface ProjectDetailItemProps {
  * Displays a label with highlighted text followed by content
  * Used in the GraduationProject component
  */
-export function ProjectDetailItem({
+const ProjectDetailItem = ({
 	label,
 	content,
-}: ProjectDetailItemProps): React.ReactElement {
-	return (
-		<p>
-			<span className="text-brand-primary font-medium">{label}:</span>{" "}
-			{content}
-		</p>
-	);
-}
+}: ProjectDetailItemProps): React.ReactElement => (
+	<p>
+		<span className="text-brand-primary font-medium">{label}:</span>{" "}
+		{content}
+	</p>
+);
+
+export { ProjectDetailItem };
 

@@ -11,7 +11,7 @@ import { FormFields } from "./fields";
  * Renders the form wrapper and delegates field rendering to FormFields
  * Used in the Contact page
  */
-export function ContactFormContainer(): React.ReactElement {
+const ContactFormContainer = (): React.ReactElement => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -72,4 +72,6 @@ export function ContactFormContainer(): React.ReactElement {
       </FeatureCard>
     </div>
   );
-}
+};
+
+export { ContactFormContainer };

@@ -9,7 +9,7 @@ import { getAnimationDelay } from "@/lib/utils";
  * Displays a grid of courses completed during education
  * Used in the Education page
  */
-export async function Courses(): Promise<React.ReactElement> {
+const Courses = async (): Promise<React.ReactElement> => {
   const t = await getTranslations();
 
   return (
@@ -36,4 +36,6 @@ export async function Courses(): Promise<React.ReactElement> {
       </FeatureCard>
     </div>
   );
-}
+};
+
+export { Courses };

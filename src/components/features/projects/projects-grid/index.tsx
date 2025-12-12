@@ -11,9 +11,9 @@ interface ProjectsGridProps {
  * Shows project cards with image, title, description, and tags
  * Used in the Projects page
  */
-export function ProjectsGrid({
+const ProjectsGrid = ({
 	projects,
-}: ProjectsGridProps): React.ReactElement {
+}: ProjectsGridProps): React.ReactElement => {
 	if (projects.length === 0) {
 		return (
 			<EmptyState description="No projects found matching your criteria." />
@@ -27,5 +27,7 @@ export function ProjectsGrid({
 			))}
 		</div>
 	);
-}
+};
+
+export { ProjectsGrid };
 

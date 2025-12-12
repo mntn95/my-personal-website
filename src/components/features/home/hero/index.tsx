@@ -11,7 +11,7 @@ import { ScrollIndicator } from "./scroll-indicator";
  * Main landing section with introduction, typing animation, and skills grid
  * Used in the homepage
  */
-export function Hero(): React.ReactElement {
+const Hero = (): React.ReactElement => {
   return (
     <div
       id="home"
@@ -30,4 +30,6 @@ export function Hero(): React.ReactElement {
       <ScrollIndicator />
     </div>
   );
-}
+};
+
+export { Hero };

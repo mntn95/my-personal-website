@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { PageHeader } from "@/components/common";
 import {
@@ -8,28 +7,7 @@ import {
   MoreAboutMeSection,
 } from "@/components/features/about";
 
-export const metadata: Metadata = {
-  title: "About Me - Mathieu Nguyen | Front-End Developer",
-  description:
-    "Learn about Mathieu Nguyen, a Freelance Front-End Developer with 7 years of experience in React, Next.js, and TypeScript. Discover my skills, experience, and what drives my passion for web development.",
-  keywords: [
-    "front-end developer",
-    "react developer",
-    "nextjs developer",
-    "typescript",
-    "web developer",
-    "freelance developer",
-    "mathieu nguyen",
-  ],
-  openGraph: {
-    title: "About Me - Mathieu Nguyen | Front-End Developer",
-    description:
-      "Learn about my journey as a Front-End Developer with expertise in React, Next.js, and modern web technologies.",
-    type: "profile",
-  },
-};
-
-export default async function AboutPage(): Promise<React.ReactElement> {
+const AboutPage = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("AboutPage");
 
   return (
@@ -51,4 +29,6 @@ export default async function AboutPage(): Promise<React.ReactElement> {
       </div>
     </div>
   );
-}
+};
+
+export default AboutPage;

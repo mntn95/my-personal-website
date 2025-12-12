@@ -19,7 +19,7 @@ type TagFilter =
   | "scss"
   | "redux";
 
-export default function Projects(): React.ReactElement {
+const Projects = (): React.ReactElement => {
   const t = useTranslations("ProjectsPage");
   const [selectedTag, setSelectedTag] = useState<TagFilter>("all");
   const [searchQuery, setSearchQuery] = useState("");
@@ -70,4 +70,6 @@ export default function Projects(): React.ReactElement {
       </div>
     </div>
   );
-}
+};
+
+export default Projects;

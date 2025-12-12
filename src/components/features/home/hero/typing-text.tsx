@@ -10,7 +10,7 @@ import { getFixedAnimationDelay } from "@/lib/utils";
  * Cycles through roles with typing and deleting animation
  * Used in the Hero component
  */
-export function TypingText(): React.ReactElement {
+const TypingText = (): React.ReactElement => {
   const t = useTranslations("HomePage.hero.roles");
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
@@ -26,21 +26,21 @@ export function TypingText(): React.ReactElement {
         if (!isDeleting) {
           if (displayText.length < role.length) {
             setDisplayText(role.slice(0, displayText.length + 1));
-          } else {
-            // Store nested timeout to clean it up properly
-            deleteTimeoutRef.current = setTimeout(
-              () => setIsDeleting(true),
-              2000
-            );
+            return;
           }
-        } else {
-          if (displayText.length > 0) {
-            setDisplayText(displayText.slice(0, -1));
-          } else {
-            setIsDeleting(false);
-            setRoleIndex((roleIndex + 1) % HERO_ROLES.length);
-          }
+          // Store nested timeout to clean it up properly
+          deleteTimeoutRef.current = setTimeout(
+            () => setIsDeleting(true),
+            2000
+          );
+          return;
         }
+        if (displayText.length > 0) {
+          setDisplayText(displayText.slice(0, -1));
+          return;
+        }
+        setIsDeleting(false);
+        setRoleIndex((roleIndex + 1) % HERO_ROLES.length);
       },
       isDeleting ? 50 : 100
     );
@@ -66,4 +66,6 @@ export function TypingText(): React.ReactElement {
       </span>
     </div>
   );
-}
+};
+
+export { TypingText };

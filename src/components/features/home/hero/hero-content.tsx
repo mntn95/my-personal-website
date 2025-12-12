@@ -11,7 +11,7 @@ import { TypingText } from "./typing-text";
  * Displays title, typing text, description, and action buttons
  * Used in the Hero component
  */
-export function HeroContent(): React.ReactElement {
+const HeroContent = (): React.ReactElement => {
   const t = useTranslations("HomePage.hero");
 
   return (
@@ -61,4 +61,6 @@ export function HeroContent(): React.ReactElement {
       </div>
     </div>
   );
-}
+};
+
+export { HeroContent };

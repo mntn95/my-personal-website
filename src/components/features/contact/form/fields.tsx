@@ -24,12 +24,12 @@ interface FormFieldsProps {
  * Renders all form inputs, submit button, status messages, and privacy notice
  * Used in the ContactFormContainer
  */
-export function FormFields({
+const FormFields = ({
   formData,
   onChange,
   isSubmitting,
   submitStatus,
-}: FormFieldsProps): React.ReactElement {
+}: FormFieldsProps): React.ReactElement => {
   const t = useTranslations("ContactPage.form");
 
   return (
@@ -115,4 +115,6 @@ export function FormFields({
       </p>
     </>
   );
-}
+};
+
+export { FormFields };

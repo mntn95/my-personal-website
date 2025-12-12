@@ -12,9 +12,9 @@ interface TechnologiesSectionProps {
 	technologies?: string[];
 }
 
-export function TechnologiesSection({
+const TechnologiesSection = ({
 	technologies,
-}: TechnologiesSectionProps): React.ReactElement | null {
+}: TechnologiesSectionProps): React.ReactElement | null => {
 	const t = useTranslations("ServicesPage.sections");
 
 	if (!technologies) {
@@ -37,5 +37,7 @@ export function TechnologiesSection({
 			</div>
 		</div>
 	);
-}
+};
+
+export { TechnologiesSection };
 

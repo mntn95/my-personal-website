@@ -37,11 +37,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({
+const RootLayout = async ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>): Promise<React.ReactElement> {
+}>): Promise<React.ReactElement> => {
   const locale = await getLocale();
 
   return (
@@ -62,4 +62,6 @@ export default async function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

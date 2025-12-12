@@ -19,10 +19,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ContactLayout({
+const ContactLayout = ({
   children,
 }: {
   children: React.ReactNode;
-}): React.ReactElement {
-  return <>{children}</>;
-}
+}): React.ReactElement => <>{children}</>;
+
+export default ContactLayout;

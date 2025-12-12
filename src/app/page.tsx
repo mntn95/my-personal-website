@@ -6,14 +6,14 @@ import {
   Contact,
 } from "@/components/features";
 
-export default function Home(): React.ReactElement {
-  return (
-    <>
-      <Hero />
-      <About />
-      <Services />
-      <Projects />
-      <Contact />
-    </>
-  );
-}
+const Home = (): React.ReactElement => (
+  <>
+    <Hero />
+    <About />
+    <Services />
+    <Projects />
+    <Contact />
+  </>
+);
+
+export default Home;

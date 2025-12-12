@@ -14,12 +14,12 @@ interface ServiceCardProps {
   seeMore: string;
 }
 
-export function ServiceCard({
+const ServiceCard = ({
   service,
   index,
   serviceT,
   seeMore,
-}: ServiceCardProps): React.ReactElement {
+}: ServiceCardProps): React.ReactElement => {
   return (
     <FeatureCard
       key={index}
@@ -48,4 +48,6 @@ export function ServiceCard({
       </div>
     </FeatureCard>
   );
-}
+};
+
+export { ServiceCard };

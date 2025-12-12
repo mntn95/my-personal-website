@@ -13,7 +13,7 @@
         "problemSolver": "Résolveur de Problèmes",
         "brandEnhancer": "Renforceur de Marque",
         "visionTranslator": "Traducteur de Vision",
-        "qualityDrivenCraftsman": "Artisan Orienté Qualité"
+        "qualityDrivenCraftsman": "Concepteur Orienté Qualité"
       },
       "skills": {
         "reactJs": "Bibliothèque UI",
@@ -312,7 +312,9 @@
       "messagePlaceholder": "Parlez-moi de votre projet, de votre calendrier et de ce que vous souhaitez accomplir...",
       "sendMessage": "Envoyer le Message",
       "sending": "Envoi en cours...",
-      "privacyNotice": "Je respecte votre vie privée. Vos informations ne seront jamais partagées avec des tiers."
+      "privacyNotice": "Je respecte votre vie privée. Vos informations ne seront jamais partagées avec des tiers.",
+      "successMessage": "Merci pour votre message ! Je vous répondrai bientôt.",
+      "errorMessage": "Une erreur s'est produite. Veuillez réessayer plus tard."
     }
   },
   "Footer": {

@@ -38,7 +38,7 @@ const sizeClasses = {
  *   Submit
  * </Button>
  */
-export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 	(
 		{
 			variant = "primary",
@@ -97,4 +97,6 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 );
 
 Button.displayName = "Button";
+
+export { Button };
 

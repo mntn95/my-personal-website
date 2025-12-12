@@ -20,10 +20,10 @@ interface ServiceCardProps {
  * Shows icon, title, subtitle, description, approach/what's included, technologies, and examples
  * Used in the Services page
  */
-export function ServiceCard({
+const ServiceCard = ({
   service,
   index,
-}: ServiceCardProps): React.ReactElement {
+}: ServiceCardProps): React.ReactElement => {
   const t = useTranslations(`ServicesPage.services.${service.id}`);
 
   const translatedService: DetailedService = {
@@ -77,4 +77,6 @@ export function ServiceCard({
       <CTAButton />
     </FeatureCard>
   );
-}
+};
+
+export { ServiceCard };

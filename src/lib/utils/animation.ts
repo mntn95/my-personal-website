@@ -15,15 +15,15 @@
  * <div style={getAnimationDelay(1)}>Item 2</div>
  * <div style={getAnimationDelay(2, 0.2)}>Item 3 (slower)</div>
  */
-export function getAnimationDelay(
+const getAnimationDelay = (
   index: number,
   delayStep: number = 0.1,
   baseDelay: number = 0
-): React.CSSProperties {
+): React.CSSProperties => {
   return {
     animationDelay: `${baseDelay + index * delayStep}s`,
   };
-}
+};
 
 /**
  * Generate animation delay string value
@@ -36,13 +36,13 @@ export function getAnimationDelay(
  * @example
  * const delay = getAnimationDelayString(3); // "0.3s"
  */
-export function getAnimationDelayString(
+const getAnimationDelayString = (
   index: number,
   delayStep: number = 0.1,
   baseDelay: number = 0
-): string {
+): string => {
   return `${baseDelay + index * delayStep}s`;
-}
+};
 
 /**
  * Generate fixed animation delay style
@@ -53,9 +53,11 @@ export function getAnimationDelayString(
  * @example
  * <div style={getFixedAnimationDelay(0.5)}>Delayed element</div>
  */
-export function getFixedAnimationDelay(seconds: number): React.CSSProperties {
+const getFixedAnimationDelay = (seconds: number): React.CSSProperties => {
   return {
     animationDelay: `${seconds}s`,
   };
-}
+};
+
+export { getAnimationDelay, getAnimationDelayString, getFixedAnimationDelay };
 

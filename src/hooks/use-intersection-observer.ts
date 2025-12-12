@@ -18,9 +18,9 @@ interface UseIntersectionObserverOptions {
  * const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
  * return <div ref={ref}>{isVisible && <Animation />}</div>
  */
-export function useIntersectionObserver<T extends HTMLElement = HTMLDivElement>(
+const useIntersectionObserver = <T extends HTMLElement = HTMLDivElement>(
   options: UseIntersectionObserverOptions = {}
-): [React.RefObject<T | null>, boolean] {
+): [React.RefObject<T | null>, boolean] => {
   const {
     threshold = 0.1,
     root = null,
@@ -64,5 +64,7 @@ export function useIntersectionObserver<T extends HTMLElement = HTMLDivElement>(
   }, [threshold, root, rootMargin, freezeOnceVisible, isIntersecting]);
 
   return [elementRef, isIntersecting];
-}
+};
+
+export { useIntersectionObserver };
 

@@ -7,7 +7,7 @@ import { ContactInfoCard, SocialLink } from "@/components/ui";
  * Displays email, location, social media links, and response time
  * Used in the Contact page
  */
-export function ContactInfo(): React.ReactElement {
+const ContactInfo = (): React.ReactElement => {
   return (
     <div className="space-y-6 animate-fadeInUp">
       <FeatureCard variant="elevated" hover>
@@ -66,4 +66,6 @@ export function ContactInfo(): React.ReactElement {
       </FeatureCard>
     </div>
   );
-}
+};
+
+export { ContactInfo };

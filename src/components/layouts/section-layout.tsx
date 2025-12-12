@@ -19,12 +19,12 @@ interface SectionLayoutProps {
  *   </div>
  * </SectionLayout>
  */
-export function SectionLayout({
+const SectionLayout = ({
   children,
   id,
   className,
   background = "dark",
-}: SectionLayoutProps): React.ReactElement {
+}: SectionLayoutProps): React.ReactElement => {
   const bgClasses = {
     dark: "bg-dark-bg",
     darker: "bg-dark-bg-alt",
@@ -35,4 +35,6 @@ export function SectionLayout({
       {children}
     </section>
   );
-}
+};
+
+export { SectionLayout };

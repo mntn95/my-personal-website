@@ -11,7 +11,7 @@ import { CTAButton } from "./cta-button";
  * Displays featured projects and CTA to full projects page
  * Used in the homepage
  */
-export function Projects(): React.ReactElement {
+const Projects = (): React.ReactElement => {
   const t = useTranslations("HomePage.projects");
 
   return (
@@ -24,4 +24,6 @@ export function Projects(): React.ReactElement {
       </div>
     </SectionLayout>
   );
-}
+};
+
+export { Projects };

@@ -7,7 +7,7 @@ import { moreAboutMeCards } from "@/data/about";
  * More About Me section component displaying personal interests, philosophy, education, and goals
  * Used in the About page
  */
-export async function MoreAboutMeSection(): Promise<React.ReactElement> {
+const MoreAboutMeSection = async (): Promise<React.ReactElement> => {
   const t = await getTranslations();
 
   return (
@@ -54,4 +54,6 @@ export async function MoreAboutMeSection(): Promise<React.ReactElement> {
       </div>
     </div>
   );
-}
+};
+
+export { MoreAboutMeSection };

@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { FeatureCard, IconWrapper } from "@/components/common";
 import { SectionLayout } from "@/components/layouts/section-layout";
 
-export function Contact(): React.ReactElement {
+const Contact = (): React.ReactElement => {
   const t = useTranslations("HomePage.contact");
 
   return (
@@ -38,4 +38,6 @@ export function Contact(): React.ReactElement {
       </div>
     </SectionLayout>
   );
-}
+};
+
+export { Contact };

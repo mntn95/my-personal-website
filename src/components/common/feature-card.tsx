@@ -20,27 +20,27 @@ interface FeatureCardProps {
  *   <p>Content</p>
  * </FeatureCard>
  */
-export function FeatureCard({
+const FeatureCard = ({
   children,
   variant = "default",
   hover = true,
   className,
   style,
-}: FeatureCardProps): React.ReactElement {
-  return (
-    <div
-      className={cn(
-        "rounded-lg transition-all",
-        variant === "default" && "bg-card-bg border border-card-border p-8",
-        variant === "elevated" &&
-          "bg-card-bg border border-card-border p-6 shadow-lg",
-        variant === "flat" && "bg-card-border p-4",
-        hover && "hover:border-teal-500/50",
-        className
-      )}
-      style={style}
-    >
-      {children}
-    </div>
-  );
-}
+}: FeatureCardProps): React.ReactElement => (
+  <div
+    className={cn(
+      "rounded-lg transition-all",
+      variant === "default" && "bg-card-bg border border-card-border p-8",
+      variant === "elevated" &&
+        "bg-card-bg border border-card-border p-6 shadow-lg",
+      variant === "flat" && "bg-card-border p-4",
+      hover && "hover:border-teal-500/50",
+      className
+    )}
+    style={style}
+  >
+    {children}
+  </div>
+);
+
+export { FeatureCard };

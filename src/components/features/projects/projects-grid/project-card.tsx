@@ -12,7 +12,7 @@ interface ProjectCardProps {
  * Displays a single project with image, title, description, and tags
  * Used in the ProjectsGrid component
  */
-export function ProjectCard({ project }: ProjectCardProps): React.ReactElement {
+const ProjectCard = ({ project }: ProjectCardProps): React.ReactElement => {
   return (
     <FeatureCard
       key={project.id}
@@ -34,4 +34,6 @@ export function ProjectCard({ project }: ProjectCardProps): React.ReactElement {
       <ProjectContent project={project} />
     </FeatureCard>
   );
-}
+};
+
+export { ProjectCard };

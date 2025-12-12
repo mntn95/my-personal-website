@@ -37,12 +37,12 @@ const sizeClasses = {
  * @example
  * <Loading size="lg" text="Loading projects..." />
  */
-export function Loading({
+const Loading = ({
   size = "md",
   text,
   className,
   centered = true,
-}: LoadingProps): React.ReactElement {
+}: LoadingProps): React.ReactElement => {
   const content = (
     <div
       className={cn(
@@ -57,13 +57,15 @@ export function Loading({
     </div>
   );
 
-  if (centered) {
-    return (
-      <div className="flex items-center justify-center min-h-[200px] w-full">
-        {content}
-      </div>
-    );
+  if (!centered) {
+    return content;
   }
 
-  return content;
-}
+  return (
+    <div className="flex items-center justify-center min-h-[200px] w-full">
+      {content}
+    </div>
+  );
+};
+
+export { Loading };

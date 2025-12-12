@@ -19,25 +19,24 @@ interface SectionHeaderProps {
  *   description="A selection of my recent web development projects."
  * />
  */
-export function SectionHeader({
+const SectionHeader = ({
   title,
   description,
   className,
   titleClassName,
   descriptionClassName,
-}: SectionHeaderProps): React.ReactElement {
-  return (
-    <div className={cn("text-center mb-16 animate-fadeInUp", className)}>
-      <h2 className={cn("text-4xl mb-6 font-bold", titleClassName)}>{title}</h2>
-      <p
-        className={cn(
-          "max-w-3xl mx-auto text-gray-400 font-normal leading-relaxed",
-          descriptionClassName
-        )}
-      >
-        {description}
-      </p>
-    </div>
-  );
-}
+}: SectionHeaderProps): React.ReactElement => (
+  <div className={cn("text-center mb-16 animate-fadeInUp", className)}>
+    <h2 className={cn("text-4xl mb-6 font-bold", titleClassName)}>{title}</h2>
+    <p
+      className={cn(
+        "max-w-3xl mx-auto text-gray-400 font-normal leading-relaxed",
+        descriptionClassName
+      )}
+    >
+      {description}
+    </p>
+  </div>
+);
 
+export { SectionHeader };

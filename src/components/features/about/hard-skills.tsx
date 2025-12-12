@@ -8,7 +8,7 @@ import { getAnimationDelay } from "@/lib/utils";
  * Hard skills section component displaying technical skills with badges
  * Used in the About page
  */
-export async function HardSkillsSection(): Promise<React.ReactElement> {
+const HardSkillsSection = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("AboutPage.hardSkills");
 
   return (
@@ -47,4 +47,6 @@ export async function HardSkillsSection(): Promise<React.ReactElement> {
       </div>
     </div>
   );
-}
+};
+
+export { HardSkillsSection };

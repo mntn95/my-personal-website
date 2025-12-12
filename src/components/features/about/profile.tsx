@@ -6,7 +6,7 @@ import { FeatureCard } from "@/components/common";
  * Profile section component displaying profile image and introduction text
  * Used in the About page
  */
-export async function ProfileSection(): Promise<React.ReactElement> {
+const ProfileSection = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("AboutPage.profile");
 
   return (
@@ -32,17 +32,13 @@ export async function ProfileSection(): Promise<React.ReactElement> {
             <span className="text-teal-500 font-semibold">Mathieu Nguyen</span>,{" "}
             {t("intro2")}
           </p>
-          <p>
-            {t("intro3")}
-          </p>
-          <p>
-            {t("intro4")}
-          </p>
-          <p>
-            {t("intro5")}
-          </p>
+          <p>{t("intro3")}</p>
+          <p>{t("intro4")}</p>
+          <p>{t("intro5")}</p>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export { ProfileSection };

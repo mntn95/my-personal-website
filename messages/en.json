@@ -312,7 +312,9 @@
       "messagePlaceholder": "Tell me more about your project, your timeline, and what you're looking to achieve...",
       "sendMessage": "Send Message",
       "sending": "Sending...",
-      "privacyNotice": "I value your privacy. Your information will never be shared with third parties."
+      "privacyNotice": "I value your privacy. Your information will never be shared with third parties.",
+      "successMessage": "Thank you for your message! I'll get back to you soon.",
+      "errorMessage": "Something went wrong. Please try again later."
     }
   },
   "Footer": {

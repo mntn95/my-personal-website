@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { socialLinks } from "@/data/social-links";
 import { SocialLink } from "@/components/ui";
 
-export async function Footer(): Promise<React.ReactElement> {
+const Footer = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("Footer");
 
   return (
@@ -52,4 +52,6 @@ export async function Footer(): Promise<React.ReactElement> {
       </div>
     </footer>
   );
-}
+};
+
+export { Footer };

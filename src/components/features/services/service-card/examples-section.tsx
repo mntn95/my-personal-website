@@ -12,9 +12,9 @@ interface ExamplesSectionProps {
 	examples: string[];
 }
 
-export function ExamplesSection({
+const ExamplesSection = ({
 	examples,
-}: ExamplesSectionProps): React.ReactElement {
+}: ExamplesSectionProps): React.ReactElement => {
 	const t = useTranslations("ServicesPage.sections");
 
 	return (
@@ -29,5 +29,7 @@ export function ExamplesSection({
 			</ul>
 		</div>
 	);
-}
+};
+
+export { ExamplesSection };
 

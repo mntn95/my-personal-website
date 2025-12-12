@@ -2,7 +2,7 @@ interface LoaderProps {
   isVisible: boolean;
 }
 
-export function Loader({ isVisible }: LoaderProps) {
+const Loader = ({ isVisible }: LoaderProps) => {
   if (!isVisible) return null;
 
   return (
@@ -25,4 +25,6 @@ export function Loader({ isVisible }: LoaderProps) {
       </div>
     </div>
   );
-}
+};
+
+export { Loader };

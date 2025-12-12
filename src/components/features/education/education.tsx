@@ -8,7 +8,7 @@ import { educationData } from "@/data/education";
  * Shows degree, institution, field, duration, location, grade, and highlights
  * Used in the Education page
  */
-export async function Education(): Promise<React.ReactElement> {
+const Education = async (): Promise<React.ReactElement> => {
   const t = await getTranslations();
 
   return (
@@ -54,4 +54,6 @@ export async function Education(): Promise<React.ReactElement> {
       </div>
     </div>
   );
-}
+};
+
+export { Education };

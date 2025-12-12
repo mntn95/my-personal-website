@@ -10,7 +10,7 @@ interface Particle {
   size: number;
 }
 
-export function ParticleBackground(): React.ReactElement {
+const ParticleBackground = (): React.ReactElement => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationIdRef = useRef<number | undefined>(undefined);
 
@@ -109,4 +109,6 @@ export function ParticleBackground(): React.ReactElement {
       />
     </div>
   );
-}
+};
+
+export { ParticleBackground };

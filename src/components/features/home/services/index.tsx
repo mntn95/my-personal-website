@@ -12,11 +12,11 @@ interface ServiceCardWrapperProps {
   seeMore: string;
 }
 
-function ServiceCardWrapper({
+const ServiceCardWrapper = ({
   service,
   index,
   seeMore,
-}: ServiceCardWrapperProps): React.ReactElement {
+}: ServiceCardWrapperProps): React.ReactElement => {
   const serviceT = useTranslations(`ServicesPage.services.${service.id}`);
 
   return (
@@ -28,9 +28,9 @@ function ServiceCardWrapper({
       seeMore={seeMore}
     />
   );
-}
+};
 
-export function Services(): React.ReactElement {
+const Services = (): React.ReactElement => {
   const t = useTranslations("HomePage.services");
 
   return (
@@ -51,5 +51,6 @@ export function Services(): React.ReactElement {
       </div>
     </SectionLayout>
   );
-}
+};
 
+export { Services };

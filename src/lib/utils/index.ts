@@ -8,9 +8,11 @@ import { twMerge } from "tailwind-merge";
  * Utility function to merge Tailwind CSS classes
  * Combines clsx and tailwind-merge for optimal class merging
  */
-export function cn(...inputs: ClassValue[]): string {
+const cn = (...inputs: ClassValue[]): string => {
   return twMerge(clsx(inputs));
-}
+};
+
+export { cn };
 
 export * from "./animation";
 

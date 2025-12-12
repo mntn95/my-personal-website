@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { PageHeader } from "@/components/common";
 import {
@@ -7,20 +6,7 @@ import {
   GraduationProject,
 } from "@/components/features/education";
 
-export const metadata: Metadata = {
-  title: "Education - Mathieu Nguyen | Front-End Developer",
-  description:
-    "Explore the educational background and professional training that shaped Mathieu Nguyen's journey as a front-end developer. 700-hour intensive program in modern web development.",
-  keywords: [
-    "web development education",
-    "react training",
-    "javascript certification",
-    "professional web developer",
-    "o'clock",
-  ],
-};
-
-export default async function Education(): Promise<React.ReactElement> {
+const Education = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("EducationPage");
 
   return (
@@ -41,4 +27,6 @@ export default async function Education(): Promise<React.ReactElement> {
       </div>
     </div>
   );
-}
+};
+
+export default Education;

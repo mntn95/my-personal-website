@@ -30,7 +30,7 @@ const sizeClasses = {
  * <Badge variant="default" size="sm">React</Badge>
  * <Badge variant="teal" interactive active>Active Filter</Badge>
  */
-export const Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(
+const Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(
 	(
 		{
 			variant = "default",
@@ -68,4 +68,6 @@ export const Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(
 );
 
 Badge.displayName = "Badge";
+
+export { Badge };
 

@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { PageHeader } from "@/components/common";
 import { ContactInfo, ContactForm } from "@/components/features/contact";
 
-export default async function Contact(): Promise<React.ReactElement> {
+const Contact = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("ContactPage");
 
   return (
@@ -25,4 +25,6 @@ export default async function Contact(): Promise<React.ReactElement> {
       </div>
     </div>
   );
-}
+};
+
+export default Contact;
