@@ -19,7 +19,7 @@ const ProjectsGrid = async (): Promise<React.ReactElement> => {
           key={index}
           variant="default"
           hover
-          className="overflow-hidden group flex flex-col p-0"
+          className="overflow-hidden group flex flex-col p-0 h-full"
           animationIndex={index}
         >
           <div className="h-48 overflow-hidden">

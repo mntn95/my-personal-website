@@ -1,6 +1,6 @@
 interface ProjectDetailItemProps {
-	label: string;
-	content: string;
+  label: string;
+  content: string;
 }
 
 /**
@@ -9,14 +9,12 @@ interface ProjectDetailItemProps {
  * Used in the GraduationProject component
  */
 const ProjectDetailItem = ({
-	label,
-	content,
+  label,
+  content,
 }: ProjectDetailItemProps): React.ReactElement => (
-	<p>
-		<span className="text-brand-primary font-medium">{label}:</span>{" "}
-		{content}
-	</p>
+  <p>
+    <span className="text-brand-primary font-medium">{label}:</span> {content}
+  </p>
 );
 
 export { ProjectDetailItem };
-

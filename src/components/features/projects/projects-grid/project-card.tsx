@@ -16,15 +16,16 @@ const ProjectCard = ({ project }: ProjectCardProps): React.ReactElement => {
     <FeatureCard
       variant="default"
       hover
-      className="group overflow-hidden flex flex-col p-0 hover:transform hover:scale-[1.02] duration-300"
+      className="group overflow-hidden flex flex-col h-full p-0 hover:transform hover:scale-[1.02] duration-300"
       animationIndex={project.id}
+      animationClassName="h-full"
     >
       {/* Project Image */}
       <div className="relative h-48 overflow-hidden">
         <ImageWithFallback
           src={project.image}
           alt={project.title}
-          className="object-cover transition-transform duration-700 hover:scale-110"
+          className="w-full h-full opacity-80 object-cover transition-transform duration-700 hover:scale-110"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>

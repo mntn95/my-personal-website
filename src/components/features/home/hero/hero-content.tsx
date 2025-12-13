@@ -32,7 +32,7 @@ const HeroContent = async (): Promise<React.ReactElement> => {
       <TypingText />
 
       <motion.p
-        className="text-base text-gray-400 mb-8 max-w-lg leading-relaxed"
+        className="text-base text-gray-400 mb-8 max-w-lg leading-relaxed text-justify"
         style={{ fontWeight: 400 }}
         initial="initial"
         whileInView="animate"

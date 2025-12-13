@@ -10,11 +10,11 @@ const ImageWithFallback = (
 ) => {
   const [didError, setDidError] = useState(false);
 
+  const { src, alt, style, className, ...rest } = props;
+
   const handleError = () => {
     setDidError(true);
   };
-
-  const { src, alt, style, className, ...rest } = props;
 
   if (didError) {
     return (

@@ -14,7 +14,7 @@ const Loader = ({ isVisible }: LoaderProps) => {
     <motion.div className="loader-overlay" initial="initial" animate="animate">
       <div className="loader-wrapper">
         <div className="loader-spinner">
-          <PacmanLoader color="#14b8a6" />
+          <PacmanLoader speedMultiplier={2.5} color="#14b8a6" />
         </div>
       </div>
     </motion.div>

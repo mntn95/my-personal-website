@@ -3,7 +3,7 @@
     "hero": {
       "greeting": "Bonjour, je suis",
       "name": "Mathieu Nguyen",
-      "description": "Développeur front-end créant des sites web élégants et efficaces qui inspirent confiance. Je transforme vos idées en interfaces engageantes qui fidélisent vos utilisateurs et valorisent votre marque. Curieux, adaptable et pragmatique, je donne vie à vos ambitions.",
+      "description": "Je crée des sites web élégants et performants qui inspirent confiance. Je transforme vos idées en interfaces engageantes qui fidélisent vos utilisateurs et valorisent votre marque. Curieux, adaptable et pragmatique, je donne vie à vos ambitions.",
       "getInTouch": "Me Contacter",
       "downloadResume": "Télécharger mon CV",
       "roles": {
@@ -33,13 +33,13 @@
       "moreAboutMe": "En savoir plus"
     },
     "services": {
-      "title": "Services",
+      "title": "Prestations",
       "description": "Du développement produit à l'accompagnement continu, je propose des solutions complètes adaptées à vos besoins métier.",
       "seeMore": "Voir plus"
     },
     "projects": {
-      "title": "Projets Sélectionnés",
-      "description": "Une sélection de mes réalisations récentes en développement web."
+      "title": "Mes Réalisations",
+      "description": "Une sélection de sites et applications que j'ai eu l'occasion de développer."
     },
     "contact": {
       "title": "Travaillons Ensemble",
@@ -52,7 +52,7 @@
     "aboutMe": "À Propos",
     "education": "Formation",
     "projects": "Projets",
-    "services": "Services",
+    "services": "Prestations",
     "contact": "Contact"
   },
   "AboutPage": {
@@ -62,7 +62,7 @@
     "profile": {
       "whoAmI": "Qui suis-je ?",
       "intro1": "Je suis",
-      "intro2": "Développeur Web Front-End Freelance avec 7 ans d'expérience dans la création d'interfaces web performantes, intuitives et maintenables.",
+      "intro2": "Développeur Web depuis 7 ans, je réalise vos ambitions digitales en développant des solutions web sur mesure et optimisées.",
       "intro3": "J'ai commencé à coder par l'envie de résoudre des problèmes et créer des outils que les gens peuvent utiliser et apprécier. Très rapidement, je me suis spécialisé dans le développement front-end, avec un focus particulier sur React et son écosystème. J'ai appris à maîtriser l'ensemble des technologies et outils permettant de construire des sites web de A à Z ou de m'intégrer efficacement au sein d'équipes techniques.",
       "intro4": "De mes premiers postes chez Alain Afflelou et Extia jusqu'à mon activité freelance actuelle, j'ai conçu et maintenu des applications web privilégiant rapidité, accessibilité et fiabilité, tout en participant aux discussions d'architecture, aux revues de code et aux optimisations de performance.",
       "intro5": "Quand je ne développe pas de sites web, j'aime explorer de nouvelles technologies, expérimenter des outils d'IA générative ou contribuer à des projets personnels. En dehors du travail, je pratique le sport, notamment le CrossFit et la boxe, je nourris ma passion pour l'histoire et la géopolitique, ou je me détends devant un bon jeu vidéo."
@@ -81,7 +81,7 @@
       "description": "Ces compétences interpersonnelles et professionnelles m'aident à travailler efficacement et à livrer des résultats de qualité."
     },
     "moreAboutMe": {
-      "title": "Pour Aller Plus Loin",
+      "title": "Pour aller plus loin",
       "cards": {
         "personalInterests": "Centres d'Intérêt",
         "codingPhilosophy": "Philosophie du Code",
@@ -142,7 +142,7 @@
   },
   "EducationPage": {
     "badge": "Formation",
-    "title": "Parcours Éducatif",
+    "title": "Parcours",
     "description": "Un aperçu de la formation, de l'expérience pratique et de l'apprentissage technique qui ont façonné mon parcours de développeur front-end.",
     "degree": "Titre Professionnel : Développeur Web et Web Mobile",
     "institution": "O'Clock",
@@ -196,14 +196,14 @@
   "ProjectsPage": {
     "badge": "Projets",
     "title": "Mes Réalisations",
-    "description": "Découvrez une sélection de mes projets récents.",
+    "description": "Découvrez une sélection de sites et applications que j'ai eu l'occasion de développer.",
     "filter": {
       "label": "Filtrer :",
       "all": "Tous",
       "searchPlaceholder": "Rechercher un projet..."
     },
     "descriptions": {
-      "1": "Une plateforme e-commerce internationale dédiée à la l'optique.",
+      "1": "Une plateforme e-commerce internationale dédiée à l'optique.",
       "2": "Une solution CRM sur-mesure conçue pour optimiser le recrutement et la gestion des consultants.",
       "3": "Une plateforme SaaS de gestion du temps et des clients pour entrepreneurs solo et petites entreprises.",
       "4": "Un site web pour un coach freelance proposant un accompagnement personnalisé pour augmenter leur chiffre d'affaires.",
@@ -213,7 +213,7 @@
     }
   },
   "ServicesPage": {
-    "badge": "Services",
+    "badge": "Prestations",
     "title": "Ce que je propose",
     "description": "Vous cherchez un développeur front-end fiable pour donner vie à votre projet ? Je mets mes compétences à votre service afin de répondre à vos besoins, qu'il s'agisse d'un nouveau site web, d'une collaboration en équipe ou d'une maintenance continue. Travaillons ensemble pour atteindre vos objectifs.",
     "services": {

@@ -53,14 +53,17 @@ const FeatureCard = ({
   animationFixedDelay,
   animationClassName,
 }: FeatureCardProps): React.ReactElement => {
+  const variantClasses = {
+    default: "bg-card-bg border border-card-border p-8",
+    elevated: "bg-card-bg border border-card-border p-6 shadow-lg",
+    flat: "bg-card-border p-4",
+  };
+
   const cardContent = (
     <div
       className={cn(
         "rounded-lg transition-all",
-        variant === "default" && "bg-card-bg border border-card-border p-8",
-        variant === "elevated" &&
-          "bg-card-bg border border-card-border p-6 shadow-lg",
-        variant === "flat" && "bg-card-border p-4",
+        variantClasses[variant],
         hover && "hover:border-teal-500/50",
         className
       )}

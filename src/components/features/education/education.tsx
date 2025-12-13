@@ -45,7 +45,7 @@ const Education = async (): Promise<React.ReactElement> => {
               </div>
             </div>
           </div>
-          <ul className="space-y-2 pl-6 list-disc text-gray-400">
+          <ul className="space-y-2 pl-6 list-disc text-gray-400 text-justify">
             {educationData.highlights.map((key, idx) => (
               <li key={idx}>{t(key)}</li>
             ))}

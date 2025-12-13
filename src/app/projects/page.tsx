@@ -27,8 +27,8 @@ const Projects = (): React.ReactElement => {
   const tGlobal = useTranslations();
   const projectsWithTranslations = projects.map((project) => ({
     ...project,
-    description: project.description.startsWith("ProjectsPage.") 
-      ? tGlobal(project.description) 
+    description: project.description.startsWith("ProjectsPage.")
+      ? tGlobal(project.description)
       : t(`descriptions.${project.id}`),
   }));
 

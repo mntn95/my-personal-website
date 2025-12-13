@@ -1,7 +1,8 @@
-import Image from "next/image";
 import { Award } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { FeatureCard, IconWrapper } from "@/components/common";
+import { ImageWithFallback } from "@/components/common";
+
 import { ProjectDetailItem } from "./project-detail-item";
 
 /**
@@ -50,11 +51,10 @@ const GraduationProject = async (): Promise<React.ReactElement> => {
 
           {/* Image - Right Side */}
           <div className="relative h-full min-h-[300px] lg:min-h-[400px]">
-            <Image
-              src="/images/project-rpg-platform.png"
+            <ImageWithFallback
+              src="/images/graduation_project.png"
               alt="Interactive RPG Platform - Game Board Interface"
-              fill
-              className="object-contain rounded-lg p-8 max-w-[75%] max-h-[75%]"
+              className="object-contain w-full h-full rounded-lg p-8"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>

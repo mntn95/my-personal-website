@@ -42,7 +42,12 @@ const SoftSkillsSection = async (): Promise<React.ReactElement> => {
       <FeatureCard variant="elevated" hover>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {skillTranslations.map((skill, index) => (
-            <FeatureCard key={index} variant="flat" hover={false}>
+            <FeatureCard
+              key={index}
+              variant="flat"
+              hover={false}
+              className="h-full"
+            >
               <h4 className="text-lg mb-2 text-white font-medium">
                 {skill.title}
               </h4>
