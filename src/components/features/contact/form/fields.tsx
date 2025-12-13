@@ -2,20 +2,14 @@
 
 import { User, Mail, FileText, MessageSquare, Send } from "lucide-react";
 import { useTranslations } from "next-intl";
+import type { UseFormRegister, FormState } from "react-hook-form";
 import { Button, Input, Textarea } from "@/components/ui";
 import { StatusMessages } from "./status-messages";
+import type { ContactFormData } from "@/lib/validation";
 
 interface FormFieldsProps {
-  formData: {
-    name: string;
-    email: string;
-    subject: string;
-    message: string;
-  };
-  onChange: (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => void;
-  isSubmitting: boolean;
+  register: UseFormRegister<ContactFormData>;
+  formState: FormState<ContactFormData>;
   submitStatus: "idle" | "success" | "error";
 }
 
@@ -25,12 +19,12 @@ interface FormFieldsProps {
  * Used in the ContactFormContainer
  */
 const FormFields = ({
-  formData,
-  onChange,
-  isSubmitting,
+  register,
+  formState,
   submitStatus,
 }: FormFieldsProps): React.ReactElement => {
   const t = useTranslations("ContactPage.form");
+  const { errors, isSubmitting } = formState;
 
   return (
     <>
@@ -42,10 +36,8 @@ const FormFields = ({
           icon={User}
           type="text"
           id="name"
-          name="name"
-          required
-          value={formData.name}
-          onChange={onChange}
+          {...register("name")}
+          error={errors.name?.message}
           placeholder={t("namePlaceholder")}
         />
 
@@ -55,10 +47,8 @@ const FormFields = ({
           icon={Mail}
           type="email"
           id="email"
-          name="email"
-          required
-          value={formData.email}
-          onChange={onChange}
+          {...register("email")}
+          error={errors.email?.message}
           placeholder={t("emailPlaceholder")}
         />
       </div>
@@ -69,10 +59,8 @@ const FormFields = ({
         icon={FileText}
         type="text"
         id="subject"
-        name="subject"
-        required
-        value={formData.subject}
-        onChange={onChange}
+        {...register("subject")}
+        error={errors.subject?.message}
         placeholder={t("subjectPlaceholder")}
       />
 
@@ -81,11 +69,9 @@ const FormFields = ({
         label={t("message")}
         icon={MessageSquare}
         id="message"
-        name="message"
-        required
         rows={4}
-        value={formData.message}
-        onChange={onChange}
+        {...register("message")}
+        error={errors.message?.message}
         placeholder={t("messagePlaceholder")}
       />
 
@@ -110,9 +96,7 @@ const FormFields = ({
       <StatusMessages submitStatus={submitStatus} />
 
       {/* Privacy Notice */}
-      <p className="text-xs text-gray-400 text-center">
-        {t("privacyNotice")}
-      </p>
+      <p className="text-xs text-gray-400 text-center">{t("privacyNotice")}</p>
     </>
   );
 };
