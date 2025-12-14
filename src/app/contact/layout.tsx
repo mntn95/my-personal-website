@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     "freelance web developer contact",
     "paris web developer",
     "remote developer",
+    "contact mathieu nguyen",
+    "mathieu nguyen contact",
+    "mathieu nguyen contact page",
+    "mathieu nguyen contact section",
+    "mathieu nguyen contact section page",
+    "mathieu nguyen contact section page",
   ],
   openGraph: {
     title: "Contact - Mathieu Nguyen",

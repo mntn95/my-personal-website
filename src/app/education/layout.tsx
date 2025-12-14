@@ -10,6 +10,11 @@ export const metadata: Metadata = {
     "javascript certification",
     "professional web developer",
     "o'clock",
+    "mathieu nguyen education",
+    "mathieu nguyen education page",
+    "mathieu nguyen education section",
+    "mathieu nguyen education section page",
+    "mathieu nguyen education section page",
   ],
   openGraph: {
     title: "Education - Mathieu Nguyen | Front-End Developer",

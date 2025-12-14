@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     "typescript projects",
     "web applications",
     "portfolio",
+    "mathieu nguyen projects",
+    "mathieu nguyen projects page",
+    "mathieu nguyen projects section",
+    "mathieu nguyen projects section page",
+    "mathieu nguyen projects section page",
   ],
   openGraph: {
     title: "Projects - Mathieu Nguyen | Portfolio",

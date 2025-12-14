@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     "website maintenance",
     "react development services",
     "freelance developer",
+    "mathieu nguyen services",
+    "mathieu nguyen services page",
+    "mathieu nguyen services section",
+    "mathieu nguyen services section page",
+    "mathieu nguyen services section page",
   ],
   openGraph: {
     title: "Services - Mathieu Nguyen | Front-End Development Services",
