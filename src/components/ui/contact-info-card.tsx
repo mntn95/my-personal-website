@@ -18,6 +18,14 @@ interface ContactInfoCardProps {
  * Displays contact details with icon, title, and value
  * Can be used as a link or static display
  *
+ * @param icon - Lucide icon component to display
+ * @param title - Title/label for the contact information
+ * @param value - Contact value (email, address, etc.)
+ * @param href - Optional URL to make the card clickable
+ * @param target - Link target attribute (defaults to undefined)
+ * @param rel - Link rel attribute (defaults to undefined)
+ * @param className - Optional additional CSS classes
+ *
  * @example
  * <ContactInfoCard
  *   icon={Mail}

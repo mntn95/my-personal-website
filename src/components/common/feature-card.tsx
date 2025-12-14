@@ -10,6 +10,7 @@ interface FeatureCardProps {
   hover?: boolean;
   className?: string;
   style?: React.CSSProperties;
+  id?: string;
   // Animation props
   animationEnabled?: boolean;
   animationIndex?: number;
@@ -46,6 +47,7 @@ const FeatureCard = ({
   hover = true,
   className,
   style,
+  id,
   animationEnabled = true,
   animationIndex,
   animationDelayStep = 0.1,
@@ -86,6 +88,7 @@ const FeatureCard = ({
 
   return (
     <motion.div
+      id={id}
       className={animationClassName}
       style={{ scrollMarginTop: "100px" }}
       initial="initial"

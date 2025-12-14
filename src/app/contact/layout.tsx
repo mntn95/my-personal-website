@@ -1,29 +1,29 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import { getTranslations, getLocale } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Contact - Mathieu Nguyen | Get in Touch",
-  description:
-    "Get in touch with Mathieu Nguyen for web development projects, collaboration opportunities, or inquiries. Based in Paris, available for remote work worldwide.",
-  keywords: [
-    "contact front-end developer",
-    "hire react developer",
-    "freelance web developer contact",
-    "paris web developer",
-    "remote developer",
-    "contact mathieu nguyen",
-    "mathieu nguyen contact",
-    "mathieu nguyen contact page",
-    "mathieu nguyen contact section",
-    "mathieu nguyen contact section page",
-    "mathieu nguyen contact section page",
-  ],
-  openGraph: {
-    title: "Contact - Mathieu Nguyen",
-    description:
-      "Get in touch for web development projects and collaboration opportunities.",
-    type: "website",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const t = await getTranslations("ContactPage.metadata");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: t.raw("keywords") as string[],
+    openGraph: {
+      title: t("openGraph.title"),
+      description: t("openGraph.description"),
+      type: "website",
+      locale: locale,
+    },
+    alternates: {
+      canonical: "/contact",
+      languages: {
+        en: "/contact",
+        fr: "/contact",
+      },
+    },
+  };
+}
 
 const ContactLayout = ({
   children,

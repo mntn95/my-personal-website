@@ -4,6 +4,14 @@ import { getTranslations } from "next-intl/server";
 import { FeatureCard, IconWrapper } from "@/components/common";
 import { SectionLayout } from "@/components/layouts/section-layout";
 
+/**
+ * Contact section component for the home page
+ * Displays a call-to-action card with link to contact page
+ * Used in the Home page
+ *
+ * @async
+ * @returns Promise resolving to React element
+ */
 const Contact = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("HomePage.contact");
 

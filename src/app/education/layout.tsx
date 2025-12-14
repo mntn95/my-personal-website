@@ -1,28 +1,29 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import { getTranslations, getLocale } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Education - Mathieu Nguyen | Front-End Developer",
-  description:
-    "Explore the educational background and professional training that shaped Mathieu Nguyen's journey as a front-end developer. 700-hour intensive program in modern web development.",
-  keywords: [
-    "web development education",
-    "react training",
-    "javascript certification",
-    "professional web developer",
-    "o'clock",
-    "mathieu nguyen education",
-    "mathieu nguyen education page",
-    "mathieu nguyen education section",
-    "mathieu nguyen education section page",
-    "mathieu nguyen education section page",
-  ],
-  openGraph: {
-    title: "Education - Mathieu Nguyen | Front-End Developer",
-    description:
-      "Explore the educational background and professional training that shaped my journey as a front-end developer.",
-    type: "profile",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const t = await getTranslations("EducationPage.metadata");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: t.raw("keywords") as string[],
+    openGraph: {
+      title: t("openGraph.title"),
+      description: t("openGraph.description"),
+      type: "profile",
+      locale: locale,
+    },
+    alternates: {
+      canonical: "/education",
+      languages: {
+        en: "/education",
+        fr: "/education",
+      },
+    },
+  };
+}
 
 const EducationLayout = ({
   children,

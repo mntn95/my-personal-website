@@ -28,9 +28,7 @@ const FormFields = ({
 
   return (
     <>
-      {/* Name and Email Row */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {/* Name Field */}
         <Input
           label={t("yourName")}
           icon={User}
@@ -41,7 +39,6 @@ const FormFields = ({
           placeholder={t("namePlaceholder")}
         />
 
-        {/* Email Field */}
         <Input
           label={t("email")}
           icon={Mail}
@@ -53,7 +50,6 @@ const FormFields = ({
         />
       </div>
 
-      {/* Subject Field */}
       <Input
         label={t("subject")}
         icon={FileText}
@@ -64,7 +60,6 @@ const FormFields = ({
         placeholder={t("subjectPlaceholder")}
       />
 
-      {/* Message Field */}
       <Textarea
         label={t("message")}
         icon={MessageSquare}
@@ -75,7 +70,6 @@ const FormFields = ({
         placeholder={t("messagePlaceholder")}
       />
 
-      {/* Submit Button */}
       <div className="pt-2">
         <Button
           type="submit"
@@ -92,10 +86,8 @@ const FormFields = ({
         </Button>
       </div>
 
-      {/* Status Messages */}
       <StatusMessages submitStatus={submitStatus} />
 
-      {/* Privacy Notice */}
       <p className="text-xs text-gray-400 text-center">{t("privacyNotice")}</p>
     </>
   );

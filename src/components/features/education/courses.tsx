@@ -10,6 +10,9 @@ import { getMotionDelay } from "@/lib/motion/utils";
  * Key courses section component
  * Displays a grid of courses completed during education
  * Used in the Education page
+ *
+ * @async
+ * @returns Promise resolving to React element
  */
 const Courses = async (): Promise<React.ReactElement> => {
   const t = await getTranslations();

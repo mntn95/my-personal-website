@@ -10,6 +10,9 @@ import { TypingText } from "./typing-text";
  * Hero content component
  * Displays title, typing text, description, and action buttons
  * Used in the Hero component
+ *
+ * @async
+ * @returns Promise resolving to React element
  */
 const HeroContent = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("HomePage.hero");

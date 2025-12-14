@@ -21,7 +21,6 @@ const ContactInfo = (): React.ReactElement => {
         </h2>
 
         <div className="space-y-4 mb-6">
-          {/* Email */}
           <ContactInfoCard
             icon={Mail}
             title={t("email")}
@@ -29,7 +28,6 @@ const ContactInfo = (): React.ReactElement => {
             href="mailto:mathieu.nguyen@proton.me"
           />
 
-          {/* Location */}
           <ContactInfoCard
             icon={MapPin}
             title={t("location")}
@@ -40,7 +38,6 @@ const ContactInfo = (): React.ReactElement => {
           />
         </div>
 
-        {/* Social Media */}
         <div>
           <h3 className="mb-3 text-teal-500 font-medium">{t("socialMedia")}</h3>
           <div className="flex gap-3">
@@ -62,7 +59,6 @@ const ContactInfo = (): React.ReactElement => {
         </div>
       </FeatureCard>
 
-      {/* Response Time */}
       <FeatureCard variant="elevated" hover className="p-4">
         <h3 className="mb-2 text-teal-500 font-medium">{t("responseTime")}</h3>
         <p className="text-sm text-gray-400">{t("responseTimeDescription")}</p>

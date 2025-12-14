@@ -6,6 +6,9 @@ import { fadeInUp } from "@/lib/motion/variants";
 /**
  * Soft skills section component displaying interpersonal and professional skills
  * Used in the About page
+ *
+ * @async
+ * @returns Promise resolving to React element
  */
 const SoftSkillsSection = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("AboutPage.softSkills");

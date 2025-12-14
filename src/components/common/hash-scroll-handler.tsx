@@ -4,8 +4,9 @@ import { useEffect } from "react";
 
 /**
  * Hash scroll handler component
- * Handles scrolling to anchor links on page load
+ * Handles scrolling to anchor links on page load with offset for fixed navigation
  * Used in pages that need hash-based navigation (e.g., /services#web-development)
+ * Scrolls to element position minus 200px offset to account for fixed navigation
  */
 export const HashScrollHandler = (): null => {
   useEffect(() => {
@@ -19,13 +20,15 @@ export const HashScrollHandler = (): null => {
       const element = document.getElementById(id);
       if (!element) return;
 
-      element.scrollIntoView({
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - 200;
+
+      window.scrollTo({
+        top: offsetPosition,
         behavior: "smooth",
-        block: "start",
       });
     }, 100);
   }, []);
 
   return null;
 };
-

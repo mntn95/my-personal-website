@@ -8,6 +8,9 @@ import { Badge } from "@/components/ui";
  * Projects grid component displaying featured projects
  * Shows project cards with image, title, description, and tags
  * Used in the Projects component
+ *
+ * @async
+ * @returns Promise resolving to React element
  */
 const ProjectsGrid = async (): Promise<React.ReactElement> => {
   const t = await getTranslations();

@@ -3,31 +3,40 @@ import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface SocialLinkProps {
-	href: string;
-	icon: LucideIcon;
-	label: string;
-	variant?: "square" | "rounded";
-	size?: "sm" | "md" | "lg";
-	className?: string;
-	target?: "_blank" | undefined;
-	rel?: "noopener noreferrer" | undefined;
+  href: string;
+  icon: LucideIcon;
+  label: string;
+  variant?: "square" | "rounded";
+  size?: "sm" | "md" | "lg";
+  className?: string;
+  target?: "_blank" | undefined;
+  rel?: "noopener noreferrer" | undefined;
 }
 
 const sizeClasses = {
-	sm: "w-8 h-8",
-	md: "w-10 h-10",
-	lg: "w-12 h-12",
+  sm: "w-8 h-8",
+  md: "w-10 h-10",
+  lg: "w-12 h-12",
 };
 
 const iconSizeClasses = {
-	sm: "h-4 w-4",
-	md: "h-5 w-5",
-	lg: "h-6 w-6",
+  sm: "h-4 w-4",
+  md: "h-5 w-5",
+  lg: "h-6 w-6",
 };
 
 /**
  * Social link component for displaying social media icons
  * Supports square and rounded variants with different sizes
+ *
+ * @param href - URL to navigate to
+ * @param icon - Lucide icon component to display
+ * @param label - Accessible label for the link
+ * @param variant - Visual variant: "square" or "rounded" (default: "square")
+ * @param size - Size variant: "sm", "md", or "lg" (default: "md")
+ * @param className - Optional additional CSS classes
+ * @param target - Link target attribute (defaults to "_blank" for non-email links)
+ * @param rel - Link rel attribute (defaults to "noopener noreferrer" for non-email links)
  *
  * @example
  * <SocialLink
@@ -39,38 +48,39 @@ const iconSizeClasses = {
  * />
  */
 export const SocialLink = ({
-	href,
-	icon: Icon,
-	label,
-	variant = "square",
-	size = "md",
-	className,
-	target,
-	rel,
+  href,
+  icon: Icon,
+  label,
+  variant = "square",
+  size = "md",
+  className,
+  target,
+  rel,
 }: SocialLinkProps): React.ReactElement => {
-	// Email links should not have target="_blank"
-	const isEmail = href.startsWith("mailto:");
-	const finalTarget = target !== undefined ? target : isEmail ? undefined : "_blank";
-	const finalRel = rel !== undefined ? rel : isEmail ? undefined : "noopener noreferrer";
+  // Email links should not have target="_blank"
+  const isEmail = href.startsWith("mailto:");
+  const finalTarget =
+    target !== undefined ? target : isEmail ? undefined : "_blank";
+  const finalRel =
+    rel !== undefined ? rel : isEmail ? undefined : "noopener noreferrer";
 
-	return (
-		<a
-			href={href}
-			target={finalTarget}
-			rel={finalRel}
-			className={cn(
-				"flex items-center justify-center",
-				variant === "rounded"
-					? "text-gray-400 hover:text-teal-500 transition-colors bg-card-bg p-3 rounded-full hover:scale-110"
-					: "bg-card-border rounded-lg hover:bg-teal-500 hover:text-white transition-all duration-300",
-				"cursor-pointer",
-				sizeClasses[size],
-				className
-			)}
-			aria-label={label}
-		>
-			<Icon className={iconSizeClasses[size]} />
-		</a>
-	);
+  return (
+    <a
+      href={href}
+      target={finalTarget}
+      rel={finalRel}
+      className={cn(
+        "flex items-center justify-center",
+        variant === "rounded"
+          ? "text-gray-400 hover:text-teal-500 transition-colors bg-card-bg p-3 rounded-full hover:scale-110"
+          : "bg-card-border rounded-lg hover:bg-teal-500 hover:text-white transition-all duration-300",
+        "cursor-pointer",
+        sizeClasses[size],
+        className
+      )}
+      aria-label={label}
+    >
+      <Icon className={iconSizeClasses[size]} />
+    </a>
+  );
 };
-

@@ -13,6 +13,11 @@ interface IconWrapperProps {
  * Consistent icon wrapper with background and styling
  * Replaces 8+ duplicate icon container patterns
  *
+ * @param icon - Lucide icon component to display
+ * @param size - Size variant: "sm", "md", or "lg" (default: "md")
+ * @param className - Optional additional CSS classes
+ * @param isCentered - Whether to center the icon horizontally (default: false)
+ *
  * @example
  * <IconWrapper icon={Code} size="md" />
  */

@@ -16,6 +16,11 @@ interface ServiceCardProps {
  * Service card component displaying detailed service information
  * Shows icon, title, subtitle, description, approach/what's included, technologies, and examples
  * Used in the Services page
+ *
+ * @async
+ * @param service - Detailed service data to display
+ * @param index - Index of the service card for animation sequencing
+ * @returns Promise resolving to React element
  */
 const ServiceCard = async ({
   service,
@@ -36,15 +41,13 @@ const ServiceCard = async ({
 
   return (
     <FeatureCard
+      id={service.serviceId || service.id}
       variant="default"
       hover
       className="p-4 sm:p-8 flex flex-col hover:bg-card-hover"
       animationIndex={index}
     >
-      <div
-        id={service.serviceId || service.id}
-        className="flex flex-col lg:flex-row lg:items-start"
-      >
+      <div className="flex flex-col lg:flex-row lg:items-start">
         <div className="mb-4 lg:mb-0 lg:mr-4 flex-shrink-0 self-center lg:self-auto">
           <IconWrapper icon={service.icon} size="lg" />
         </div>

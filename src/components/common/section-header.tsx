@@ -15,6 +15,12 @@ interface SectionHeaderProps {
  * Reusable section header component with consistent styling
  * Used across homepage sections (About, Skills, Projects, Contact)
  *
+ * @param title - Section title text
+ * @param description - Section description text
+ * @param className - Optional additional CSS classes for the container
+ * @param titleClassName - Optional additional CSS classes for the title
+ * @param descriptionClassName - Optional additional CSS classes for the description
+ *
  * @example
  * <SectionHeader
  *   title="Featured Projects"

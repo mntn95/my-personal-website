@@ -74,7 +74,7 @@ export const recordSubmission = (ip: string): void => {
 
 /**
  * Periodic cleanup function to remove old entries and prevent memory growth
- * Should be called periodically (e.g., every hour)
+ * Should be called periodically (e.g., every 30 minutes)
  */
 export const cleanupOldEntries = (): void => {
   const now = Date.now();

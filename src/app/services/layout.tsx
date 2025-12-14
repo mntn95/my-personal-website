@@ -1,29 +1,29 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import { getTranslations, getLocale } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Services - Mathieu Nguyen | Front-End Development Services",
-  description:
-    "Professional front-end development services including custom website creation, team collaboration, and ongoing maintenance & support. Quality web solutions tailored to your needs.",
-  keywords: [
-    "web development services",
-    "custom website creation",
-    "front-end collaboration",
-    "website maintenance",
-    "react development services",
-    "freelance developer",
-    "mathieu nguyen services",
-    "mathieu nguyen services page",
-    "mathieu nguyen services section",
-    "mathieu nguyen services section page",
-    "mathieu nguyen services section page",
-  ],
-  openGraph: {
-    title: "Services - Mathieu Nguyen | Front-End Development Services",
-    description:
-      "Professional front-end development services: custom websites, team collaboration, and maintenance support.",
-    type: "website",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const t = await getTranslations("ServicesPage.metadata");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: t.raw("keywords") as string[],
+    openGraph: {
+      title: t("openGraph.title"),
+      description: t("openGraph.description"),
+      type: "website",
+      locale: locale,
+    },
+    alternates: {
+      canonical: "/services",
+      languages: {
+        en: "/services",
+        fr: "/services",
+      },
+    },
+  };
+}
 
 const ServicesLayout = ({
   children,

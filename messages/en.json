@@ -45,6 +45,37 @@
       "title": "Let's Work Together",
       "description": "I'm currently available for freelance work and open to new opportunities. If you have a project in mind or want to collaborate, let's connect!",
       "getInTouch": "Get in Touch"
+    },
+    "metadata": {
+      "title": "Mathieu Nguyen - Front-End Web Developer",
+      "description": "Freelance Front-End Web Developer with 7 years of experience creating high-performance, intuitive, and maintainable web interfaces using React, Next.js, and TypeScript.",
+      "keywords": [
+        "Front-End Developer",
+        "Web Developer",
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Freelance",
+        "front-end developer",
+        "react developer",
+        "nextjs developer",
+        "typescript",
+        "web developer",
+        "freelance developer",
+        "Website Development",
+        "Web Development",
+        "Web Design",
+        "Web Development Services",
+        "Web Development Company",
+        "Web Development Agency",
+        "Web Development Freelancer",
+        "Web Development Consultant",
+        "Web Development Expert"
+      ],
+      "openGraph": {
+        "title": "Mathieu Nguyen - Front-End Web Developer",
+        "description": "Freelance Front-End Web Developer specializing in React, Next.js, and modern web technologies"
+      }
     }
   },
   "Navigation": {
@@ -138,6 +169,29 @@
         "title": "Critical Thinking",
         "description": "Analytical evaluation of solutions and approaches"
       }
+    },
+    "metadata": {
+      "title": "About Me - Mathieu Nguyen | Front-End Developer",
+      "description": "Learn about Mathieu Nguyen, a Freelance Front-End Developer with 7 years of experience in React, Next.js, and TypeScript. Discover my skills, experience, and what drives my passion for web development.",
+      "keywords": [
+        "front-end developer",
+        "react developer",
+        "nextjs developer",
+        "typescript",
+        "web developer",
+        "freelance developer",
+        "mathieu nguyen",
+        "about me",
+        "about mathieu nguyen",
+        "mathieu nguyen about",
+        "mathieu nguyen about me",
+        "mathieu nguyen about page",
+        "mathieu nguyen about section"
+      ],
+      "openGraph": {
+        "title": "About Me - Mathieu Nguyen | Front-End Developer",
+        "description": "Learn about my journey as a Front-End Developer with expertise in React, Next.js, and modern web technologies."
+      }
     }
   },
   "EducationPage": {
@@ -191,6 +245,24 @@
         "label": "Methodology",
         "content": "Agile development with weekly sprints and systematic code reviews, ensuring high-quality collaborative development."
       }
+    },
+    "metadata": {
+      "title": "Education - Mathieu Nguyen | Front-End Developer",
+      "description": "Explore the educational background and professional training that shaped Mathieu Nguyen's journey as a front-end developer. 700-hour intensive program in modern web development.",
+      "keywords": [
+        "web development education",
+        "react training",
+        "javascript certification",
+        "professional web developer",
+        "o'clock",
+        "mathieu nguyen education",
+        "mathieu nguyen education page",
+        "mathieu nguyen education section"
+      ],
+      "openGraph": {
+        "title": "Education - Mathieu Nguyen | Front-End Developer",
+        "description": "Explore the educational background and professional training that shaped my journey as a front-end developer."
+      }
     }
   },
   "ProjectsPage": {
@@ -210,6 +282,25 @@
       "5": "Website for a vintage-inspired barber shop offering a modern booking system.",
       "6": "The digital showcase of a Mediterranean cuisine restaurant.",
       "7": "A landing page dedicated to organizing guided tours in Paris."
+    },
+    "metadata": {
+      "title": "Projects - Mathieu Nguyen | Portfolio & Web Development Projects",
+      "description": "Explore my portfolio of web development projects built with React, Next.js, TypeScript, and modern web technologies. See examples of responsive websites, web applications, and more.",
+      "keywords": [
+        "web development portfolio",
+        "react projects",
+        "nextjs projects",
+        "typescript projects",
+        "web applications",
+        "portfolio",
+        "mathieu nguyen projects",
+        "mathieu nguyen projects page",
+        "mathieu nguyen projects section"
+      ],
+      "openGraph": {
+        "title": "Projects - Mathieu Nguyen | Portfolio",
+        "description": "Explore my portfolio of web development projects built with modern technologies."
+      }
     }
   },
   "ServicesPage": {
@@ -313,6 +404,25 @@
       "whatsIncluded": "What's Included",
       "technologiesUsed": "Technologies Used",
       "examples": "Examples"
+    },
+    "metadata": {
+      "title": "Services - Mathieu Nguyen | Front-End Development Services",
+      "description": "Professional front-end development services including custom website creation, team collaboration, and ongoing maintenance & support. Quality web solutions tailored to your needs.",
+      "keywords": [
+        "web development services",
+        "custom website creation",
+        "front-end collaboration",
+        "website maintenance",
+        "react development services",
+        "freelance developer",
+        "mathieu nguyen services",
+        "mathieu nguyen services page",
+        "mathieu nguyen services section"
+      ],
+      "openGraph": {
+        "title": "Services - Mathieu Nguyen | Front-End Development Services",
+        "description": "Professional front-end development services: custom websites, team collaboration, and maintenance support."
+      }
     }
   },
   "ContactPage": {
@@ -341,6 +451,25 @@
       "privacyNotice": "I value your privacy. Your information will never be shared with third parties.",
       "successMessage": "Thank you for your message! I'll get back to you soon.",
       "errorMessage": "Something went wrong. Please try again later."
+    },
+    "metadata": {
+      "title": "Contact - Mathieu Nguyen | Get in Touch",
+      "description": "Get in touch with Mathieu Nguyen for web development projects, collaboration opportunities, or inquiries. Based in Paris, available for remote work worldwide.",
+      "keywords": [
+        "contact front-end developer",
+        "hire react developer",
+        "freelance web developer contact",
+        "paris web developer",
+        "remote developer",
+        "contact mathieu nguyen",
+        "mathieu nguyen contact",
+        "mathieu nguyen contact page",
+        "mathieu nguyen contact section"
+      ],
+      "openGraph": {
+        "title": "Contact - Mathieu Nguyen",
+        "description": "Get in touch for web development projects and collaboration opportunities."
+      }
     }
   },
   "Footer": {

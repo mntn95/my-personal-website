@@ -2,6 +2,13 @@ import { getTranslations } from "next-intl/server";
 import { socialLinks } from "@/data/social-links";
 import { SocialLink } from "@/components/ui";
 
+/**
+ * Footer component displaying site branding, description, and social links
+ * Used across all pages
+ *
+ * @async
+ * @returns Promise resolving to React element
+ */
 const Footer = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("Footer");
 

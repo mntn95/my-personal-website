@@ -7,6 +7,9 @@ import { educationData } from "@/data/education";
  * Education component displaying education history
  * Shows degree, institution, field, duration, location, grade, and highlights
  * Used in the Education page
+ *
+ * @async
+ * @returns Promise resolving to React element
  */
 const Education = async (): Promise<React.ReactElement> => {
   const t = await getTranslations();

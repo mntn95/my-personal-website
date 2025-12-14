@@ -9,6 +9,9 @@ import { ProjectDetailItem } from "./project-detail-item";
  * Graduation project section component
  * Displays details about the graduation project with image
  * Used in the Education page
+ *
+ * @async
+ * @returns Promise resolving to React element
  */
 const GraduationProject = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("EducationPage.graduationProject");
@@ -50,7 +53,7 @@ const GraduationProject = async (): Promise<React.ReactElement> => {
           </div>
 
           {/* Image - Right Side */}
-          <div className="relative h-full min-h-[300px] lg:min-h-[400px]">
+          <div className="hidden md:block relative h-full min-h-[300px] lg:min-h-[400px]">
             <ImageWithFallback
               src="/images/graduation_project.png"
               alt="Interactive RPG Platform - Game Board Interface"

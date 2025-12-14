@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { MotionConfig } from "motion/react";
 import { Navigation } from "@/components/layouts/navigation";
 import { Footer } from "@/components/layouts/footer";
@@ -18,41 +18,30 @@ const inter = Inter({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Mathieu Nguyen - Front-End Web Developer",
-  description:
-    "Freelance Front-End Web Developer with 7 years of experience creating high-performance, intuitive, and maintainable web interfaces using React, Next.js, and TypeScript.",
-  keywords: [
-    "Front-End Developer",
-    "Web Developer",
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Freelance",
-    "front-end developer",
-    "react developer",
-    "nextjs developer",
-    "typescript",
-    "web developer",
-    "freelance developer",
-    "Website Development",
-    "Web Development",
-    "Web Design",
-    "Web Development Services",
-    "Web Development Company",
-    "Web Development Agency",
-    "Web Development Freelancer",
-    "Web Development Consultant",
-    "Web Development Expert",
-  ],
-  authors: [{ name: "Mathieu Nguyen" }],
-  openGraph: {
-    title: "Mathieu Nguyen - Front-End Web Developer",
-    description:
-      "Freelance Front-End Web Developer specializing in React, Next.js, and modern web technologies",
-    type: "website",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const t = await getTranslations("HomePage.metadata");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: t.raw("keywords") as string[],
+    authors: [{ name: "Mathieu Nguyen" }],
+    openGraph: {
+      title: t("openGraph.title"),
+      description: t("openGraph.description"),
+      type: "website",
+      locale: locale,
+    },
+    alternates: {
+      canonical: "/",
+      languages: {
+        en: "/",
+        fr: "/",
+      },
+    },
+  };
+}
 
 const RootLayout = async ({
   children,

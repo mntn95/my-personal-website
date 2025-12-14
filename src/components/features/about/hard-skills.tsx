@@ -8,6 +8,9 @@ import { fadeInUp } from "@/lib/motion/variants";
 /**
  * Hard skills section component displaying technical skills with badges
  * Used in the About page
+ *
+ * @async
+ * @returns Promise resolving to React element
  */
 const HardSkillsSection = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("AboutPage.hardSkills");
@@ -43,8 +46,8 @@ const HardSkillsSection = async (): Promise<React.ReactElement> => {
                 skill.color === "teal"
                   ? "teal"
                   : skill.color === "blue"
-                  ? "purple"
-                  : "green"
+                    ? "purple"
+                    : "green"
               }
               size="sm"
             >

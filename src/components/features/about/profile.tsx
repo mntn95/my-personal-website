@@ -6,6 +6,9 @@ import { fadeInLeft } from "@/lib/motion/variants";
 /**
  * Profile section component displaying profile image and introduction text
  * Used in the About page
+ *
+ * @async
+ * @returns Promise resolving to React element
  */
 const ProfileSection = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("AboutPage.profile");

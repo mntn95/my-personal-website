@@ -10,6 +10,15 @@ interface PageLayoutProps {
   children: React.ReactNode;
 }
 
+/**
+ * Page layout component with header, hash scroll handling, and scroll wrapper
+ * Provides consistent page structure with translations support
+ *
+ * @async
+ * @param translationsKey - Translation key for page header (badge, title, description)
+ * @param children - Page content to render
+ * @returns Promise resolving to React element
+ */
 const PageLayout = async ({
   translationsKey,
   children,

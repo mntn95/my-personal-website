@@ -8,6 +8,9 @@ import { fadeInUp } from "@/lib/motion/variants";
 /**
  * More About Me section component displaying personal interests, philosophy, education, and goals
  * Used in the About page
+ *
+ * @async
+ * @returns Promise resolving to React element
  */
 const MoreAboutMeSection = async (): Promise<React.ReactElement> => {
   const t = await getTranslations();

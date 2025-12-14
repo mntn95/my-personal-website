@@ -24,7 +24,7 @@ const validateRequestBodySize = async (
     const size = parseInt(contentLength, 10);
     return !isNaN(size) && size <= MAX_REQUEST_BODY_SIZE;
   }
-  return true; // If no content-length header, proceed (Next.js will handle it)
+  return true;
 };
 
 /**
@@ -97,8 +97,8 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
         error instanceof Error && error.message.includes("too large")
           ? "Request is too large. Please reduce the message size."
           : error instanceof Error && error.message.includes("JSON")
-          ? "Invalid request format."
-          : "Please check your form and try again.";
+            ? "Invalid request format."
+            : "Please check your form and try again.";
 
       return createErrorResponse(message, 400, error);
     }
@@ -116,9 +116,8 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     }
 
     // Send notification email (critical - must succeed)
-    const notificationResult = await emailService.sendNotificationEmail(
-      formData
-    );
+    const notificationResult =
+      await emailService.sendNotificationEmail(formData);
 
     if (notificationResult.error) {
       return createErrorResponse(

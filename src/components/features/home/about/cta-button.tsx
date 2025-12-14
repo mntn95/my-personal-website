@@ -9,6 +9,9 @@ import { getMotionFixedDelay } from "@/lib/motion/utils";
  * CTA button component for About section
  * Links to the full about page
  * Used in the About component
+ *
+ * @async
+ * @returns Promise resolving to React element
  */
 const CTAButton = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("HomePage.about");

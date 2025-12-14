@@ -55,8 +55,8 @@ const FilterBar = ({
   return (
     <div className="mb-12">
       <FeatureCard variant="elevated" hover={false}>
-        <div className="flex flex-col md:flex-row gap-6 items-center justify-between">
-          <div className="flex flex-col lg:flex-row items-start md:items-center w-full :w-auto gap-3 md:gap-0">
+        <div className="flex flex-col xl:flex-row gap-6 items-center justify-between">
+          <div className="flex flex-col xl:flex-row items-start xl:items-center w-full :w-auto gap-3 xl:gap-0">
             <div className="flex items-center">
               <Filter className="mr-2 h-5 w-5 text-gray-400" />
               <span className="mr-4 text-white font-medium text-sm">
@@ -78,7 +78,7 @@ const FilterBar = ({
               ))}
             </div>
           </div>
-          <div className="w-full md:w-64">
+          <div className="w-full xl:w-64">
             <Input
               icon={Search}
               type="text"

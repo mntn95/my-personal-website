@@ -158,10 +158,9 @@ export const fadeOutDown: Variants = {
 export const scrollDot: Variants = {
   animate: {
     opacity: [0, 1, 1, 0],
-    y: [20, 0, 0, 20],
+    y: [0, 20, 0, 20, 0],
     transition: {
-      duration: 2,
-      ease: "easeInOut",
+      duration: 4,
       repeat: Infinity,
       repeatType: "loop",
       times: [0, 0.2, 0.8, 1],
@@ -178,7 +177,7 @@ export const scrollIndicator: Variants = {
     opacity: [0, 1, 1, 0],
     y: [20, 0, 0, 20],
     transition: {
-      duration: 3,
+      duration: 4,
       ease: "easeInOut",
       repeat: Infinity,
       repeatType: "loop",
