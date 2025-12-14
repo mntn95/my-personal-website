@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { projects } from "@/data/projects";
-import { PageHeader, ScrollTriggeredAnimation } from "@/components/common";
+import { PageLayout } from "@/components/common";
 import { FilterBar, ProjectsGrid } from "@/components/features/projects";
 
 type TagFilter =
@@ -48,29 +48,16 @@ const Projects = (): React.ReactElement => {
   });
 
   return (
-    <div className="min-h-screen relative z-10">
-      <div className="pt-32 pb-16">
-        <div className="container mx-auto px-4 lg:px-8">
-          {/* Header */}
-          <PageHeader
-            badge={t("badge")}
-            title={t("title")}
-            description={t("description")}
-          />
+    <PageLayout translationsKey="ProjectsPage">
+      <FilterBar
+        selectedTag={selectedTag}
+        onTagChange={setSelectedTag}
+        searchQuery={searchQuery}
+        onSearchChange={setSearchQuery}
+      />
 
-          <ScrollTriggeredAnimation>
-            <FilterBar
-              selectedTag={selectedTag}
-              onTagChange={setSelectedTag}
-              searchQuery={searchQuery}
-              onSearchChange={setSearchQuery}
-            />
-
-            <ProjectsGrid projects={filteredProjects} />
-          </ScrollTriggeredAnimation>
-        </div>
-      </div>
-    </div>
+      <ProjectsGrid projects={filteredProjects} />
+    </PageLayout>
   );
 };
 

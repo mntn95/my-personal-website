@@ -1,32 +1,13 @@
-import { getTranslations } from "next-intl/server";
-import { PageHeader, ScrollTriggeredAnimation } from "@/components/common";
+import { PageLayout } from "@/components/common";
 import { ContactInfo, ContactForm } from "@/components/features/contact";
 
-const Contact = async (): Promise<React.ReactElement> => {
-  const t = await getTranslations("ContactPage");
-
-  return (
-    <div className="min-h-screen relative z-10">
-      <div className="pt-24 pb-16 min-h-screen flex items-center">
-        <div className="container mx-auto px-4 max-w-6xl">
-          {/* Header */}
-          <PageHeader
-            badge={t("badge")}
-            title={t("title")}
-            description={t("description")}
-          />
-
-          <ScrollTriggeredAnimation>
-            {/* Two Column Layout */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              <ContactInfo />
-              <ContactForm />
-            </div>
-          </ScrollTriggeredAnimation>
-        </div>
-      </div>
+const Contact = (): React.ReactElement => (
+  <PageLayout translationsKey="ContactPage">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <ContactInfo />
+      <ContactForm />
     </div>
-  );
-};
+  </PageLayout>
+);
 
 export default Contact;

@@ -12,5 +12,7 @@ export * from "./particle-background";
 export * from "./icon-wrapper";
 export * from "./loading";
 export * from "./page-header";
+export * from "./page-layout";
 export * from "./section-header";
 export * from "./scroll-triggered-animation";
+export * from "./scroll-wrapper";

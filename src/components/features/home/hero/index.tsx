@@ -2,7 +2,7 @@ import { FloatingIcons } from "@/components/common/floating-icons";
 import { GradientOrbs } from "./gradient-orbs";
 import { HeroContent } from "./hero-content";
 import { SkillsGrid } from "./skills-grid";
-import { ScrollIndicator } from "./scroll-indicator";
+import { ScrollIndicator } from "@/components/ui/scroll-indicator";
 
 /**
  * Hero section component
@@ -24,8 +24,7 @@ const Hero = (): React.ReactElement => {
           <SkillsGrid />
         </div>
       </div>
-
-      <ScrollIndicator />
+      <ScrollIndicator className="bottom-8" />
     </div>
   );
 };
