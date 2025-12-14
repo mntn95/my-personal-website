@@ -62,10 +62,10 @@
     "profile": {
       "whoAmI": "Qui suis-je ?",
       "intro1": "Je suis",
-      "intro2": "Développeur Web depuis 7 ans, je réalise vos ambitions digitales en développant des solutions web sur mesure et optimisées.",
-      "intro3": "J'ai commencé à coder par l'envie de résoudre des problèmes et créer des outils que les gens peuvent utiliser et apprécier. Très rapidement, je me suis spécialisé dans le développement front-end, avec un focus particulier sur React et son écosystème. J'ai appris à maîtriser l'ensemble des technologies et outils permettant de construire des sites web de A à Z ou de m'intégrer efficacement au sein d'équipes techniques.",
-      "intro4": "De mes premiers postes chez Alain Afflelou et Extia jusqu'à mon activité freelance actuelle, j'ai conçu et maintenu des applications web privilégiant rapidité, accessibilité et fiabilité, tout en participant aux discussions d'architecture, aux revues de code et aux optimisations de performance.",
-      "intro5": "Quand je ne développe pas de sites web, j'aime explorer de nouvelles technologies, expérimenter des outils d'IA générative ou contribuer à des projets personnels. En dehors du travail, je pratique le sport, notamment le CrossFit et la boxe, je nourris ma passion pour l'histoire et la géopolitique, ou je me détends devant un bon jeu vidéo."
+      "intro2": "Développeur Web depuis 7 ans, je réalise des solutions web sur mesure et optimisées pour des entreprises ou des indépendants.",
+      "intro3": "J'ai commencé à coder par l'envie de résoudre des problèmes et créer des outils que les gens peuvent utiliser et apprécier. Très rapidement, je me suis spécialisé dans le développement front-end, avec un focus particulier sur React et son écosystème.",
+      "intro4": "D'Alain Afflelou à mon activité freelance, j'ai conçu des applications web privilégiant rapidité, accessibilité et fiabilité, tout en participant aux décisions d'architecture et d'optimisations de performance.",
+      "intro5": "En dehors du travail, je pratique le sport, notamment le CrossFit et la boxe, je nourris ma passion pour l'histoire et la géopolitique, ou je me détends devant un bon jeu vidéo."
     },
     "hardSkills": {
       "title": "Hard Skills",

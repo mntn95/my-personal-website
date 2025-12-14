@@ -62,10 +62,10 @@
     "profile": {
       "whoAmI": "Who am I?",
       "intro1": "I'm",
-      "intro2": "a Freelance Front-End Web Developer with 7 years of experience creating high-performance, intuitive, and maintainable web interfaces.",
-      "intro3": "I began coding driven by a love for problem-solving and building things that people can use and enjoy. Over time, I focused on front-end development and learned to master modern JavaScript ecosystems, full-stack frameworks, and advanced tooling.",
-      "intro4": "From my early roles at Alain Afflelou and Extia to my current freelance work, I've designed and maintained web applications that prioritize speed, accessibility, and reliability, while participating in architecture discussions, code reviews, and performance optimizations.",
-      "intro5": "When I'm not building websites, I enjoy exploring web technologies, experimenting with automation tools or contributing to personal projects. Outside work, I focus on sports, particularly CrossFit and boxing, nurture my passion for history and geopolitics, and unwind with video games from time to time."
+      "intro2": "Web Developer for 7 years, I create custom and optimized web solutions for companies or freelancers.",
+      "intro3": "I started coding out of a desire to solve problems and create tools that people can use and appreciate. Very quickly, I specialized in front-end development, with a particular focus on React and its ecosystem.",
+      "intro4": "From Alain Afflelou to my freelance activity, I've designed web applications prioritizing speed, accessibility, and reliability, while participating in architecture decisions and performance optimizations.",
+      "intro5": "Outside of work, I practice sports, particularly CrossFit and boxing, I nurture my passion for history and geopolitics, or I relax with a good video game."
     },
     "hardSkills": {
       "title": "Hard Skills",
