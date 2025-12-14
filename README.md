@@ -64,7 +64,7 @@ This portfolio serves as a professional showcase for connecting with business ow
 
 ### Prerequisites
 
-- **Node.js** 22 or lower (tested with Node 22)
+- **Node.js** 22
 - **pnpm** - Package manager ([Installation guide](https://pnpm.io/installation))
 
 ### Installation
