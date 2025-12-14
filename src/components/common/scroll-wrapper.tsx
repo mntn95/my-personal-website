@@ -30,7 +30,7 @@ const ScrollWrapper = ({
   children,
   threshold = 50,
   className,
-}: ScrollWrapperProps): React.ReactElement => {
+}: ScrollWrapperProps): React.ReactNode => {
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(true);
 
