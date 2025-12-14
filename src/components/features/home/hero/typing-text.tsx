@@ -56,7 +56,7 @@ const TypingText = (): React.ReactElement => {
 
   return (
     <motion.div
-      className="h-12 mb-6"
+      className="h-12 mb-2 md:mb-6"
       initial="initial"
       whileInView="animate"
       viewport={{ once: true, margin: "0px 0px -100px 0px" }}
@@ -64,7 +64,7 @@ const TypingText = (): React.ReactElement => {
       transition={getMotionFixedDelay(0.2)}
     >
       <span
-        className="text-2xl md:text-3xl text-gray-300"
+        className="text-xl md:text-3xl text-gray-300"
         style={{ fontWeight: 400 }}
       >
         {displayText}

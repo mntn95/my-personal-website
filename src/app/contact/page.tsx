@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { PageHeader } from "@/components/common";
+import { PageHeader, ScrollTriggeredAnimation } from "@/components/common";
 import { ContactInfo, ContactForm } from "@/components/features/contact";
 
 const Contact = async (): Promise<React.ReactElement> => {
@@ -16,11 +16,13 @@ const Contact = async (): Promise<React.ReactElement> => {
             description={t("description")}
           />
 
-          {/* Two Column Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <ContactInfo />
-            <ContactForm />
-          </div>
+          <ScrollTriggeredAnimation>
+            {/* Two Column Layout */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <ContactInfo />
+              <ContactForm />
+            </div>
+          </ScrollTriggeredAnimation>
         </div>
       </div>
     </div>

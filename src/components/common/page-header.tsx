@@ -37,7 +37,7 @@ const PageHeader = ({
       variants={fadeInUp}
     >
       {badge && (
-        <div className="mb-4">
+        <div className="my-8 md:mb-4">
           <Badge variant="outline" size="sm">
             {badge}
           </Badge>
@@ -45,7 +45,7 @@ const PageHeader = ({
       )}
       <h1 className="text-4xl md:text-5xl mb-6 font-bold">{title}</h1>
       <div className="max-w-3xl mx-auto">
-        <p className="text-lg text-gray-400 leading-relaxed font-normal">
+        <p className="text-gray-400 leading-relaxed font-normal">
           {description}
         </p>
       </div>

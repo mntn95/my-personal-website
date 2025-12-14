@@ -17,7 +17,7 @@ const HeroContent = async (): Promise<React.ReactElement> => {
   return (
     <div>
       <motion.h1
-        className="text-5xl md:text-6xl font-bold mb-2 leading-tight"
+        className="text-4xl md:text-6xl font-bold mb-2 leading-tight"
         style={{ fontWeight: 800 }}
         initial="initial"
         whileInView="animate"
@@ -32,7 +32,7 @@ const HeroContent = async (): Promise<React.ReactElement> => {
       <TypingText />
 
       <motion.p
-        className="text-base text-gray-400 mb-8 max-w-lg leading-relaxed text-justify"
+        className="text-base text-gray-400 mb-4 md:mb-8 max-w-lg leading-relaxed text-justify"
         style={{ fontWeight: 400 }}
         initial="initial"
         whileInView="animate"

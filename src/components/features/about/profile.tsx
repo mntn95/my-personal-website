@@ -1,6 +1,7 @@
+import * as motion from "motion/react-client";
 import { getTranslations } from "next-intl/server";
-import { ImageWithFallback } from "@/components/common/image-with-fallback";
-import { FeatureCard } from "@/components/common";
+import { ImageWithFallback } from "@/components/common";
+import { fadeInLeft } from "@/lib/motion/variants";
 
 /**
  * Profile section component displaying profile image and introduction text
@@ -11,13 +12,20 @@ const ProfileSection = async (): Promise<React.ReactElement> => {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
-      <div className="relative w-full h-120 rounded-lg overflow-hidden opacity-70">
-        <ImageWithFallback
-          src="/images/profile-pic.png"
-          alt="Profile"
-          className="w-full h-full object-contain rounded-full"
-        />
-      </div>
+      <motion.div
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+        variants={fadeInLeft}
+      >
+        <div className="relative w-full h-120 rounded-lg overflow-hidden opacity-70">
+          <ImageWithFallback
+            src="/images/profile-pic.png"
+            alt="Profile"
+            className="w-full h-full object-contain rounded-full"
+          />
+        </div>
+      </motion.div>
 
       <div className="flex flex-col justify-center">
         <h2 className="text-3xl mb-6 font-bold">{t("whoAmI")}</h2>

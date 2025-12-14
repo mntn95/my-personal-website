@@ -13,3 +13,4 @@ export * from "./icon-wrapper";
 export * from "./loading";
 export * from "./page-header";
 export * from "./section-header";
+export * from "./scroll-triggered-animation";

@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { PageHeader } from "@/components/common";
+import { PageHeader, ScrollTriggeredAnimation } from "@/components/common";
 import {
   ProfileSection,
   HardSkillsSection,
@@ -20,11 +20,12 @@ const AboutPage = async (): Promise<React.ReactElement> => {
             title={t("title")}
             description={t("description")}
           />
-
-          <ProfileSection />
-          <HardSkillsSection />
-          <SoftSkillsSection />
-          <MoreAboutMeSection />
+          <ScrollTriggeredAnimation>
+            <ProfileSection />
+            <HardSkillsSection />
+            <SoftSkillsSection />
+            <MoreAboutMeSection />
+          </ScrollTriggeredAnimation>
         </div>
       </div>
     </div>

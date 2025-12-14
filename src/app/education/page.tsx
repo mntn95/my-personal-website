@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { PageHeader } from "@/components/common";
+import { PageHeader, ScrollTriggeredAnimation } from "@/components/common";
 import {
   Education as EducationComponent,
   Courses,
@@ -20,9 +20,11 @@ const Education = async (): Promise<React.ReactElement> => {
             description={t("description")}
           />
 
-          <EducationComponent />
-          <Courses />
-          <GraduationProject />
+          <ScrollTriggeredAnimation>
+            <EducationComponent />
+            <Courses />
+            <GraduationProject />
+          </ScrollTriggeredAnimation>
         </div>
       </div>
     </div>

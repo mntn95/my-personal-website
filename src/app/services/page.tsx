@@ -1,5 +1,9 @@
 import { getTranslations } from "next-intl/server";
-import { PageHeader, HashScrollHandler } from "@/components/common";
+import {
+  PageHeader,
+  HashScrollHandler,
+  ScrollTriggeredAnimation,
+} from "@/components/common";
 import { ServicesList } from "@/components/features/services";
 
 const Services = async (): Promise<React.ReactElement> => {
@@ -17,9 +21,11 @@ const Services = async (): Promise<React.ReactElement> => {
             description={t("description")}
           />
 
-          <div className="space-y-8">
-            <ServicesList />
-          </div>
+          <ScrollTriggeredAnimation>
+            <div className="space-y-8">
+              <ServicesList />
+            </div>
+          </ScrollTriggeredAnimation>
         </div>
       </div>
     </div>

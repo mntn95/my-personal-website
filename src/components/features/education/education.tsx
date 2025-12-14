@@ -12,7 +12,7 @@ const Education = async (): Promise<React.ReactElement> => {
   const t = await getTranslations();
 
   return (
-    <div className="mb-24">
+    <div className="my-24">
       <div className="grid grid-cols-1 gap-8">
         <FeatureCard
           variant="default"
