@@ -347,5 +347,11 @@
     "description": "Building innovative digital solutions with a focus on clean, efficient code and exceptional user experiences.",
     "connectWithMe": "Connect with me",
     "copyright": "© 2025 Mathieu Nguyen All rights reserved."
+  },
+  "NotFound": {
+    "badge": "404",
+    "title": "Oops! That page can't be found",
+    "description": "The page you are looking for was maybe deleted or never existed...",
+    "buttonText": "Go To Home"
   }
 }
