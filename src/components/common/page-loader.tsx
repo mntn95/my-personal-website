@@ -13,12 +13,17 @@ const PageLoader = ({ children }: PageLoaderProps) => {
   const pathname = usePathname();
 
   useEffect(() => {
-    setIsLoading(true);
+    const rafId = requestAnimationFrame(() => {
+      setIsLoading(true);
+    });
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 800);
 
-    return () => clearTimeout(timer);
+    return () => {
+      cancelAnimationFrame(rafId);
+      clearTimeout(timer);
+    };
   }, [pathname]);
 
   if (isLoading) {

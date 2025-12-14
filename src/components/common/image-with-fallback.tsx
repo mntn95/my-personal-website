@@ -25,6 +25,7 @@ const ImageWithFallback = (
         style={style}
       >
         <div className="flex items-center justify-center w-full h-full">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={ERROR_IMG_SRC}
             alt="Error loading image"
@@ -37,14 +38,17 @@ const ImageWithFallback = (
   }
 
   return (
-    <img
-      src={src}
-      alt={alt}
-      className={className}
-      style={style}
-      {...rest}
-      onError={handleError}
-    />
+    <>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={src}
+        alt={alt}
+        className={className}
+        style={style}
+        {...rest}
+        onError={handleError}
+      />
+    </>
   );
 };
 

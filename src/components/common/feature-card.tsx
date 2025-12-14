@@ -1,6 +1,5 @@
 import React from "react";
 import * as motion from "motion/react-client";
-import type { Variants } from "motion/react";
 import { cn } from "@/lib/utils";
 import { fadeInUp } from "@/lib/motion/variants";
 import { getMotionDelay, getMotionFixedDelay } from "@/lib/motion/utils";

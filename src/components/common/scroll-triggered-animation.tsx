@@ -57,8 +57,12 @@ const ScrollTriggeredAnimation = ({
   useEffect(() => {
     // On desktop (md+), always show content immediately
     if (!isMobile) {
-      setHasScrolled(true);
-      return;
+      const rafId = requestAnimationFrame(() => {
+        setHasScrolled(true);
+      });
+      return () => {
+        cancelAnimationFrame(rafId);
+      };
     }
 
     // On mobile, use scroll trigger

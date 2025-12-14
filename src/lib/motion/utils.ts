@@ -1,5 +1,3 @@
-import { stagger } from 'motion/react'
-
 /**
  * Generate Motion transition delay for staggered animations
  *
@@ -14,14 +12,14 @@ import { stagger } from 'motion/react'
  * <motion.div transition={getMotionDelay(2, 0.2)}>Item 3 (slower)</motion.div>
  */
 export const getMotionDelay = (
-	index: number,
-	delayStep: number = 0.1,
-	baseDelay: number = 0
+  index: number,
+  delayStep: number = 0.1,
+  baseDelay: number = 0
 ): { delay: number } => {
-	return {
-		delay: baseDelay + index * delayStep,
-	}
-}
+  return {
+    delay: baseDelay + index * delayStep,
+  };
+};
 
 /**
  * Generate fixed Motion transition delay
@@ -33,10 +31,10 @@ export const getMotionDelay = (
  * <motion.div transition={getMotionFixedDelay(0.5)}>Delayed element</motion.div>
  */
 export const getMotionFixedDelay = (seconds: number): { delay: number } => {
-	return {
-		delay: seconds,
-	}
-}
+  return {
+    delay: seconds,
+  };
+};
 
 /**
  * Generate Motion stagger configuration for parent components
@@ -55,13 +53,11 @@ export const getMotionFixedDelay = (seconds: number): { delay: number } => {
  * </motion.div>
  */
 export const getMotionStagger = (
-	delayStep: number = 0.1,
-	baseDelay: number = 0
+  delayStep: number = 0.1,
+  baseDelay: number = 0
 ): { delayChildren: number; staggerChildren: number } => {
-	return {
-		delayChildren: baseDelay,
-		staggerChildren: delayStep,
-	}
-}
-
-
+  return {
+    delayChildren: baseDelay,
+    staggerChildren: delayStep,
+  };
+};
