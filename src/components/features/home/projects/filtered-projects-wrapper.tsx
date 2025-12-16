@@ -3,20 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { projects } from "@/data/projects";
-import { Project } from "@/types";
-
-type TagFilter =
-  | "all"
-  | "react"
-  | "next"
-  | "tailwind"
-  | "typescript"
-  | "bootstrap"
-  | "jest"
-  | "cypress"
-  | "graphql"
-  | "scss"
-  | "redux";
+import { Project, type TagFilter } from "@/types";
 
 interface FilteredProjectsWrapperProps {
   children: (props: FilteredProjectsWrapperPropsReturn) => React.ReactNode;

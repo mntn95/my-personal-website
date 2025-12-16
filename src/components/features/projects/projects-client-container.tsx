@@ -2,6 +2,7 @@
 
 import FilteredProjectsWrapper from "@/components/features/home/projects/filtered-projects-wrapper";
 import { FilterBar, ProjectsGrid } from "@/components/features/projects";
+import { type TagFilter } from "@/types";
 
 /**
  * Projects client wrapper component
@@ -21,7 +22,7 @@ const ProjectsClientContainer = (): React.ReactElement => (
       <>
         <FilterBar
           selectedTag={selectedTag}
-          onTagChange={setSelectedTag}
+          onTagChange={(tag: TagFilter) => setSelectedTag(tag)}
           searchQuery={searchQuery}
           onSearchChange={setSearchQuery}
         />

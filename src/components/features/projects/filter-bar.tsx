@@ -4,22 +4,7 @@ import { Filter, Search } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { FeatureCard } from "@/components/common";
 import { Badge, Input } from "@/components/ui";
-
-type TagFilter =
-  | "all"
-  | "react"
-  | "next"
-  | "tailwind"
-  | "typescript"
-  | "bootstrap"
-  | "jest"
-  | "cypress"
-  | "graphql"
-  | "scss"
-  | "redux"
-  | "node"
-  | "express"
-  | "zustand";
+import { type TagFilter } from "@/types";
 
 const tagFilters = [
   { id: "all", labelKey: "All" },

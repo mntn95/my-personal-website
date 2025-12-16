@@ -58,6 +58,22 @@ export interface Project {
   liveUrl?: string;
 }
 
+export type TagFilter =
+  | "all"
+  | "react"
+  | "next"
+  | "tailwind"
+  | "typescript"
+  | "bootstrap"
+  | "jest"
+  | "cypress"
+  | "graphql"
+  | "scss"
+  | "redux"
+  | "node"
+  | "express"
+  | "zustand";
+
 /**
  * Social media link
  */
