@@ -20,7 +20,7 @@ export const aboutSkills: AboutSkill[] = [
   { name: "CI/CD", level: "Intermediate", color: "blue" },
   { name: "Cypress", level: "Intermediate", color: "blue" },
   { name: "Jest", level: "Intermediate", color: "blue" },
-  { name: "Supabase", level: "Beginner", color: "green" },
+  { name: "Supabase", level: "Intermediate", color: "blue" },
   { name: "GenAI", level: "Intermediate", color: "blue" },
   { name: "Prompt Engineering", level: "Intermediate", color: "blue" },
   { name: "AI Agents/MCP", level: "Beginner", color: "green" },

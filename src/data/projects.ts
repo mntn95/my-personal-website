@@ -31,6 +31,14 @@ export const projects: Project[] = [
   },
   {
     id: 4,
+    title: "LinkedIn Prospector",
+    description: "ProjectsPage.descriptions.4",
+    image: "/images/lnkdn_prospector.png",
+    tags: ["React", "Typescript", "Tailwind CSS", "Node", "Express", "Zustand"],
+    githubUrl: "https://github.com/mntn95/",
+  },
+  {
+    id: 5,
     title: "Freelance Coach",
     description: "ProjectsPage.descriptions.4",
     image: "/images/coach_freelance_portfolio.png",
@@ -38,7 +46,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/mntn95/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Merci l'Artiste",
     description: "ProjectsPage.descriptions.5",
     image: "/images/merci_lartiste.png",
@@ -46,7 +54,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/mntn95/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Terra Oliva",
     description: "ProjectsPage.descriptions.6",
     image: "/images/terra_oliva.png",

@@ -23,7 +23,7 @@ const ProfileSection = async (): Promise<React.ReactElement> => {
       >
         <div className="relative w-full h-120 rounded-lg overflow-hidden opacity-70">
           <ImageWithFallback
-            src="/images/profile-pic.png"
+            src="/images/profile-pic.jpeg"
             alt="Profile"
             className="w-full h-full object-contain rounded-full"
           />

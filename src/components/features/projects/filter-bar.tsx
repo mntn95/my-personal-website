@@ -16,7 +16,10 @@ type TagFilter =
   | "cypress"
   | "graphql"
   | "scss"
-  | "redux";
+  | "redux"
+  | "node"
+  | "express"
+  | "zustand";
 
 const tagFilters = [
   { id: "all", labelKey: "All" },
@@ -30,6 +33,9 @@ const tagFilters = [
   { id: "cypress", labelKey: "Cypress" },
   { id: "graphql", labelKey: "GraphQL" },
   { id: "scss", labelKey: "SCSS" },
+  { id: "node", labelKey: "Node" },
+  { id: "express", labelKey: "Express" },
+  { id: "zustand", labelKey: "Zustand" },
 ];
 
 interface FilterBarProps {
