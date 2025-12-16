@@ -21,11 +21,11 @@ const ProfileSection = async (): Promise<React.ReactElement> => {
         viewport={{ once: true, margin: "0px 0px -100px 0px" }}
         variants={fadeInLeft}
       >
-        <div className="relative w-full h-120 rounded-lg overflow-hidden opacity-70">
+        <div className="relative w-full h-120 overflow-hidden opacity-70">
           <ImageWithFallback
             src="/images/profile-pic.jpeg"
             alt="Profile"
-            className="w-full h-full object-contain rounded-full"
+            className="w-full h-full object-contain"
           />
         </div>
       </motion.div>
