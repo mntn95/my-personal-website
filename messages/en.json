@@ -39,7 +39,8 @@
     },
     "projects": {
       "title": "Featured Projects",
-      "description": "A selection of my recent web development projects."
+      "description": "A selection of my recent web development projects.",
+      "viewAllProjects": "View All Projects"
     },
     "contact": {
       "title": "Let's Work Together",

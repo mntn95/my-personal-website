@@ -39,7 +39,8 @@
     },
     "projects": {
       "title": "Mes Réalisations",
-      "description": "Une sélection de sites et applications que j'ai eu l'occasion de développer."
+      "description": "Une sélection de sites et applications que j'ai eu l'occasion de développer.",
+      "viewAllProjects": "Voir tous les projets"
     },
     "contact": {
       "title": "Travaillons Ensemble",

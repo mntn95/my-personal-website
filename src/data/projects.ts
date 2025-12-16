@@ -40,7 +40,7 @@ export const projects: Project[] = [
   {
     id: 5,
     title: "Freelance Coach",
-    description: "ProjectsPage.descriptions.4",
+    description: "ProjectsPage.descriptions.5",
     image: "/images/coach_freelance_portfolio.png",
     tags: ["React", "Next", "Typescript", "Tailwind CSS"],
     githubUrl: "https://github.com/mntn95/",
@@ -48,7 +48,7 @@ export const projects: Project[] = [
   {
     id: 6,
     title: "Merci l'Artiste",
-    description: "ProjectsPage.descriptions.5",
+    description: "ProjectsPage.descriptions.6",
     image: "/images/merci_lartiste.png",
     tags: ["React", "Typescript", "Tailwind CSS"],
     githubUrl: "https://github.com/mntn95/",
@@ -56,7 +56,7 @@ export const projects: Project[] = [
   {
     id: 7,
     title: "Terra Oliva",
-    description: "ProjectsPage.descriptions.6",
+    description: "ProjectsPage.descriptions.7",
     image: "/images/terra_oliva.png",
     tags: ["React", "Typescript", "Tailwind CSS"],
     githubUrl: "https://github.com/mntn95/",
