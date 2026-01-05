@@ -1,10 +1,11 @@
 import * as motion from "motion/react-client";
 import { ArrowRight, Download } from "lucide-react";
 import Link from "next/link";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
 import { fadeInUp } from "@/lib/motion/variants";
 import { getMotionFixedDelay } from "@/lib/motion/utils";
 import { TypingText } from "./typing-text";
+import { getResumeFilename } from "./helper";
 
 /**
  * Hero content component
@@ -16,6 +17,8 @@ import { TypingText } from "./typing-text";
  */
 const HeroContent = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("HomePage.hero");
+  const locale = await getLocale();
+  const resumeFilename = getResumeFilename(locale as "fr" | "en");
 
   return (
     <div>
@@ -62,7 +65,7 @@ const HeroContent = async (): Promise<React.ReactElement> => {
           <ArrowRight className="ml-2 h-4 w-4" />
         </Link>
         <a
-          href="/cv-mathieu-nguyen.pdf"
+          href={resumeFilename}
           download
           className="inline-flex items-center bg-card-bg text-white px-6 py-3 rounded-lg hover:bg-card-hover hover:scale-105 transition-all font-medium cursor-pointer"
         >
