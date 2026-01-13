@@ -12,7 +12,7 @@ const ProjectDetailItem = ({
   label,
   content,
 }: ProjectDetailItemProps): React.ReactElement => (
-  <p>
+  <p className="text-sm md:text-base">
     <span className="text-brand-primary font-medium">{label}:</span> {content}
   </p>
 );

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { fadeInUp } from "@/lib/motion/variants";
 import { getMotionFixedDelay } from "@/lib/motion/utils";
+import { Button } from "@/components/ui/button";
 
 /**
  * CTA button component for About section
@@ -18,20 +19,16 @@ const CTAButton = async (): Promise<React.ReactElement> => {
 
   return (
     <motion.div
-      className="text-center"
+      className="text-center mt-24"
       initial="initial"
       whileInView="animate"
       viewport={{ once: true, margin: "0px 0px -100px 0px" }}
       variants={fadeInUp}
       transition={getMotionFixedDelay(0.6)}
     >
-      <Link
-        href="/about"
-        className="inline-flex items-center px-6 py-3 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-all hover:scale-105 cursor-pointer font-medium"
-      >
-        {t("moreAboutMe")}
-        <ArrowRight className="ml-2 h-4 w-4" />
-      </Link>
+      <Button asChild variant="primary" icon={ArrowRight} iconPosition="right">
+        <Link href="/about">{t("moreAboutMe")}</Link>
+      </Button>
     </motion.div>
   );
 };

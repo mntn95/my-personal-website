@@ -16,7 +16,6 @@ const About = (): React.ReactElement => {
     <SectionLayout id="about" background="darker">
       <div className="container mx-auto px-4">
         <SectionHeader title={t("title")} description={t("description")} />
-
         <SkillsGrid />
         <CTAButton />
       </div>

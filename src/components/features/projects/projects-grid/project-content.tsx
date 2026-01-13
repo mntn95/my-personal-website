@@ -14,10 +14,10 @@ const ProjectContent = ({
   project,
 }: ProjectContentProps): React.ReactElement => (
   <div className="p-6 flex-grow flex flex-col">
-    <h3 className="text-xl mb-2 text-white group-hover:text-teal-500 transition-colors delay-100 font-semibold">
+    <h3 className="text-md md:text-xl mb-2 text-white group-hover:text-teal-500 transition-colors delay-100 font-semibold">
       {project.title}
     </h3>
-    <p className="text-gray-400 mb-4 flex-grow text-sm">
+    <p className="text-gray-400 mb-4 flex-grow text-sm md:text-base">
       {project.description}
     </p>
 

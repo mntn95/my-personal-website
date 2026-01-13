@@ -12,7 +12,10 @@ const DescriptionSection = ({
 }: DescriptionSectionProps): React.ReactElement => (
   <div className="space-y-3 mb-6">
     {description.map((desc, i) => (
-      <p key={i} className="text-gray-400 leading-relaxed text-sm text-justify">
+      <p
+        key={i}
+        className="text-gray-400 leading-relaxed text-sm md:text-base text-justify"
+      >
         {desc}
       </p>
     ))}

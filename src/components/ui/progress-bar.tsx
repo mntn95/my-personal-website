@@ -41,7 +41,7 @@ export const ProgressBar = ({
     <div className={cn("w-full", className)}>
       {label && (
         <div className="flex justify-between items-center mb-2">
-          <h3 className="text-lg font-medium">{label}</h3>
+          <h3 className="text-sm md:text-lg font-medium">{label}</h3>
           {showLabel && (
             <span className="text-sm text-gray-400 font-normal">{value}%</span>
           )}

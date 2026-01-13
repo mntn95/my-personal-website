@@ -31,16 +31,16 @@ const ProfileSection = async (): Promise<React.ReactElement> => {
       </motion.div>
 
       <div className="flex flex-col justify-center">
-        <h2 className="text-3xl mb-6 font-bold">{t("whoAmI")}</h2>
-        <div className="space-y-4 text-gray-400 font-normal leading-relaxed text-justify">
-          <p>
+        <h2 className="text-2xl md:text-3xl mb-6 font-bold">{t("whoAmI")}</h2>
+        <div className="space-y-4 text-gray-400 leading-relaxed text-justify">
+          <p className="text-sm md:text-base">
             {t("intro1")}{" "}
             <span className="text-teal-500 font-semibold">Mathieu Nguyen</span>.{" "}
             {t("intro2")}
           </p>
-          <p>{t("intro3")}</p>
-          <p>{t("intro4")}</p>
-          <p>{t("intro5")}</p>
+          <p className="text-sm md:text-base">{t("intro3")}</p>
+          <p className="text-sm md:text-base">{t("intro4")}</p>
+          <p className="text-sm md:text-base">{t("intro5")}</p>
         </div>
       </div>
     </div>

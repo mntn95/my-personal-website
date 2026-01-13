@@ -24,16 +24,18 @@ const Education = async (): Promise<React.ReactElement> => {
         >
           <div className="flex items-center mb-4">
             <IconWrapper icon={GraduationCap} size="md" className="mr-4" />
-            <h3 className="text-white text-xl font-semibold">
+            <h3 className="text-white text-md md:text-xl font-semibold">
               {t(educationData.degree)}
             </h3>
           </div>
           <div className="mb-4">
-            <div className="text-white mb-1 text-lg font-medium">
+            <div className="text-white mb-1 text-md md:text-lg font-medium">
               {t(educationData.institution)}
             </div>
-            <p className="text-gray-400">{t(educationData.field)}</p>
-            <div className="flex flex-wrap gap-y-2 gap-x-4 mt-2 text-gray-400 text-sm">
+            <p className="text-sm md:text-base text-gray-400">
+              {t(educationData.field)}
+            </p>
+            <div className="flex flex-wrap gap-y-2 gap-x-4 mt-2 text-gray-400 text-sm md:text-base">
               <div className="flex items-center">
                 <Calendar className="h-4 w-4 mr-1" />
                 {t(educationData.duration)}
@@ -48,7 +50,7 @@ const Education = async (): Promise<React.ReactElement> => {
               </div>
             </div>
           </div>
-          <ul className="space-y-2 pl-6 list-disc text-gray-400 text-justify">
+          <ul className="space-y-2 pl-6 list-disc text-gray-400 text-justify text-sm md:text-base list-none md:list-disc">
             {educationData.highlights.map((key, idx) => (
               <li key={idx}>{t(key)}</li>
             ))}

@@ -16,7 +16,7 @@ const ContactInfo = (): React.ReactElement => {
   return (
     <div className="space-y-6">
       <FeatureCard variant="elevated" hover>
-        <h2 className="text-xl mb-4 text-teal-500 font-semibold">
+        <h2 className="text-lg md:text-xl mb-4 text-teal-500 font-semibold">
           {t("contactInformation")}
         </h2>
 

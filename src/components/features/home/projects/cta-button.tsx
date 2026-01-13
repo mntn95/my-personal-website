@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { fadeInUp } from "@/lib/motion/variants";
 import { getMotionFixedDelay } from "@/lib/motion/utils";
+import { Button } from "@/components/ui/button";
 
 /**
  * CTA button component for Projects section
@@ -24,13 +25,9 @@ const CTAButton = (): React.ReactElement => {
       variants={fadeInUp}
       transition={getMotionFixedDelay(0.4)}
     >
-      <Link
-        href="/projects"
-        className="inline-flex items-center px-6 py-3 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-all hover:scale-105 cursor-pointer font-medium"
-      >
-        {t("viewAllProjects")}
-        <ArrowRight className="ml-2 h-4 w-4" />
-      </Link>
+      <Button asChild variant="primary" icon={ArrowRight} iconPosition="right">
+        <Link href="/projects">{t("viewAllProjects")}</Link>
+      </Button>
     </motion.div>
   );
 };

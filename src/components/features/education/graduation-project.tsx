@@ -1,6 +1,6 @@
 import { Award } from "lucide-react";
 import { getTranslations } from "next-intl/server";
-import { FeatureCard, IconWrapper } from "@/components/common";
+import { FeatureCard, IconWrapper, SectionHeader } from "@/components/common";
 import { ImageWithFallback } from "@/components/common";
 
 import { ProjectDetailItem } from "./project-detail-item";
@@ -18,9 +18,7 @@ const GraduationProject = async (): Promise<React.ReactElement> => {
 
   return (
     <>
-      <h2 className="mb-12 text-center text-white text-3xl font-bold">
-        {t("title")}
-      </h2>
+      <SectionHeader title={t("title")} className="mb-12" />
       <FeatureCard
         variant="default"
         hover
@@ -31,12 +29,12 @@ const GraduationProject = async (): Promise<React.ReactElement> => {
           <div className="p-8 lg:p-10 flex flex-col justify-center">
             <div className="flex items-center mb-6">
               <IconWrapper icon={Award} size="md" className="mr-4" />
-              <h3 className="text-white text-2xl font-semibold">
+              <h3 className="text-white text-md md:text-xl font-semibold">
                 {t("projectTitle")}
               </h3>
             </div>
             <div className="space-y-4 text-gray-400">
-              <p>{t("description")}</p>
+              <p className="text-sm md:text-base">{t("description")}</p>
               <ProjectDetailItem
                 label={t("keyFeatures.label")}
                 content={t("keyFeatures.content")}

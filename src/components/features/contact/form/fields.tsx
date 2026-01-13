@@ -74,7 +74,6 @@ const FormFields = ({
         <Button
           type="submit"
           variant="primary"
-          size="md"
           fullWidth
           icon={Send}
           iconPosition="left"

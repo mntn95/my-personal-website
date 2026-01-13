@@ -5,7 +5,7 @@ import { fadeInUp } from "@/lib/motion/variants";
 
 interface SectionHeaderProps {
   title: string;
-  description: string;
+  description?: string;
   className?: string;
   titleClassName?: string;
   descriptionClassName?: string;
@@ -41,15 +41,19 @@ const SectionHeader = ({
     viewport={{ once: true, margin: "0px 0px -100px 0px" }}
     variants={fadeInUp}
   >
-    <h2 className={cn("text-4xl mb-6 font-bold", titleClassName)}>{title}</h2>
-    <p
-      className={cn(
-        "max-w-3xl mx-auto text-gray-400 font-normal leading-relaxed",
-        descriptionClassName
-      )}
-    >
-      {description}
-    </p>
+    <h2 className={cn("text-2xl md:text-4xl mb-6 font-bold", titleClassName)}>
+      {title}
+    </h2>
+    {description && (
+      <p
+        className={cn(
+          "max-w-3xl mx-auto text-gray-400 text-sm md:text-base leading-relaxed",
+          descriptionClassName
+        )}
+      >
+        {description}
+      </p>
+    )}
   </motion.div>
 );
 

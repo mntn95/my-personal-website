@@ -6,6 +6,7 @@ import { fadeInUp } from "@/lib/motion/variants";
 import { getMotionFixedDelay } from "@/lib/motion/utils";
 import { TypingText } from "./typing-text";
 import { getResumeFilename } from "./helper";
+import { Button } from "@/components/ui/button";
 
 /**
  * Hero content component
@@ -38,7 +39,7 @@ const HeroContent = async (): Promise<React.ReactElement> => {
       <TypingText />
 
       <motion.p
-        className="text-base text-gray-400 mb-4 md:mb-8 max-w-lg leading-relaxed text-justify"
+        className="text-sm md:text-base text-gray-400 mb-4 md:mb-8 max-w-lg leading-relaxed text-justify"
         style={{ fontWeight: 400 }}
         initial="initial"
         whileInView="animate"
@@ -57,21 +58,24 @@ const HeroContent = async (): Promise<React.ReactElement> => {
         variants={fadeInUp}
         transition={getMotionFixedDelay(0.4)}
       >
-        <Link
-          href="/contact"
-          className="inline-flex items-center bg-teal-500 text-white px-6 py-3 rounded-lg hover:bg-teal-600 transition-all hover:scale-105 font-medium cursor-pointer"
+        <Button
+          asChild
+          variant="primary"
+          icon={ArrowRight}
+          iconPosition="right"
         >
-          {t("getInTouch")}
-          <ArrowRight className="ml-2 h-4 w-4" />
-        </Link>
-        <a
-          href={resumeFilename}
-          download
-          className="inline-flex items-center bg-card-bg text-white px-6 py-3 rounded-lg hover:bg-card-hover hover:scale-105 transition-all font-medium cursor-pointer"
+          <Link href="/contact">{t("getInTouch")}</Link>
+        </Button>
+        <Button
+          asChild
+          variant="secondary"
+          icon={Download}
+          iconPosition="right"
         >
-          {t("downloadResume")}
-          <Download className="ml-2 h-4 w-4" />
-        </a>
+          <a href={resumeFilename} download>
+            {t("downloadResume")}
+          </a>
+        </Button>
       </motion.div>
     </div>
   );

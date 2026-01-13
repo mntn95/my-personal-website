@@ -1,9 +1,11 @@
+"use client";
 import { getTranslations } from "next-intl/server";
 import { ImageWithFallback } from "@/components/common/image-with-fallback";
 import { featuredProjects } from "@/data/projects";
 import { FeatureCard } from "@/components/common";
 import { Badge } from "@/components/ui";
-
+import { useIsMobile } from "@/hooks";
+import { useTranslations } from "next-intl";
 /**
  * Projects grid component displaying featured projects
  * Shows project cards with image, title, description, and tags
@@ -12,8 +14,9 @@ import { Badge } from "@/components/ui";
  * @async
  * @returns Promise resolving to React element
  */
-const ProjectsGrid = async (): Promise<React.ReactElement> => {
-  const t = await getTranslations();
+const ProjectsGrid = (): React.ReactElement => {
+  const t = useTranslations();
+  const isMobile = useIsMobile();
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -33,8 +36,10 @@ const ProjectsGrid = async (): Promise<React.ReactElement> => {
             />
           </div>
           <div className="p-6 flex flex-col flex-grow">
-            <h3 className="text-xl mb-2 font-semibold">{project.title}</h3>
-            <p className="text-gray-400 mb-4 flex-grow font-normal leading-relaxed">
+            <h3 className="text-lg md:text-xl mb-2 font-semibold">
+              {project.title}
+            </h3>
+            <p className="text-sm md:text-base text-gray-400 mb-4 flex-grow font-normal leading-relaxed">
               {project.description.startsWith("ProjectsPage.")
                 ? t(project.description)
                 : project.description}
@@ -45,7 +50,7 @@ const ProjectsGrid = async (): Promise<React.ReactElement> => {
                 <Badge
                   key={tagIndex}
                   variant="default"
-                  size="md"
+                  size={isMobile ? "sm" : "md"}
                   className="bg-dark-bg-alt"
                 >
                   {tag}

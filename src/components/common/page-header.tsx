@@ -45,7 +45,7 @@ const PageHeader = ({
       )}
       <h1 className="text-4xl md:text-5xl mb-6 font-bold">{title}</h1>
       <div className="max-w-3xl mx-auto">
-        <p className="text-gray-400 leading-relaxed font-normal">
+        <p className="text-gray-400 leading-relaxed text-sm md:text-base">
           {description}
         </p>
       </div>

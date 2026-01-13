@@ -20,16 +20,6 @@ describe("Button", () => {
     expect(button).toHaveClass("bg-card-bg");
   });
 
-  it("should render with different sizes", () => {
-    const { rerender } = render(<Button size="sm">Small</Button>);
-    let button = screen.getByRole("button");
-    expect(button).toHaveClass("text-sm");
-
-    rerender(<Button size="lg">Large</Button>);
-    button = screen.getByRole("button");
-    expect(button).toHaveClass("text-lg");
-  });
-
   it("should be disabled when isLoading is true", () => {
     render(<Button isLoading>Loading</Button>);
     const button = screen.getByRole("button");

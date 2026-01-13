@@ -1,9 +1,7 @@
-import * as motion from "motion/react-client";
 import { getTranslations } from "next-intl/server";
-import { FeatureCard } from "@/components/common";
+import { FeatureCard, SectionHeader } from "@/components/common";
 import { Badge } from "@/components/ui";
 import { aboutSkills } from "@/data/about";
-import { fadeInUp } from "@/lib/motion/variants";
 
 /**
  * Hard skills section component displaying technical skills with badges
@@ -16,21 +14,10 @@ const HardSkillsSection = async (): Promise<React.ReactElement> => {
   const t = await getTranslations("AboutPage.hardSkills");
 
   return (
-    <motion.div
-      className="mb-24"
-      initial="initial"
-      whileInView="animate"
-      viewport={{ once: true, margin: "0px 0px -100px 0px" }}
-      variants={fadeInUp}
-    >
-      <div className="text-center mb-12">
-        <h2 className="text-3xl mb-6 font-bold">{t("title")}</h2>
-        <p className="text-gray-400 max-w-3xl mx-auto font-normal leading-relaxed">
-          {t("description")}
-        </p>
-      </div>
+    <div className="mb-24">
+      <SectionHeader title={t("title")} description={t("description")} />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
         {aboutSkills.map((skill, index) => (
           <FeatureCard
             key={index}
@@ -40,7 +27,9 @@ const HardSkillsSection = async (): Promise<React.ReactElement> => {
             animationIndex={index}
             animationDelayStep={0.05}
           >
-            <h3 className="mb-2 font-semibold">{skill.name}</h3>
+            <h3 className="mb-2 text-sm md:text-base font-semibold">
+              {skill.name}
+            </h3>
             <Badge
               variant={
                 skill.color === "teal"
@@ -56,7 +45,7 @@ const HardSkillsSection = async (): Promise<React.ReactElement> => {
           </FeatureCard>
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 };
 

@@ -1,8 +1,9 @@
 import { Handshake, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
-import { FeatureCard, IconWrapper } from "@/components/common";
+import { FeatureCard, IconWrapper, SectionHeader } from "@/components/common";
 import { SectionLayout } from "@/components/layouts/section-layout";
+import { Button } from "@/components/ui/button";
 
 /**
  * Contact section component for the home page
@@ -27,19 +28,22 @@ const Contact = async (): Promise<React.ReactElement> => {
             <IconWrapper icon={Handshake} size="lg" isCentered />
           </div>
 
-          <h2 className="text-3xl mb-4 font-bold">{t("title")}</h2>
+          <SectionHeader
+            title={t("title")}
+            description={t("description")}
+            titleClassName="text-2xl md:text-3xl mb-4"
+            descriptionClassName="max-w-xl"
+            className="mb-8"
+          />
 
-          <p className="text-gray-400 mb-8 max-w-xl mx-auto font-normal leading-relaxed">
-            {t("description")}
-          </p>
-
-          <Link
-            href="/contact"
-            className="inline-flex items-center px-8 py-4 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-all hover:scale-105 cursor-pointer font-medium"
+          <Button
+            asChild
+            variant="primary"
+            icon={ArrowRight}
+            iconPosition="right"
           >
-            {t("getInTouch")}
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
+            <Link href="/contact">{t("getInTouch")}</Link>
+          </Button>
         </FeatureCard>
       </div>
     </SectionLayout>

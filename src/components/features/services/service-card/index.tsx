@@ -52,10 +52,10 @@ const ServiceCard = async ({
           <IconWrapper icon={service.icon} size="lg" />
         </div>
         <div className="flex-1">
-          <h3 className="text-xl sm:text-2xl mb-2 text-white text-center lg:text-left font-semibold">
+          <h3 className="text-lg md:text-xl mb-2 text-white text-center lg:text-left font-semibold">
             {translatedService.title}
           </h3>
-          <p className="text-gray-300 mb-6 text-center lg:text-left text-base font-medium">
+          <p className="text-gray-300 mb-6 text-center lg:text-left text-sm md:text-md font-medium">
             {translatedService.subtitle}
           </p>
 

@@ -30,7 +30,8 @@
     "about": {
       "title": "Qui suis-je",
       "description": "Je suis Développeur Front-End Freelance avec 7 ans d'expérience. J'aide les entreprises, les startups et les indépendants à gagner en crédibilité, capter l'attention de leur audience et se démarquer de la concurrence.",
-      "moreAboutMe": "En savoir plus"
+      "moreAboutMe": "En savoir plus",
+      "showMore": "Voir plus"
     },
     "services": {
       "title": "Prestations",
@@ -308,6 +309,7 @@
     "badge": "Prestations",
     "title": "Ce que je propose",
     "description": "Vous cherchez un développeur front-end fiable pour donner vie à votre projet ? Je mets mes compétences à votre service afin de répondre à vos besoins, qu'il s'agisse d'un nouveau site web, d'une collaboration en équipe ou d'une maintenance continue. Travaillons ensemble pour atteindre vos objectifs.",
+    "getInTouch": "Me Contacter",
     "services": {
       "customWebsiteCreation": {
         "title": "Création de Sites Web Sur-Mesure",
