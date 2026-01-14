@@ -310,15 +310,17 @@
     "title": "What I Offer",
     "description": "Looking for a reliable front-end developer to bring your project to life? I deliver quality web solutions tailored to your needs, whether it's a brand-new website, team collaboration, or ongoing maintenance. Let's work together to achieve your goals.",
     "getInTouch": "Get in Touch",
+    "showMore": "See More",
+    "showLess": "See Less",
     "services": {
       "customWebsiteCreation": {
         "title": "Custom Website Creation",
         "description": "Experienced in crafting fast, attractive websites that converts, from simple pages to full digital platforms.",
         "subtitle": "I create websites that inspire trust and convert your visitors into clients.",
         "descriptionParagraphs": {
-          "0": "I design and develop custom websites tailored to your specific business needs and brand identity. Every project starts with understanding your goals, target audience, and unique value proposition. Whether you need a stunning showcase website, a high-converting landing page, or a fully-featured e-commerce platform, I deliver solutions that combine aesthetics with functionality.",
-          "1": "My development process prioritizes user experience, ensuring your website is not only visually appealing but also intuitive and easy to navigate. I build responsive designs that look perfect on all devices—from desktop computers to smartphones—and optimize every aspect for fast loading times and smooth performance.",
-          "2": "Beyond just building your website, I implement SEO best practices from the ground up, helping your site rank better in search engines. I also ensure accessibility standards are met, making your content available to all users. After launch, I provide guidance on content management and offer support to ensure your website continues to perform optimally."
+          "0": "Get a unique website that captures your identity and serves your business goals, from showcase site to complete digital solution.",
+          "1": "Enjoy an elegant, intuitive interface perfectly adapted to all devices to offer the best experience to your visitors.",
+          "2": "Your online visibility is maximized through integrated SEO optimization, universal accessibility, and dedicated post-launch support."
         },
         "approach": {
           "0": "Modern, responsive design that adapts seamlessly to all screen sizes and devices",
@@ -346,9 +348,9 @@
         "description": "Skilled at working with teams to enhance projects, refine user interfaces, and deliver front-end solutions that keep development running smoothly.",
         "subtitle": "I join your team to build or evolve your web project.",
         "descriptionParagraphs": {
-          "0": "I integrate seamlessly into your development team as a skilled front-end developer, bringing expertise in modern web technologies and a collaborative mindset. Whether you need short-term assistance for a specific sprint or long-term partnership for ongoing development, I adapt to your team's workflow, tools, and processes.",
-          "1": "With experience in agile environments, I'm comfortable working with version control systems, participating in code reviews, and contributing to design system development. I believe in clear communication and thorough documentation, ensuring that my code is not only functional but also maintainable by the entire team.",
-          "2": "I take pride in writing clean, semantic, and well-tested code that follows your team's conventions and best practices. Beyond just implementing features, I actively participate in technical discussions, suggest improvements, and help mentor junior developers when needed. My goal is to add value to your team while delivering high-quality results on time."
+          "0": "Benefit from flexible front-end reinforcement that naturally adapts to your technical stack and processes, whether for a sprint or a long-term project.",
+          "1": "Enjoy agile and professional collaboration with proven version control practices, code reviews, and comprehensive documentation.",
+          "2": "Receive clean and maintainable code while enriching your team through relevant technical contributions and skills development support."
         },
         "approach": {
           "0": "Clean, maintainable code that follows your team's standards and conventions",
@@ -376,9 +378,9 @@
         "description": "Focused on maintaining website performance and security, handling updates, optimizations, and troubleshooting to give clients peace of mind.",
         "subtitle": "I handle your website maintenance to keep it efficient and secure.",
         "descriptionParagraphs": {
-          "0": "Your website is a living asset that requires ongoing care to remain secure, fast, and effective. I provide comprehensive maintenance services that keep your site running smoothly, protecting it from security vulnerabilities and ensuring optimal performance as technology evolves and your business grows.",
-          "1": "My maintenance approach is both preventive and reactive. I proactively monitor your website's health, perform regular updates to dependencies and plugins, and implement security patches before issues arise. At the same time, I'm available to quickly address any unexpected problems, bugs, or optimization needs that emerge.",
-          "2": "Beyond technical upkeep, I provide clear monthly reports on your website's status, performance metrics, and any actions taken. You'll have access to priority support channels, and I offer guidance on best practices for content updates and site management. My goal is to give you peace of mind, knowing your website is in expert hands."
+          "0": "Protect your investment with comprehensive maintenance that preserves security and performance, while handling bugs and minor adjustments.",
+          "1": "Enjoy constant vigilance with preventive updates, proactive security patches, and rapid resolution of any incident.",
+          "2": "Stay in control with clear monthly reports, dedicated support, and expert advice for optimal management of your online presence."
         },
         "whatIncluded": {
           "0": "Monthly health checks and performance monitoring to catch issues early",

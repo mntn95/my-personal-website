@@ -10,7 +10,7 @@ interface DescriptionSectionProps {
 const DescriptionSection = ({
   description,
 }: DescriptionSectionProps): React.ReactElement => (
-  <div className="space-y-3 mb-6">
+  <div className="space-y-3">
     {description.map((desc, i) => (
       <p
         key={i}

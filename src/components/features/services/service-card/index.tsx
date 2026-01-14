@@ -2,9 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { FeatureCard, IconWrapper } from "@/components/common";
 import type { DetailedService } from "@/types";
 import { DescriptionSection } from "./description-section";
-import { ApproachSection } from "./approach-section";
-import { TechnologiesSection } from "./technologies-section";
-import { ExamplesSection } from "./examples-section";
+import { CollapsibleServiceCard } from "./collapsible-service-card";
 import { CTAButton } from "./cta-button";
 
 interface ServiceCardProps {
@@ -60,12 +58,12 @@ const ServiceCard = async ({
           </p>
 
           <DescriptionSection description={translatedService.description} />
-          <ApproachSection
+          <CollapsibleServiceCard
             approach={translatedService.approach}
             whatIncluded={translatedService.whatIncluded}
+            technologies={translatedService.technologies}
+            examples={translatedService.examples}
           />
-          <TechnologiesSection technologies={translatedService.technologies} />
-          <ExamplesSection examples={translatedService.examples} />
         </div>
       </div>
 

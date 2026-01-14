@@ -27,7 +27,7 @@ const ApproachSection = ({
   const title = approach ? t("myApproach") : t("whatsIncluded");
 
   return (
-    <div className="mb-6">
+    <div className="mt-6 mb-6">
       <h4 className="text-white mb-3 font-semibold text-base">{title}</h4>
       <div className="bg-dark-bg/30 p-4 rounded-lg border border-card-border/50">
         <ul className="space-y-2">

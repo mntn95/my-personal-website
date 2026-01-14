@@ -310,15 +310,17 @@
     "title": "Ce que je propose",
     "description": "Vous cherchez un développeur front-end fiable pour donner vie à votre projet ? Je mets mes compétences à votre service afin de répondre à vos besoins, qu'il s'agisse d'un nouveau site web, d'une collaboration en équipe ou d'une maintenance continue. Travaillons ensemble pour atteindre vos objectifs.",
     "getInTouch": "Me Contacter",
+    "showMore": "Voir plus",
+    "showLess": "Voir moins",
     "services": {
       "customWebsiteCreation": {
         "title": "Création de Sites Web Sur-Mesure",
         "description": "Je crée des sites qui inspirent confiance et convertissent vos visiteurs en clients.",
         "subtitle": "Je crée des sites web qui inspirent confiance et convertissent vos visiteurs en clients.",
         "descriptionParagraphs": {
-          "0": "Je conçois et développe des sites web sur-mesure adaptés aux besoins spécifiques de votre activité et à votre identité de marque. Chaque projet démarre par une compréhension approfondie de vos objectifs, de votre audience cible et de votre proposition de valeur unique. Que vous ayez besoin d'un site vitrine élégant, d'une landing page à fort taux de conversion ou d'une plateforme complète, je livre des solutions qui allient esthétique et fonctionnalité.",
-          "1": "Mon processus de développement privilégie l'expérience utilisateur, garantissant que votre site web soit non seulement visuellement attrayant mais aussi intuitif et facile à naviguer. Je construis des designs responsive qui s'affichent parfaitement sur tous les appareils, de l'ordinateur de bureau aux smartphones, et j'optimise chaque aspect pour des temps de chargement rapides et des performances fluides.",
-          "2": "Au-delà de la simple construction de votre site web, j'implémente dès le départ les bonnes pratiques SEO, aidant votre site à mieux se positionner dans les moteurs de recherche. Je veille également au respect des standards d'accessibilité, rendant votre contenu disponible pour tous les utilisateurs. Après le lancement, je vous accompagne sur la gestion de contenu et offre un support pour garantir que votre site web continue de performer de manière optimale."
+          "0": "Obtenez un site web unique qui capte votre identité et sert vos objectifs commerciaux, du site vitrine à la solution digitale complète.",
+          "1": "Profitez d'une interface élégante, intuitive et parfaitement adaptée à tous les appareils pour offrir la meilleure expérience à vos visiteurs.",
+          "2": "Votre visibilité en ligne est maximisée grâce à l'optimisation SEO intégrée, l'accessibilité universelle et un support dédié après lancement."
         },
         "approach": {
           "0": "Design moderne et responsive qui s'adapte parfaitement à toutes les tailles d'écran et appareils",
@@ -346,9 +348,9 @@
         "description": "J'intègre vos effectifs pour construire ou faire évoluer votre projet web.",
         "subtitle": "Je rejoins vos équipes en freelance pour assurer la qualité et la continuité de votre développement.",
         "descriptionParagraphs": {
-          "0": "Je m'intègre naturellement à votre équipe de développement en tant que développeur front-end qualifié, apportant une expertise dans les technologies web modernes et un état d'esprit collaboratif. Que vous ayez besoin d'une assistance ponctuelle pour un sprint spécifique ou d'un partenariat long terme pour un développement continu, je m'adapte au workflow, aux outils et aux processus de votre équipe.",
-          "1": "Fort d'une expérience en environnements agiles, je maîtrise les systèmes de contrôle de version, je participe aux revues de code et je contribue au développement de design systems. Je crois en une communication claire et une documentation approfondie, garantissant que mon code soit non seulement fonctionnel mais aussi maintenable par toute l'équipe.",
-          "2": "Je suis fier d'écrire du code propre, sémantique et bien testé qui respecte les conventions et bonnes pratiques de votre équipe. Au-delà de la simple implémentation de fonctionnalités, je participe activement aux discussions techniques, suggère des améliorations et aide au mentorat des développeurs juniors lorsque nécessaire. Mon objectif est d'apporter de la valeur à votre équipe tout en livrant des résultats de haute qualité dans les délais."
+          "0": "Bénéficiez d'un renfort front-end flexible qui s'adapte naturellement à votre stack technique et vos processus, que ce soit pour un sprint ou un projet long terme.",
+          "1": "Profitez d'une collaboration agile et professionnelle avec des pratiques éprouvées de contrôle de version, revues de code et documentation exhaustive.",
+          "2": "Recevez du code propre et maintenable tout en enrichissant votre équipe par des contributions techniques pertinentes et un soutien au développement des compétences."
         },
         "approach": {
           "0": "Code propre et maintenable qui suit les standards et conventions de votre entreprise",
@@ -376,9 +378,9 @@
         "description": "Je prends en charge la maintenance de votre site web pour le garder performant et sécurisé.",
         "subtitle": "Je prends en charge la maintenance de votre site web pour le garder performant et sécurisé.",
         "descriptionParagraphs": {
-          "0": "Votre site web est un actif vivant qui nécessite un entretien continu pour rester sécurisé, rapide et efficace. Je propose des services de maintenance complets qui maintiennent votre site en bon état de marche, le protégeant des vulnérabilités de sécurité et garantissant des performances optimales à mesure que la technologie évolue et que votre entreprise se développe.",
-          "1": "Mon approche de la maintenance est à la fois préventive et réactive. Je surveille de manière proactive la santé de votre site web, effectue des mises à jour régulières des dépendances et plugins, et implémente les correctifs de sécurité avant que des problèmes ne surviennent. Dans le même temps, je suis disponible pour traiter rapidement tout problème imprévu, bug ou besoin d'optimisation qui émerge.",
-          "2": "Au-delà de l'entretien technique, je fournis des rapports mensuels clairs sur l'état de votre site web, les métriques de performance et toute action entreprise. Vous aurez accès à des canaux de support prioritaires, et je vous conseille sur les bonnes pratiques pour les mises à jour de contenu et la gestion du site. Mon objectif est de vous offrir la tranquillité d'esprit, sachant que votre site web est entre de bonnes mains."
+          "0": "Protégez votre investissement avec une maintenance complète qui préserve sécurité et performance, tout en prenant en charge bugs et ajustements mineurs.",
+          "1": "Profitez d'une vigilance constante avec des mises à jour préventives, des correctifs de sécurité anticipés et une résolution rapide de tout incident.",
+          "2": "Gardez le contrôle grâce à des rapports mensuels clairs, un support dédié et des conseils avisés pour une gestion optimale de votre présence en ligne."
         },
         "whatIncluded": {
           "0": "Contrôles de santé mensuels et surveillance des performances pour détecter les problèmes en amont",
