@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
@@ -28,18 +28,9 @@ const CollapsibleServiceCard = ({
   examples,
 }: CollapsibleServiceCardProps): React.ReactElement => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const buttonRef = useRef<HTMLDivElement>(null);
   const t = useTranslations("ServicesPage");
 
   const handleToggle = () => {
-    // If collapsing (currently expanded), scroll to button
-    if (isExpanded && buttonRef.current) {
-      console.log("scrolling to button");
-      buttonRef.current.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-      });
-    }
     setIsExpanded((prev) => !prev);
   };
 
@@ -79,7 +70,7 @@ const CollapsibleServiceCard = ({
           <ExamplesSection examples={examples} />
         </motion.div>
 
-        <div ref={buttonRef} className="flex justify-center mb-6">
+        <div className="flex justify-center mb-6">
           <button
             onClick={handleToggle}
             onKeyDown={handleKeyDown}

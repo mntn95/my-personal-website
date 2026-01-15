@@ -85,13 +85,6 @@ export const softSkills: SoftSkill[] = [
 
 export const moreAboutMeCards: AboutCard[] = [
   {
-    title: "AboutPage.moreAboutMe.cards.personalInterests",
-    icon: User,
-    listIcon: Heart,
-    items: interests,
-    animationDelay: "0s",
-  },
-  {
     title: "AboutPage.moreAboutMe.cards.codingPhilosophy",
     icon: Brain,
     listIcon: Lightbulb,
@@ -104,6 +97,13 @@ export const moreAboutMeCards: AboutCard[] = [
     listIcon: BookOpen,
     items: education,
     animationDelay: "0.2s",
+  },
+  {
+    title: "AboutPage.moreAboutMe.cards.personalInterests",
+    icon: User,
+    listIcon: Heart,
+    items: interests,
+    animationDelay: "0s",
   },
   {
     title: "AboutPage.moreAboutMe.cards.futureGoals",
