@@ -1,5 +1,16 @@
 import "@testing-library/jest-dom";
 
+// Mock next-intl
+jest.mock("next-intl", () => ({
+  useTranslations: () => (key: string) => key,
+  useLocale: () => "en",
+}));
+
+jest.mock("next-intl/server", () => ({
+  getTranslations: async () => (key: string) => key,
+  getLocale: async () => "en",
+}));
+
 // Mock IntersectionObserver
 global.IntersectionObserver = class IntersectionObserver {
   constructor() {}
