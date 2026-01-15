@@ -44,14 +44,14 @@ const CollapsibleServiceCard = ({
   return (
     <>
       {/* Desktop: always visible */}
-      <div className="hidden md:block">
+      <div className="hidden xl:block">
         <ApproachSection approach={approach} whatIncluded={whatIncluded} />
         <TechnologiesSection technologies={technologies} />
         <ExamplesSection examples={examples} />
       </div>
 
       {/* Mobile: collapsible with animation */}
-      <div className="md:hidden">
+      <div className="xl:hidden">
         <motion.div
           className="mb-12"
           initial={false}

@@ -32,21 +32,21 @@ export const skills: Skill[] = [
     span: "col-span-2 row-span-2",
   },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     description: "HomePage.hero.skills.tailwindCss",
     icon: Palette,
-    span: "col-span-2 row-span-2",
-  },
-  {
-    name: "GraphQL",
-    description: "HomePage.hero.skills.graphQl",
-    icon: Server,
     span: "col-span-2 row-span-2",
   },
   {
     name: "Redux",
     description: "HomePage.hero.skills.redux",
     icon: Store,
+    span: "col-span-2 row-span-2",
+  },
+  {
+    name: "GraphQL",
+    description: "HomePage.hero.skills.graphQl",
+    icon: Server,
     span: "col-span-3 row-span-2",
   },
   {
