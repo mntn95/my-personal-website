@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
 import { MotionConfig } from "motion/react";
+import { GoogleAnalytics } from "@/components/analytics";
 import { Navigation } from "@/components/layouts/navigation";
 import { Footer } from "@/components/layouts/footer";
 import { ParticleBackground } from "@/components/common/particle-background";
@@ -53,6 +54,7 @@ const RootLayout = async ({
   return (
     <html lang={locale} className={inter.className}>
       <body className="antialiased" suppressHydrationWarning>
+        <GoogleAnalytics />
         <NextIntlClientProvider>
           <MotionConfig {...motionConfig}>
             <PageLoader>
