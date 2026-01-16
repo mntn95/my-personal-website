@@ -14,7 +14,7 @@ export const aboutSkills: AboutSkill[] = [
   { name: "React.js", level: "Advanced", color: "teal" },
   { name: "Next.js", level: "Advanced", color: "teal" },
   { name: "Typescript", level: "Advanced", color: "teal" },
-  { name: "Tailwind CSS", level: "Intermediate", color: "blue" },
+  { name: "Tailwind", level: "Intermediate", color: "blue" },
   { name: "Redux", level: "Intermediate", color: "blue" },
   { name: "GraphQL", level: "Intermediate", color: "blue" },
   { name: "CI/CD", level: "Intermediate", color: "blue" },
@@ -62,20 +62,20 @@ export const softSkills: SoftSkill[] = [
     description: "AboutPage.softSkillsList.problemSolving.description",
   },
   {
-    title: "AboutPage.softSkillsList.communication.title",
-    description: "AboutPage.softSkillsList.communication.description",
-  },
-  {
     title: "AboutPage.softSkillsList.teamCollaboration.title",
     description: "AboutPage.softSkillsList.teamCollaboration.description",
   },
   {
-    title: "AboutPage.softSkillsList.adaptability.title",
-    description: "AboutPage.softSkillsList.adaptability.description",
-  },
-  {
     title: "AboutPage.softSkillsList.timeManagement.title",
     description: "AboutPage.softSkillsList.timeManagement.description",
+  },
+  {
+    title: "AboutPage.softSkillsList.communication.title",
+    description: "AboutPage.softSkillsList.communication.description",
+  },
+  {
+    title: "AboutPage.softSkillsList.adaptability.title",
+    description: "AboutPage.softSkillsList.adaptability.description",
   },
   {
     title: "AboutPage.softSkillsList.criticalThinking.title",

@@ -1,48 +1,27 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowUp } from "lucide-react";
-import { fadeInUp, fadeOutDown } from "@/lib/motion/variants";
 
 const BackToTop = (): React.ReactElement | null => {
   const [isVisible, setIsVisible] = useState(false);
-  const [isAnimatingOut, setIsAnimatingOut] = useState(false);
-  const timeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
   useEffect(() => {
     const toggleVisibility = () => {
-      // Clear any pending timeout to prevent race conditions
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
-
       if (window.pageYOffset > 300) {
         setIsVisible(true);
-        setIsAnimatingOut(false);
-        return;
-      }
-
-      if (!isVisible) return;
-
-      setIsAnimatingOut(true);
-      // Store timeout ID for cleanup
-      timeoutRef.current = setTimeout(() => {
+      } else {
         setIsVisible(false);
-        setIsAnimatingOut(false);
-      }, 300); // Match animation duration
+      }
     };
 
     window.addEventListener("scroll", toggleVisibility);
 
     return () => {
       window.removeEventListener("scroll", toggleVisibility);
-      // Clean up timeout on unmount
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
     };
-  }, [isVisible]);
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -58,10 +37,10 @@ const BackToTop = (): React.ReactElement | null => {
           onClick={scrollToTop}
           className="fixed bottom-8 right-8 z-50 p-4 bg-purple-400 text-white rounded-full shadow-lg hover:bg-purple-400/90 transition-all hover:scale-110 cursor-pointer"
           aria-label="Back to top"
-          initial="initial"
-          animate={isAnimatingOut ? "exit" : "animate"}
-          exit="exit"
-          variants={isAnimatingOut ? fadeOutDown : fadeInUp}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 30 }}
+          transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
         >
           <ArrowUp className="w-5 h-5" />
         </motion.button>

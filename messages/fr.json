@@ -4,15 +4,15 @@
       "greeting": "Bonjour, je suis",
       "name": "Mathieu Nguyen",
       "description": "Je crée des sites web élégants et performants qui inspirent confiance. Je transforme vos idées en interfaces engageantes qui fidélisent vos utilisateurs et valorisent votre marque. Curieux, adaptable et pragmatique, je donne vie à vos ambitions.",
-      "getInTouch": "Me Contacter",
+      "getInTouch": "Me contacter",
       "downloadResume": "Télécharger mon CV",
       "roles": {
         "webDeveloper": "Développeur Web",
         "freelancer": "Freelance",
         "ideaAccelerator": "Accélérateur d'Idées",
-        "problemSolver": "Résolveur de Problèmes",
-        "brandEnhancer": "Valorisateur de Marque",
-        "visionTranslator": "Créateur de Solutions",
+        "problemSolver": "Résolveur de problèmes",
+        "brandEnhancer": "Valorisateur de marque",
+        "visionTranslator": "Créateur de solutions",
         "qualityDrivenCraftsman": "Artisan Codeur"
       },
       "skills": {
@@ -39,14 +39,14 @@
       "seeMore": "Voir plus"
     },
     "projects": {
-      "title": "Mes Réalisations",
+      "title": "Mes réalisations",
       "description": "Une sélection de sites et applications que j'ai eu l'occasion de développer.",
-      "viewAllProjects": "Voir tous les projets"
+      "discoverMyProjects": "Découvrir mes projets"
     },
     "contact": {
-      "title": "Travaillons Ensemble",
+      "title": "Travaillons ensemble",
       "description": "Je suis actuellement disponible pour des missions freelance et ouvert à de nouvelles opportunités. Si vous avez un projet en tête ou souhaitez collaborer, connectons-nous !",
-      "getInTouch": "Me Contacter"
+      "getInTouch": "Me contacter"
     },
     "metadata": {
       "title": "Mathieu Nguyen - Développeur Web Front-End",
@@ -82,14 +82,14 @@
   },
   "Navigation": {
     "home": "Accueil",
-    "aboutMe": "À Propos",
+    "aboutMe": "À propos",
     "education": "Formation",
     "projects": "Projets",
     "services": "Prestations",
     "contact": "Contact"
   },
   "AboutPage": {
-    "badge": "À Propos",
+    "badge": "À propos",
     "title": "Découvrez qui je suis",
     "description": "Je transforme les idées en applications web interactives et conviviales. Les sections ci-dessous mettent en lumière mon parcours, mes compétences techniques et les valeurs qui guident mon travail.",
     "profile": {
@@ -101,8 +101,7 @@
       "intro5": "En dehors du travail, je pratique le sport, notamment le CrossFit et la boxe, je nourris ma passion pour l'histoire et la géopolitique, ou je me détends devant un bon jeu vidéo."
     },
     "hardSkills": {
-      "title": "Hard Skills",
-      "description": "Voici les technologies et langages de programmation avec lesquels j'ai travaillé et dans lesquels je continue à développer mon expertise.",
+      "title": "Hard skills",
       "levels": {
         "Advanced": "Avancé",
         "Intermediate": "Intermédiaire",
@@ -110,16 +109,15 @@
       }
     },
     "softSkills": {
-      "title": "Soft Skills",
-      "description": "Ces compétences interpersonnelles et professionnelles m'aident à travailler efficacement et à livrer des résultats de qualité."
+      "title": "Soft skills"
     },
     "moreAboutMe": {
       "title": "Pour aller plus loin",
       "cards": {
-        "personalInterests": "Centres d'Intérêt",
-        "codingPhilosophy": "Philosophie du Code",
-        "educationJourney": "Parcours de Formation",
-        "futureGoals": "Objectifs Futurs"
+        "personalInterests": "Centres d'intérêt",
+        "codingPhilosophy": "Philosophie du code",
+        "educationJourney": "Parcours de formation",
+        "futureGoals": "Objectifs futurs"
       },
       "interests": {
         "0": "Explorer de nouvelles technologies",
@@ -148,7 +146,7 @@
     },
     "softSkillsList": {
       "problemSolving": {
-        "title": "Résolution de Problèmes",
+        "title": "Résolution de problèmes",
         "description": "Approche analytique des défis techniques complexes"
       },
       "communication": {
@@ -156,7 +154,7 @@
         "description": "Communication claire, technique et non-technique"
       },
       "teamCollaboration": {
-        "title": "Travail d'Équipe",
+        "title": "Travail d'équipe",
         "description": "Collaboration efficace dans des équipes pluridisciplinaires"
       },
       "adaptability": {
@@ -164,16 +162,16 @@
         "description": "Apprentissage rapide de nouvelles technologies et méthodologies"
       },
       "timeManagement": {
-        "title": "Gestion du Temps",
+        "title": "Gestion du temps",
         "description": "Livraison efficace des projets dans les délais"
       },
       "criticalThinking": {
-        "title": "Esprit Critique",
+        "title": "Esprit critique",
         "description": "Évaluation analytique des solutions et approches"
       }
     },
     "metadata": {
-      "title": "À Propos - Mathieu Nguyen | Développeur Front-End",
+      "title": "À propos - Mathieu Nguyen | Développeur Front-End",
       "description": "Découvrez Mathieu Nguyen, Développeur Front-End Freelance avec 7 ans d'expérience en React, Next.js et TypeScript. Apprenez-en plus sur mes compétences et mon parcours.",
       "keywords": [
         "développeur front-end",
@@ -269,7 +267,7 @@
   },
   "ProjectsPage": {
     "badge": "Projets",
-    "title": "Mes Réalisations",
+    "title": "Mes réalisations",
     "description": "Découvrez une sélection de sites et applications que j'ai eu l'occasion de développer.",
     "filter": {
       "label": "Filtrer :",
@@ -309,12 +307,12 @@
     "badge": "Prestations",
     "title": "Ce que je propose",
     "description": "Vous cherchez un développeur front-end fiable pour donner vie à votre projet ? Je mets mes compétences à votre service afin de répondre à vos besoins, qu'il s'agisse d'un nouveau site web, d'une collaboration en équipe ou d'une maintenance continue. Travaillons ensemble pour atteindre vos objectifs.",
-    "getInTouch": "Me Contacter",
+    "getInTouch": "Me contacter",
     "showMore": "Voir plus",
     "showLess": "Voir moins",
     "services": {
       "customWebsiteCreation": {
-        "title": "Création de Sites Web Sur-Mesure",
+        "title": "Création de sites web sur-mesure",
         "description": "Je crée des sites qui inspirent confiance et convertissent vos visiteurs en clients.",
         "subtitle": "Je crée des sites web qui inspirent confiance et convertissent vos visiteurs en clients.",
         "descriptionParagraphs": {
@@ -338,13 +336,13 @@
         },
         "technologies": {
           "0": "React & Next.js pour une expérience utilisateur fluide et moderne",
-          "1": "Tailwind CSS pour un design parfaitement adapté à tous les écrans",
+          "1": "Tailwind pour un design parfaitement adapté à tous les écrans",
           "2": "Supabase pour la gestion des données et des connexions utilisateurs",
           "3": "Vercel pour un hébergement performant et des déploiements automatisés"
         }
       },
       "frontEndCollaboration": {
-        "title": "Collaboration Front-End",
+        "title": "Collaboration front-end",
         "description": "J'intègre vos effectifs pour construire ou faire évoluer votre projet web.",
         "subtitle": "Je rejoins vos équipes en freelance pour assurer la qualité et la continuité de votre développement.",
         "descriptionParagraphs": {
@@ -368,13 +366,13 @@
         },
         "technologies": {
           "0": "React, Next.js et TypeScript pour un code typé de haute qualité",
-          "1": "Tailwind CSS pour une cohérence visuelle et une maintenance simplifiée",
+          "1": "Tailwind pour une cohérence visuelle et une maintenance simplifiée",
           "2": "GenAI et serveurs MCP pour l'automatisation agentique",
           "3": "Pipelines CI/CD pour un déploiement automatisé et fiable"
         }
       },
       "maintenanceSupport": {
-        "title": "Maintenance & Support",
+        "title": "Maintenance & support",
         "description": "Je prends en charge la maintenance de votre site web pour le garder performant et sécurisé.",
         "subtitle": "Je prends en charge la maintenance de votre site web pour le garder performant et sécurisé.",
         "descriptionParagraphs": {
@@ -405,9 +403,9 @@
       }
     },
     "sections": {
-      "myApproach": "Mon Approche",
-      "whatsIncluded": "Ce Qui Est Inclus",
-      "technologiesUsed": "Technologies Utilisées",
+      "myApproach": "Mon approche",
+      "whatsIncluded": "Ce qui est inclus",
+      "technologiesUsed": "Technologies utilisées",
       "examples": "Exemples"
     },
     "metadata": {
@@ -435,15 +433,15 @@
     "title": "Restons en contact",
     "description": "Un projet en tête ? Envoyez-moi un message et créons ensemble quelque chose d'extraordinaire !",
     "info": {
-      "contactInformation": "Informations de Contact",
+      "contactInformation": "Informations de contact",
       "email": "Email",
       "location": "Localisation",
-      "socialMedia": "Réseaux Sociaux",
-      "responseTime": "Délai de Réponse",
+      "socialMedia": "Réseaux sociaux",
+      "responseTime": "Délai de réponse",
       "responseTimeDescription": "Je réponds généralement dans les 24 heures en jours ouvrés."
     },
     "form": {
-      "yourName": "Votre Nom",
+      "yourName": "Votre nom",
       "email": "Email",
       "subject": "Sujet",
       "message": "Message",
@@ -451,7 +449,7 @@
       "emailPlaceholder": "vous@exemple.com",
       "subjectPlaceholder": "Demande de projet / Opportunité d'emploi / Collaboration...",
       "messagePlaceholder": "Parlez-moi de votre projet, de vos délais et de ce que vous souhaitez accomplir...",
-      "sendMessage": "Envoyer le Message",
+      "sendMessage": "Envoyer le message",
       "sending": "Envoi en cours...",
       "privacyNotice": "Je respecte votre vie privée. Vos informations ne seront jamais partagées avec des tiers.",
       "successMessage": "Merci pour votre message ! Je vous répondrai très prochainement.",
@@ -480,7 +478,7 @@
   "Footer": {
     "description": "Bâtisseur de solutions web qui propulsent votre croissance et renforcent l'efficacité de vos équipes techniques.",
     "connectWithMe": "Prenez contact avec moi",
-    "copyright": "© 2025 Mathieu Nguyen Tous droits réservés."
+    "copyright": "© 2026 - Mathieu Nguyen - Tous droits réservés."
   },
   "NotFound": {
     "badge": "404",

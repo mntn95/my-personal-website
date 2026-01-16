@@ -7,7 +7,7 @@ import { fadeInUp } from "@/lib/motion/variants";
 interface PageHeaderProps {
   badge?: string;
   title: string;
-  description: string;
+  description: string | React.ReactNode;
   className?: string;
 }
 

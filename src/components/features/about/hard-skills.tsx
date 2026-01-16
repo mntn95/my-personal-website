@@ -15,7 +15,7 @@ const HardSkillsSection = async (): Promise<React.ReactElement> => {
 
   return (
     <div className="mb-24">
-      <SectionHeader title={t("title")} description={t("description")} />
+      <SectionHeader title={t("title")} />
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
         {aboutSkills.map((skill, index) => (

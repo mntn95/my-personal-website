@@ -77,7 +77,7 @@ export const skillLevels: SkillLevel[] = [
   { name: "React.js", level: 90 },
   { name: "Next.js", level: 85 },
   { name: "Typescript", level: 80 },
-  { name: "Tailwind CSS", level: 75 },
+  { name: "Tailwind", level: 75 },
   { name: "Redux", level: 75 },
   { name: "GenAI", level: 70 },
 ];

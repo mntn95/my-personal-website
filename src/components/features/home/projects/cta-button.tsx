@@ -26,7 +26,7 @@ const CTAButton = (): React.ReactElement => {
       transition={getMotionFixedDelay(0.4)}
     >
       <Button asChild variant="primary" icon={ArrowRight} iconPosition="right">
-        <Link href="/projects">{t("viewAllProjects")}</Link>
+        <Link href="/projects">{t("discoverMyProjects")}</Link>
       </Button>
     </motion.div>
   );

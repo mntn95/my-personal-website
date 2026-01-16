@@ -26,7 +26,7 @@ export const projects: Project[] = [
     title: "Timeweaver",
     description: "ProjectsPage.descriptions.3",
     image: "/images/timeweaver.png",
-    tags: ["React", "Next", "Typescript", "Tailwind CSS", "Jest"],
+    tags: ["React", "Next", "Typescript", "Tailwind", "Jest"],
     githubUrl: "https://github.com/mntn95/",
   },
   {
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     title: "LinkedIn Prospector",
     description: "ProjectsPage.descriptions.4",
     image: "/images/lnkdn_prospector.png",
-    tags: ["React", "Typescript", "Tailwind CSS", "Node", "Express", "Zustand"],
+    tags: ["React", "Typescript", "Tailwind", "Node", "Express", "Zustand"],
     githubUrl: "https://github.com/mntn95/",
   },
   {
@@ -42,7 +42,7 @@ export const projects: Project[] = [
     title: "Freelance Coach",
     description: "ProjectsPage.descriptions.5",
     image: "/images/coach_freelance_portfolio.png",
-    tags: ["React", "Next", "Typescript", "Tailwind CSS"],
+    tags: ["React", "Next", "Typescript", "Tailwind"],
     githubUrl: "https://github.com/mntn95/",
   },
   {
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     title: "Merci l'Artiste",
     description: "ProjectsPage.descriptions.6",
     image: "/images/merci_lartiste.png",
-    tags: ["React", "Typescript", "Tailwind CSS"],
+    tags: ["React", "Typescript", "Tailwind"],
     githubUrl: "https://github.com/mntn95/",
   },
   {
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     title: "Terra Oliva",
     description: "ProjectsPage.descriptions.7",
     image: "/images/terra_oliva.png",
-    tags: ["React", "Typescript", "Tailwind CSS"],
+    tags: ["React", "Typescript", "Tailwind"],
     githubUrl: "https://github.com/mntn95/",
   },
 ];

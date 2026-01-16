@@ -4,16 +4,16 @@
       "greeting": "Hi, I'm",
       "name": "Mathieu Nguyen",
       "description": "Front-end developer crafting fast, modern, and meaningful digital experiences. I design clear, intuitive interfaces that elevate your ideas and strengthen your brand. Curious, adaptable, and always exploring new challenges, I'm here to help turn your vision into something impactful.",
-      "getInTouch": "Get in Touch",
-      "downloadResume": "Download Resume",
+      "getInTouch": "Get in touch",
+      "downloadResume": "Download resume",
       "roles": {
         "webDeveloper": "Web Developer",
         "freelancer": "Freelancer",
-        "ideaAccelerator": "Idea Accelerator",
-        "problemSolver": "Problem Solver",
-        "brandEnhancer": "Brand Enhancer",
-        "visionTranslator": "Vision Translator",
-        "qualityDrivenCraftsman": "Quality-Driven Craftsman"
+        "ideaAccelerator": "Idea accelerator",
+        "problemSolver": "Problem solver",
+        "brandEnhancer": "Brand enhancer",
+        "visionTranslator": "Vision translator",
+        "qualityDrivenCraftsman": "Quality-driven craftsman"
       },
       "skills": {
         "reactJs": "UI library",
@@ -30,7 +30,7 @@
     "about": {
       "title": "Who I Am",
       "description": "I'm a Freelance Front-End Developer with 7 years of experience helping businesses and startups build clean, modern, and easy-to-use websites.",
-      "moreAboutMe": "More About Me",
+      "moreAboutMe": "More about me",
       "showMore": "Show more"
     },
     "services": {
@@ -39,14 +39,14 @@
       "seeMore": "See more"
     },
     "projects": {
-      "title": "Featured Projects",
+      "title": "Featured projects",
       "description": "A selection of my recent web development projects.",
-      "viewAllProjects": "View All Projects"
+      "discoverMyProjects": "Discover my projects"
     },
     "contact": {
-      "title": "Let's Work Together",
+      "title": "Let's work together",
       "description": "I'm currently available for freelance work and open to new opportunities. If you have a project in mind or want to collaborate, let's connect!",
-      "getInTouch": "Get in Touch"
+      "getInTouch": "Get in touch"
     },
     "metadata": {
       "title": "Mathieu Nguyen - Front-End Web Developer",
@@ -82,18 +82,18 @@
   },
   "Navigation": {
     "home": "Home",
-    "aboutMe": "About Me",
+    "aboutMe": "About me",
     "education": "Education",
     "projects": "Projects",
     "services": "Services",
     "contact": "Contact"
   },
   "AboutPage": {
-    "badge": "About Me",
-    "title": "Know Who I Am",
+    "badge": "About me",
+    "title": "Know who I am",
     "description": "I turn ideas into interactive, user-friendly web applications. The divs below highlight my experience, technical skills, and the values that guide my work.",
     "profile": {
-      "whoAmI": "Who am I?",
+      "whoAmI": "Who am I",
       "intro1": "I'm",
       "intro2": "Web Developer for 7 years, I create custom and optimized web solutions for companies or freelancers.",
       "intro3": "I started coding out of a desire to solve problems and create tools that people can use and appreciate. Very quickly, I specialized in front-end development, with a particular focus on React and its ecosystem.",
@@ -101,8 +101,7 @@
       "intro5": "Outside of work, I practice sports, particularly CrossFit and boxing, I nurture my passion for history and geopolitics, or I relax with a good video game."
     },
     "hardSkills": {
-      "title": "Hard Skills",
-      "description": "These are the technologies and programming languages I've worked with and continue to develop expertise in.",
+      "title": "Hard skills",
       "levels": {
         "Advanced": "Advanced",
         "Intermediate": "Intermediate",
@@ -110,16 +109,15 @@
       }
     },
     "softSkills": {
-      "title": "Soft Skills",
-      "description": "These are the interpersonal and professional skills that help me work effectively and deliver quality results."
+      "title": "Soft skills"
     },
     "moreAboutMe": {
-      "title": "More About Me",
+      "title": "More about me",
       "cards": {
-        "personalInterests": "Personal Interests",
-        "codingPhilosophy": "Coding Philosophy",
-        "educationJourney": "Education Journey",
-        "futureGoals": "Future Goals"
+        "personalInterests": "Personal interests",
+        "codingPhilosophy": "Coding philosophy",
+        "educationJourney": "Education journey",
+        "futureGoals": "Future goals"
       },
       "interests": {
         "0": "Exploring new technologies",
@@ -148,7 +146,7 @@
     },
     "softSkillsList": {
       "problemSolving": {
-        "title": "Problem Solving",
+        "title": "Problem solving",
         "description": "Analytical approach to complex technical challenges"
       },
       "communication": {
@@ -156,7 +154,7 @@
         "description": "Clear technical and non-technical communication"
       },
       "teamCollaboration": {
-        "title": "Team Collaboration",
+        "title": "Team collaboration",
         "description": "Effective work in cross-functional teams"
       },
       "adaptability": {
@@ -164,11 +162,11 @@
         "description": "Quick learning of new technologies and methodologies"
       },
       "timeManagement": {
-        "title": "Time Management",
+        "title": "Time management",
         "description": "Efficient project delivery within deadlines"
       },
       "criticalThinking": {
-        "title": "Critical Thinking",
+        "title": "Critical thinking",
         "description": "Analytical evaluation of solutions and approaches"
       }
     },
@@ -269,7 +267,7 @@
   },
   "ProjectsPage": {
     "badge": "Projects",
-    "title": "My Projects",
+    "title": "My projects",
     "description": "Explore a selection of my recent web development projects.",
     "filter": {
       "label": "Filter:",
@@ -307,14 +305,14 @@
   },
   "ServicesPage": {
     "badge": "Services",
-    "title": "What I Offer",
+    "title": "What I offer",
     "description": "Looking for a reliable front-end developer to bring your project to life? I deliver quality web solutions tailored to your needs, whether it's a brand-new website, team collaboration, or ongoing maintenance. Let's work together to achieve your goals.",
-    "getInTouch": "Get in Touch",
-    "showMore": "See More",
-    "showLess": "See Less",
+    "getInTouch": "Get in touch",
+    "showMore": "See more",
+    "showLess": "See less",
     "services": {
       "customWebsiteCreation": {
-        "title": "Custom Website Creation",
+        "title": "Custom website creation",
         "description": "Experienced in crafting fast, attractive websites that converts, from simple pages to full digital platforms.",
         "subtitle": "I create websites that inspire trust and convert your visitors into clients.",
         "descriptionParagraphs": {
@@ -338,13 +336,13 @@
         },
         "technologies": {
           "0": "React & Next.js for dynamic, high-performance websites",
-          "1": "Tailwind CSS for responsive, customizable styling",
+          "1": "Tailwind for responsive, customizable styling",
           "2": "Supabase for database and authentication",
           "3": "Optimization tools for speed and accessibility"
         }
       },
       "frontEndCollaboration": {
-        "title": "Front-end Collaboration",
+        "title": "Front-end collaboration",
         "description": "Skilled at working with teams to enhance projects, refine user interfaces, and deliver front-end solutions that keep development running smoothly.",
         "subtitle": "I join your team to build or evolve your web project.",
         "descriptionParagraphs": {
@@ -368,13 +366,13 @@
         },
         "technologies": {
           "0": "React, Next.js and TypeScript for high-quality typed code",
-          "1": "Tailwind CSS for responsive, customizable styling",
+          "1": "Tailwind for responsive, customizable styling",
           "2": "GenAI and MCP servers for agentic automation",
           "3": "CI/CD pipelines for continuous delivery"
         }
       },
       "maintenanceSupport": {
-        "title": "Maintenance & Support",
+        "title": "Maintenance & support",
         "description": "Focused on maintaining website performance and security, handling updates, optimizations, and troubleshooting to give clients peace of mind.",
         "subtitle": "I handle your website maintenance to keep it efficient and secure.",
         "descriptionParagraphs": {
@@ -405,9 +403,9 @@
       }
     },
     "sections": {
-      "myApproach": "My Approach",
-      "whatsIncluded": "What's Included",
-      "technologiesUsed": "Technologies Used",
+      "myApproach": "My approach",
+      "whatsIncluded": "What's included",
+      "technologiesUsed": "Technologies used",
       "examples": "Examples"
     },
     "metadata": {
@@ -432,18 +430,18 @@
   },
   "ContactPage": {
     "badge": "Contact",
-    "title": "Let's Connect",
+    "title": "Let's connect",
     "description": "Got a project in mind? Drop me a message and let's create something amazing together!",
     "info": {
-      "contactInformation": "Contact Information",
+      "contactInformation": "Contact information",
       "email": "Email",
       "location": "Location",
-      "socialMedia": "Social Media",
-      "responseTime": "Response Time",
+      "socialMedia": "Social media",
+      "responseTime": "Response time",
       "responseTimeDescription": "I typically reply within 24 hours during business days."
     },
     "form": {
-      "yourName": "Your Name",
+      "yourName": "Your name",
       "email": "Email",
       "subject": "Subject",
       "message": "Message",
@@ -451,7 +449,7 @@
       "emailPlaceholder": "you@example.com",
       "subjectPlaceholder": "Project inquiry / Job opportunity / Collaboration...",
       "messagePlaceholder": "Tell me more about your project, your timeline, and what you're looking to achieve...",
-      "sendMessage": "Send Message",
+      "sendMessage": "Send message",
       "sending": "Sending...",
       "privacyNotice": "I value your privacy. Your information will never be shared with third parties.",
       "successMessage": "Thank you for your message! I'll get back to you soon.",
@@ -480,12 +478,12 @@
   "Footer": {
     "description": "Building innovative digital solutions with a focus on clean, efficient code and exceptional user experiences.",
     "connectWithMe": "Connect with me",
-    "copyright": "© 2025 Mathieu Nguyen All rights reserved."
+    "copyright": "© 2026 - Mathieu Nguyen - All rights reserved."
   },
   "NotFound": {
     "badge": "404",
     "title": "Oops! That page can't be found",
     "description": "The page you are looking for was maybe deleted or never existed...",
-    "buttonText": "Go To Home"
+    "buttonText": "Go to home"
   }
 }

@@ -18,16 +18,22 @@ const SkillsGrid = (): React.ReactElement => {
     threshold: 0.1,
   });
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-  const [visibleCount, setVisibleCount] = useState(2);
+  const [isPartiallyVisible, setIsPartiallyVisible] = useState(false);
 
   useEffect(() => {
     setIsMobile(window.innerWidth < 768);
   }, [isMobile]);
 
+  useEffect(() => {
+    if (isMobile) {
+      setIsPartiallyVisible(true);
+    }
+  }, []);
+
   const t = useTranslations("HomePage.about");
 
   const handleShowMore = () => {
-    setVisibleCount((prevCount) => prevCount + 2);
+    setIsPartiallyVisible(false);
   };
 
   const handleKeyDown = (event: React.KeyboardEvent) => {
@@ -37,10 +43,9 @@ const SkillsGrid = (): React.ReactElement => {
     }
   };
 
-  const displayedSkills = isMobile
-    ? skillLevels.slice(0, visibleCount)
-    : skillLevels;
-  const showButton = visibleCount < skillLevels.length;
+  const displayedSkills =
+    isMobile && isPartiallyVisible ? skillLevels.slice(0, 2) : skillLevels;
+  const showButton = isPartiallyVisible;
 
   return (
     <>

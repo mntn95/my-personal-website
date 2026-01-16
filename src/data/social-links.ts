@@ -7,9 +7,9 @@ import type { SocialLink } from "@/types";
  */
 export const socialLinks: SocialLink[] = [
   {
-    name: "GitHub",
-    icon: Github,
-    href: "https://github.com/mntn95/",
+    name: "Email",
+    icon: Mail,
+    href: "mailto:mathieu.nguyen@proton.me",
   },
   {
     name: "LinkedIn",
@@ -17,8 +17,8 @@ export const socialLinks: SocialLink[] = [
     href: "https://www.linkedin.com/in/mathieu-ng/",
   },
   {
-    name: "Email",
-    icon: Mail,
-    href: "mailto:mathieu.nguyen@proton.me",
+    name: "GitHub",
+    icon: Github,
+    href: "https://github.com/mntn95/",
   },
 ];

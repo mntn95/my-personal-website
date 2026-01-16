@@ -31,7 +31,10 @@ const SectionLayout = ({
   };
 
   return (
-    <section id={id} className={cn("py-24", bgClasses[background], className)}>
+    <section
+      id={id}
+      className={cn("py-12 xl:py-24", bgClasses[background], className)}
+    >
       {children}
     </section>
   );
