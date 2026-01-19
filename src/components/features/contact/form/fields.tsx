@@ -68,6 +68,7 @@ const FormFields = ({
         {...register("message")}
         error={errors.message?.message}
         placeholder={t("messagePlaceholder")}
+        maxLength={3000}
       />
 
       <div className="pt-2">

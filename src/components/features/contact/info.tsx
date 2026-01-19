@@ -17,7 +17,7 @@ const ContactInfo = (): React.ReactElement => {
     <div className="space-y-6">
       <FeatureCard variant="elevated" hover>
         <h2 className="text-lg md:text-xl mb-4 text-teal-500 font-semibold">
-          {t("contactInformation")}
+          {t("contactMe")}
         </h2>
 
         <div className="space-y-4 mb-6">
@@ -31,8 +31,8 @@ const ContactInfo = (): React.ReactElement => {
           <ContactInfoCard
             icon={MapPin}
             title={t("location")}
-            value="Paris, France"
-            href="https://maps.google.com/?q=Paris"
+            value="Le Blanc Mesnil, France"
+            href="https://maps.google.com/?q=93150+Le+Blanc+Mesnil"
             target="_blank"
             rel="noopener noreferrer"
           />

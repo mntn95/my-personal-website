@@ -1,4 +1,6 @@
-import { EmptyState } from "@/components/ui";
+"use client";
+
+import { useTranslations } from "next-intl";
 import type { Project } from "@/types";
 import { ProjectCard } from "./project-card";
 
@@ -12,9 +14,13 @@ interface ProjectsGridProps {
  * Used in the Projects page
  */
 const ProjectsGrid = ({ projects }: ProjectsGridProps): React.ReactElement => {
+  const t = useTranslations("ProjectsPage.filter");
+
   if (projects.length === 0) {
     return (
-      <EmptyState description="No projects found matching your criteria." />
+      <div className="text-center py-20">
+        <p className="text-gray-400 text-lg">{t("noResults")}</p>
+      </div>
     );
   }
 

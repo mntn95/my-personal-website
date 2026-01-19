@@ -1,4 +1,5 @@
-import React, { useId } from "react";
+"use client";
+import React, { useId, useState } from "react";
 import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -23,11 +24,12 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
  */
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
 	({ label, icon: Icon, error, helperText, className, id, ...props }, ref) => {
+		const [isFocused, setIsFocused] = useState(false);
 		const generatedId = useId();
 		const inputId = id || generatedId;
 
 		return (
-			<div className="space-y-1">
+			<div className="space-y-2" onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)}>
 				{label && (
 					<label
 						htmlFor={inputId}
@@ -38,7 +40,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
 				)}
 				<div className="relative">
 					{Icon && (
-						<Icon className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 pointer-events-none" />
+						<Icon className={cn("absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 pointer-events-none", isFocused && "text-teal-400")} />
 					)}
 					<input
 						ref={ref}
@@ -73,6 +75,7 @@ interface TextareaProps
 	icon?: LucideIcon;
 	error?: string;
 	helperText?: string;
+	maxLength?: number;
 }
 
 /**
@@ -88,12 +91,21 @@ interface TextareaProps
  * />
  */
 const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
-	({ label, icon: Icon, error, helperText, className, id, ...props }, ref) => {
+	({ label, icon: Icon, error, helperText, className, id, maxLength, onChange, ...props }, ref) => {
+		const [isFocused, setIsFocused] = useState(false);
 		const generatedId = useId();
 		const textareaId = id || generatedId;
+		const [charCount, setCharCount] = useState(0);
+
+		const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+			setCharCount(e.target.value.length);
+			if (onChange) {
+				onChange(e);
+			}
+		};
 
 		return (
-			<div className="space-y-1">
+			<div className="space-y-2" onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)}>
 				{label && (
 					<label
 						htmlFor={textareaId}
@@ -104,11 +116,13 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
 				)}
 				<div className="relative">
 					{Icon && (
-						<Icon className="absolute left-3 top-4 text-gray-400 w-4 h-4 pointer-events-none" />
+						<Icon className={cn("absolute left-3 top-4 text-gray-400 w-4 h-4 pointer-events-none", isFocused && "text-teal-400")} />
 					)}
 					<textarea
 						ref={ref}
 						id={textareaId}
+						maxLength={maxLength}
+						onChange={handleChange}
 						className={cn(
 							"w-full pl-10 pr-4 py-2.5 bg-card-border text-white rounded-lg",
 							"focus:outline-none focus:ring-2 focus:ring-teal-500 resize-none",
@@ -121,6 +135,11 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
 						{...props}
 					/>
 				</div>
+				{maxLength && (
+					<p className="text-xs text-teal-500 text-right">
+						{charCount}/{maxLength}
+					</p>
+				)}
 				{error && <p className="text-sm text-red-500">{error}</p>}
 				{helperText && !error && (
 					<p className="text-sm text-gray-400">{helperText}</p>

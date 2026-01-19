@@ -21,7 +21,7 @@ export const HashScrollHandler = (): null => {
       if (!element) return;
 
       const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - 200;
+      const offsetPosition = elementPosition + window.pageYOffset - 150;
 
       window.scrollTo({
         top: offsetPosition,

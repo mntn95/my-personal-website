@@ -16,8 +16,6 @@ const Hero = (): React.ReactElement => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8 md:pt-16"
     >
       <FloatingIcons />
-      <GradientOrbs />
-
       <div className="container mx-auto px-4 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <HeroContent />

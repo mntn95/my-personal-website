@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
+import { Button } from "@/components/ui/button";
 import { ApproachSection } from "./approach-section";
 import { TechnologiesSection } from "./technologies-section";
 import { ExamplesSection } from "./examples-section";
@@ -32,13 +33,6 @@ const CollapsibleServiceCard = ({
 
   const handleToggle = () => {
     setIsExpanded((prev) => !prev);
-  };
-
-  const handleKeyDown = (event: React.KeyboardEvent) => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      handleToggle();
-    }
   };
 
   return (
@@ -71,12 +65,11 @@ const CollapsibleServiceCard = ({
         </motion.div>
 
         <div className="flex justify-center mb-6">
-          <button
+          <Button
+            variant="ghost"
             onClick={handleToggle}
-            onKeyDown={handleKeyDown}
-            className="flex items-center gap-2 text-teal-500 hover:text-teal-400 transition-colors"
             aria-label={isExpanded ? t("showLess") : t("showMore")}
-            tabIndex={0}
+            className="gap-2 text-teal-500 hover:text-teal-400 p-0"
           >
             <span>{isExpanded ? t("showLess") : t("showMore")}</span>
             <motion.div
@@ -85,7 +78,7 @@ const CollapsibleServiceCard = ({
             >
               <ChevronDown className="w-4 h-4" />
             </motion.div>
-          </button>
+          </Button>
         </div>
       </div>
     </>

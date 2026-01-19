@@ -272,7 +272,8 @@
     "filter": {
       "label": "Filtrer :",
       "all": "Tous",
-      "searchPlaceholder": "Rechercher un projet..."
+      "searchPlaceholder": "Rechercher un projet...",
+      "noResults": "Aucun projet ne correspond à vos critères."
     },
     "descriptions": {
       "1": "Une plateforme e-commerce internationale dédiée à l'optique.",
@@ -433,7 +434,7 @@
     "title": "Restons en contact",
     "description": "Un projet en tête ? Envoyez-moi un message et créons ensemble quelque chose d'extraordinaire !",
     "info": {
-      "contactInformation": "Informations de contact",
+      "contactMe": "Me contacter",
       "email": "Email",
       "location": "Localisation",
       "socialMedia": "Réseaux sociaux",
@@ -449,7 +450,7 @@
       "emailPlaceholder": "vous@exemple.com",
       "subjectPlaceholder": "Demande de projet / Opportunité d'emploi / Collaboration...",
       "messagePlaceholder": "Parlez-moi de votre projet, de vos délais et de ce que vous souhaitez accomplir...",
-      "sendMessage": "Envoyer le message",
+      "sendMessage": "Envoyer",
       "sending": "Envoi en cours...",
       "privacyNotice": "Je respecte votre vie privée. Vos informations ne seront jamais partagées avec des tiers.",
       "successMessage": "Merci pour votre message ! Je vous répondrai très prochainement.",

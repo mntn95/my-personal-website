@@ -64,7 +64,7 @@ export const ParticleBackground = (): React.ReactElement => {
   });
 
   return (
-    <div className="fixed inset-0 z-0">
+    <div className="hidden lg:block fixed inset-0 z-0">
       <canvas
         ref={canvasRef}
         className="w-full h-full"

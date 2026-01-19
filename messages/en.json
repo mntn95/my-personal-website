@@ -272,7 +272,8 @@
     "filter": {
       "label": "Filter:",
       "all": "All",
-      "searchPlaceholder": "Search projects..."
+      "searchPlaceholder": "Search projects...",
+      "noResults": "No projects found matching your criteria."
     },
     "descriptions": {
       "1": "An international e-commerce platform dedicated to eyewear.",
@@ -433,7 +434,7 @@
     "title": "Let's connect",
     "description": "Got a project in mind? Drop me a message and let's create something amazing together!",
     "info": {
-      "contactInformation": "Contact information",
+      "contactMe": "Contact me",
       "email": "Email",
       "location": "Location",
       "socialMedia": "Social media",
@@ -449,7 +450,7 @@
       "emailPlaceholder": "you@example.com",
       "subjectPlaceholder": "Project inquiry / Job opportunity / Collaboration...",
       "messagePlaceholder": "Tell me more about your project, your timeline, and what you're looking to achieve...",
-      "sendMessage": "Send message",
+      "sendMessage": "Send",
       "sending": "Sending...",
       "privacyNotice": "I value your privacy. Your information will never be shared with third parties.",
       "successMessage": "Thank you for your message! I'll get back to you soon.",
